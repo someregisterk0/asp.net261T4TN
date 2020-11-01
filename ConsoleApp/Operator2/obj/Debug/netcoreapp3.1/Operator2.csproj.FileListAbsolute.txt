@@ -1,0 +1,10 @@
+D:\ASP.NET-261T4TN\ConsoleApp\Operator2\bin\Debug\netcoreapp3.1\Operator2.exe
+D:\ASP.NET-261T4TN\ConsoleApp\Operator2\bin\Debug\netcoreapp3.1\Operator2.deps.json
+D:\ASP.NET-261T4TN\ConsoleApp\Operator2\bin\Debug\netcoreapp3.1\Operator2.runtimeconfig.json
+D:\ASP.NET-261T4TN\ConsoleApp\Operator2\bin\Debug\netcoreapp3.1\Operator2.runtimeconfig.dev.json
+D:\ASP.NET-261T4TN\ConsoleApp\Operator2\bin\Debug\netcoreapp3.1\Operator2.dll
+D:\ASP.NET-261T4TN\ConsoleApp\Operator2\bin\Debug\netcoreapp3.1\Operator2.pdb
+D:\ASP.NET-261T4TN\ConsoleApp\Operator2\obj\Debug\netcoreapp3.1\Operator2.AssemblyInfoInputs.cache
+D:\ASP.NET-261T4TN\ConsoleApp\Operator2\obj\Debug\netcoreapp3.1\Operator2.AssemblyInfo.cs
+D:\ASP.NET-261T4TN\ConsoleApp\Operator2\obj\Debug\netcoreapp3.1\Operator2.dll
+D:\ASP.NET-261T4TN\ConsoleApp\Operator2\obj\Debug\netcoreapp3.1\Operator2.pdb

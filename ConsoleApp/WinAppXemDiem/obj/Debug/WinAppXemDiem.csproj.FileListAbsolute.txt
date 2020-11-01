@@ -1,0 +1,9 @@
+D:\ASP.NET-261T4TN\ConsoleApp\WinAppXemDiem\bin\Debug\WinAppXemDiem.exe.config
+D:\ASP.NET-261T4TN\ConsoleApp\WinAppXemDiem\bin\Debug\WinAppXemDiem.exe
+D:\ASP.NET-261T4TN\ConsoleApp\WinAppXemDiem\bin\Debug\WinAppXemDiem.pdb
+D:\ASP.NET-261T4TN\ConsoleApp\WinAppXemDiem\obj\Debug\WinAppXemDiem.csprojAssemblyReference.cache
+D:\ASP.NET-261T4TN\ConsoleApp\WinAppXemDiem\obj\Debug\WinAppXemDiem.Form1.resources
+D:\ASP.NET-261T4TN\ConsoleApp\WinAppXemDiem\obj\Debug\WinAppXemDiem.Properties.Resources.resources
+D:\ASP.NET-261T4TN\ConsoleApp\WinAppXemDiem\obj\Debug\WinAppXemDiem.csproj.GenerateResource.cache
+D:\ASP.NET-261T4TN\ConsoleApp\WinAppXemDiem\obj\Debug\WinAppXemDiem.exe
+D:\ASP.NET-261T4TN\ConsoleApp\WinAppXemDiem\obj\Debug\WinAppXemDiem.pdb

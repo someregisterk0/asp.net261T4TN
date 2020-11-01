@@ -1,0 +1,10 @@
+D:\ASP.NET-261T4TN\ConsoleApp\Operator4\bin\Debug\netcoreapp3.1\Operator4.exe
+D:\ASP.NET-261T4TN\ConsoleApp\Operator4\bin\Debug\netcoreapp3.1\Operator4.deps.json
+D:\ASP.NET-261T4TN\ConsoleApp\Operator4\bin\Debug\netcoreapp3.1\Operator4.runtimeconfig.json
+D:\ASP.NET-261T4TN\ConsoleApp\Operator4\bin\Debug\netcoreapp3.1\Operator4.runtimeconfig.dev.json
+D:\ASP.NET-261T4TN\ConsoleApp\Operator4\bin\Debug\netcoreapp3.1\Operator4.dll
+D:\ASP.NET-261T4TN\ConsoleApp\Operator4\bin\Debug\netcoreapp3.1\Operator4.pdb
+D:\ASP.NET-261T4TN\ConsoleApp\Operator4\obj\Debug\netcoreapp3.1\Operator4.AssemblyInfoInputs.cache
+D:\ASP.NET-261T4TN\ConsoleApp\Operator4\obj\Debug\netcoreapp3.1\Operator4.AssemblyInfo.cs
+D:\ASP.NET-261T4TN\ConsoleApp\Operator4\obj\Debug\netcoreapp3.1\Operator4.dll
+D:\ASP.NET-261T4TN\ConsoleApp\Operator4\obj\Debug\netcoreapp3.1\Operator4.pdb
