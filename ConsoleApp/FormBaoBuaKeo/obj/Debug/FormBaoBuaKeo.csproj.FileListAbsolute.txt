@@ -1,0 +1,9 @@
+D:\ASP.NET-261T4TN\ConsoleApp\FormBaoBuaKeo\bin\Debug\FormBaoBuaKeo.exe.config
+D:\ASP.NET-261T4TN\ConsoleApp\FormBaoBuaKeo\bin\Debug\FormBaoBuaKeo.exe
+D:\ASP.NET-261T4TN\ConsoleApp\FormBaoBuaKeo\bin\Debug\FormBaoBuaKeo.pdb
+D:\ASP.NET-261T4TN\ConsoleApp\FormBaoBuaKeo\obj\Debug\FormBaoBuaKeo.csprojAssemblyReference.cache
+D:\ASP.NET-261T4TN\ConsoleApp\FormBaoBuaKeo\obj\Debug\FormBaoBuaKeo.Form1.resources
+D:\ASP.NET-261T4TN\ConsoleApp\FormBaoBuaKeo\obj\Debug\FormBaoBuaKeo.Properties.Resources.resources
+D:\ASP.NET-261T4TN\ConsoleApp\FormBaoBuaKeo\obj\Debug\FormBaoBuaKeo.csproj.GenerateResource.cache
+D:\ASP.NET-261T4TN\ConsoleApp\FormBaoBuaKeo\obj\Debug\FormBaoBuaKeo.exe
+D:\ASP.NET-261T4TN\ConsoleApp\FormBaoBuaKeo\obj\Debug\FormBaoBuaKeo.pdb

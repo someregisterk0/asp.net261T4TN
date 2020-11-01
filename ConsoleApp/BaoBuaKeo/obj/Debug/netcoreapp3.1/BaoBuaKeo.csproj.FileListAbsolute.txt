@@ -1,0 +1,11 @@
+D:\ASP.NET-261T4TN\ConsoleApp\BaoBuaKeo\bin\Debug\netcoreapp3.1\BaoBuaKeo.exe
+D:\ASP.NET-261T4TN\ConsoleApp\BaoBuaKeo\bin\Debug\netcoreapp3.1\BaoBuaKeo.deps.json
+D:\ASP.NET-261T4TN\ConsoleApp\BaoBuaKeo\bin\Debug\netcoreapp3.1\BaoBuaKeo.runtimeconfig.json
+D:\ASP.NET-261T4TN\ConsoleApp\BaoBuaKeo\bin\Debug\netcoreapp3.1\BaoBuaKeo.runtimeconfig.dev.json
+D:\ASP.NET-261T4TN\ConsoleApp\BaoBuaKeo\bin\Debug\netcoreapp3.1\BaoBuaKeo.dll
+D:\ASP.NET-261T4TN\ConsoleApp\BaoBuaKeo\bin\Debug\netcoreapp3.1\BaoBuaKeo.pdb
+D:\ASP.NET-261T4TN\ConsoleApp\BaoBuaKeo\obj\Debug\netcoreapp3.1\BaoBuaKeo.AssemblyInfoInputs.cache
+D:\ASP.NET-261T4TN\ConsoleApp\BaoBuaKeo\obj\Debug\netcoreapp3.1\BaoBuaKeo.AssemblyInfo.cs
+D:\ASP.NET-261T4TN\ConsoleApp\BaoBuaKeo\obj\Debug\netcoreapp3.1\BaoBuaKeo.dll
+D:\ASP.NET-261T4TN\ConsoleApp\BaoBuaKeo\obj\Debug\netcoreapp3.1\BaoBuaKeo.pdb
+D:\ASP.NET-261T4TN\ConsoleApp\BaoBuaKeo\obj\Debug\netcoreapp3.1\BaoBuaKeo.csprojAssemblyReference.cache

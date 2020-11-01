@@ -1,0 +1,11 @@
+D:\ASP.NET-261T4TN\ConsoleApp\Array2Dimention\bin\Debug\netcoreapp3.1\Array2Dimention.exe
+D:\ASP.NET-261T4TN\ConsoleApp\Array2Dimention\bin\Debug\netcoreapp3.1\Array2Dimention.deps.json
+D:\ASP.NET-261T4TN\ConsoleApp\Array2Dimention\bin\Debug\netcoreapp3.1\Array2Dimention.runtimeconfig.json
+D:\ASP.NET-261T4TN\ConsoleApp\Array2Dimention\bin\Debug\netcoreapp3.1\Array2Dimention.runtimeconfig.dev.json
+D:\ASP.NET-261T4TN\ConsoleApp\Array2Dimention\bin\Debug\netcoreapp3.1\Array2Dimention.dll
+D:\ASP.NET-261T4TN\ConsoleApp\Array2Dimention\bin\Debug\netcoreapp3.1\Array2Dimention.pdb
+D:\ASP.NET-261T4TN\ConsoleApp\Array2Dimention\obj\Debug\netcoreapp3.1\Array2Dimention.csprojAssemblyReference.cache
+D:\ASP.NET-261T4TN\ConsoleApp\Array2Dimention\obj\Debug\netcoreapp3.1\Array2Dimention.AssemblyInfoInputs.cache
+D:\ASP.NET-261T4TN\ConsoleApp\Array2Dimention\obj\Debug\netcoreapp3.1\Array2Dimention.AssemblyInfo.cs
+D:\ASP.NET-261T4TN\ConsoleApp\Array2Dimention\obj\Debug\netcoreapp3.1\Array2Dimention.dll
+D:\ASP.NET-261T4TN\ConsoleApp\Array2Dimention\obj\Debug\netcoreapp3.1\Array2Dimention.pdb

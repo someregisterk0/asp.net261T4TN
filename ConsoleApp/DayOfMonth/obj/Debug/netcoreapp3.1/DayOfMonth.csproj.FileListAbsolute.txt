@@ -1,0 +1,10 @@
+D:\ASP.NET-261T4TN\ConsoleApp\DayOfMonth\bin\Debug\netcoreapp3.1\DayOfMonth.exe
+D:\ASP.NET-261T4TN\ConsoleApp\DayOfMonth\bin\Debug\netcoreapp3.1\DayOfMonth.deps.json
+D:\ASP.NET-261T4TN\ConsoleApp\DayOfMonth\bin\Debug\netcoreapp3.1\DayOfMonth.runtimeconfig.json
+D:\ASP.NET-261T4TN\ConsoleApp\DayOfMonth\bin\Debug\netcoreapp3.1\DayOfMonth.runtimeconfig.dev.json
+D:\ASP.NET-261T4TN\ConsoleApp\DayOfMonth\bin\Debug\netcoreapp3.1\DayOfMonth.dll
+D:\ASP.NET-261T4TN\ConsoleApp\DayOfMonth\bin\Debug\netcoreapp3.1\DayOfMonth.pdb
+D:\ASP.NET-261T4TN\ConsoleApp\DayOfMonth\obj\Debug\netcoreapp3.1\DayOfMonth.AssemblyInfoInputs.cache
+D:\ASP.NET-261T4TN\ConsoleApp\DayOfMonth\obj\Debug\netcoreapp3.1\DayOfMonth.AssemblyInfo.cs
+D:\ASP.NET-261T4TN\ConsoleApp\DayOfMonth\obj\Debug\netcoreapp3.1\DayOfMonth.dll
+D:\ASP.NET-261T4TN\ConsoleApp\DayOfMonth\obj\Debug\netcoreapp3.1\DayOfMonth.pdb
