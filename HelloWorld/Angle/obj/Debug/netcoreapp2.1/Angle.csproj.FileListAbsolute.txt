@@ -1,0 +1,10 @@
+D:\HelloWorld\Angle\bin\Debug\netcoreapp2.1\Angle.deps.json
+D:\HelloWorld\Angle\bin\Debug\netcoreapp2.1\Angle.runtimeconfig.json
+D:\HelloWorld\Angle\bin\Debug\netcoreapp2.1\Angle.runtimeconfig.dev.json
+D:\HelloWorld\Angle\bin\Debug\netcoreapp2.1\Angle.dll
+D:\HelloWorld\Angle\bin\Debug\netcoreapp2.1\Angle.pdb
+D:\HelloWorld\Angle\obj\Debug\netcoreapp2.1\Angle.csproj.CoreCompileInputs.cache
+D:\HelloWorld\Angle\obj\Debug\netcoreapp2.1\Angle.AssemblyInfoInputs.cache
+D:\HelloWorld\Angle\obj\Debug\netcoreapp2.1\Angle.AssemblyInfo.cs
+D:\HelloWorld\Angle\obj\Debug\netcoreapp2.1\Angle.dll
+D:\HelloWorld\Angle\obj\Debug\netcoreapp2.1\Angle.pdb

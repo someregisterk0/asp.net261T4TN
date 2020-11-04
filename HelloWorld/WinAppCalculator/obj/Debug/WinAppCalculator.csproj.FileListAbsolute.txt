@@ -1,0 +1,10 @@
+D:\HelloWorld\WinAppCalculator\bin\Debug\WinAppCalculator.exe.config
+D:\HelloWorld\WinAppCalculator\bin\Debug\WinAppCalculator.exe
+D:\HelloWorld\WinAppCalculator\bin\Debug\WinAppCalculator.pdb
+D:\HelloWorld\WinAppCalculator\obj\Debug\WinAppCalculator.csprojAssemblyReference.cache
+D:\HelloWorld\WinAppCalculator\obj\Debug\WinAppCalculator.Form1.resources
+D:\HelloWorld\WinAppCalculator\obj\Debug\WinAppCalculator.Properties.Resources.resources
+D:\HelloWorld\WinAppCalculator\obj\Debug\WinAppCalculator.csproj.GenerateResource.cache
+D:\HelloWorld\WinAppCalculator\obj\Debug\WinAppCalculator.csproj.CoreCompileInputs.cache
+D:\HelloWorld\WinAppCalculator\obj\Debug\WinAppCalculator.exe
+D:\HelloWorld\WinAppCalculator\obj\Debug\WinAppCalculator.pdb

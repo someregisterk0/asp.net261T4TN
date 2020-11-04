@@ -1,0 +1,10 @@
+D:\HelloWorld\HHMMSS\bin\Debug\netcoreapp2.1\HHMMSS.deps.json
+D:\HelloWorld\HHMMSS\bin\Debug\netcoreapp2.1\HHMMSS.runtimeconfig.json
+D:\HelloWorld\HHMMSS\bin\Debug\netcoreapp2.1\HHMMSS.runtimeconfig.dev.json
+D:\HelloWorld\HHMMSS\bin\Debug\netcoreapp2.1\HHMMSS.dll
+D:\HelloWorld\HHMMSS\bin\Debug\netcoreapp2.1\HHMMSS.pdb
+D:\HelloWorld\HHMMSS\obj\Debug\netcoreapp2.1\HHMMSS.csproj.CoreCompileInputs.cache
+D:\HelloWorld\HHMMSS\obj\Debug\netcoreapp2.1\HHMMSS.AssemblyInfoInputs.cache
+D:\HelloWorld\HHMMSS\obj\Debug\netcoreapp2.1\HHMMSS.AssemblyInfo.cs
+D:\HelloWorld\HHMMSS\obj\Debug\netcoreapp2.1\HHMMSS.dll
+D:\HelloWorld\HHMMSS\obj\Debug\netcoreapp2.1\HHMMSS.pdb

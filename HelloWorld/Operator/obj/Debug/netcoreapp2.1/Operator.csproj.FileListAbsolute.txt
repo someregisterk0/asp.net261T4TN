@@ -1,0 +1,10 @@
+D:\HelloWorld\Operator\bin\Debug\netcoreapp2.1\Operator.deps.json
+D:\HelloWorld\Operator\bin\Debug\netcoreapp2.1\Operator.runtimeconfig.json
+D:\HelloWorld\Operator\bin\Debug\netcoreapp2.1\Operator.runtimeconfig.dev.json
+D:\HelloWorld\Operator\bin\Debug\netcoreapp2.1\Operator.dll
+D:\HelloWorld\Operator\bin\Debug\netcoreapp2.1\Operator.pdb
+D:\HelloWorld\Operator\obj\Debug\netcoreapp2.1\Operator.csproj.CoreCompileInputs.cache
+D:\HelloWorld\Operator\obj\Debug\netcoreapp2.1\Operator.AssemblyInfoInputs.cache
+D:\HelloWorld\Operator\obj\Debug\netcoreapp2.1\Operator.AssemblyInfo.cs
+D:\HelloWorld\Operator\obj\Debug\netcoreapp2.1\Operator.dll
+D:\HelloWorld\Operator\obj\Debug\netcoreapp2.1\Operator.pdb

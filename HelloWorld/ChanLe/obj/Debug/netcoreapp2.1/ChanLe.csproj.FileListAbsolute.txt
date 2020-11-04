@@ -1,0 +1,10 @@
+D:\HelloWorld\ChanLe\bin\Debug\netcoreapp2.1\ChanLe.deps.json
+D:\HelloWorld\ChanLe\bin\Debug\netcoreapp2.1\ChanLe.runtimeconfig.json
+D:\HelloWorld\ChanLe\bin\Debug\netcoreapp2.1\ChanLe.runtimeconfig.dev.json
+D:\HelloWorld\ChanLe\bin\Debug\netcoreapp2.1\ChanLe.dll
+D:\HelloWorld\ChanLe\bin\Debug\netcoreapp2.1\ChanLe.pdb
+D:\HelloWorld\ChanLe\obj\Debug\netcoreapp2.1\ChanLe.csproj.CoreCompileInputs.cache
+D:\HelloWorld\ChanLe\obj\Debug\netcoreapp2.1\ChanLe.AssemblyInfoInputs.cache
+D:\HelloWorld\ChanLe\obj\Debug\netcoreapp2.1\ChanLe.AssemblyInfo.cs
+D:\HelloWorld\ChanLe\obj\Debug\netcoreapp2.1\ChanLe.dll
+D:\HelloWorld\ChanLe\obj\Debug\netcoreapp2.1\ChanLe.pdb

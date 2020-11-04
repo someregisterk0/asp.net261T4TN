@@ -1,0 +1,10 @@
+D:\HelloWorld\Arrays\bin\Debug\netcoreapp2.1\Arrays.deps.json
+D:\HelloWorld\Arrays\bin\Debug\netcoreapp2.1\Arrays.runtimeconfig.json
+D:\HelloWorld\Arrays\bin\Debug\netcoreapp2.1\Arrays.runtimeconfig.dev.json
+D:\HelloWorld\Arrays\bin\Debug\netcoreapp2.1\Arrays.dll
+D:\HelloWorld\Arrays\bin\Debug\netcoreapp2.1\Arrays.pdb
+D:\HelloWorld\Arrays\obj\Debug\netcoreapp2.1\Arrays.csproj.CoreCompileInputs.cache
+D:\HelloWorld\Arrays\obj\Debug\netcoreapp2.1\Arrays.AssemblyInfoInputs.cache
+D:\HelloWorld\Arrays\obj\Debug\netcoreapp2.1\Arrays.AssemblyInfo.cs
+D:\HelloWorld\Arrays\obj\Debug\netcoreapp2.1\Arrays.dll
+D:\HelloWorld\Arrays\obj\Debug\netcoreapp2.1\Arrays.pdb

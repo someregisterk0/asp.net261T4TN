@@ -1,0 +1,11 @@
+D:\HelloWorld\AppInput\bin\Debug\netcoreapp2.1\AppInput.deps.json
+D:\HelloWorld\AppInput\bin\Debug\netcoreapp2.1\AppInput.runtimeconfig.json
+D:\HelloWorld\AppInput\bin\Debug\netcoreapp2.1\AppInput.runtimeconfig.dev.json
+D:\HelloWorld\AppInput\bin\Debug\netcoreapp2.1\AppInput.dll
+D:\HelloWorld\AppInput\bin\Debug\netcoreapp2.1\AppInput.pdb
+D:\HelloWorld\AppInput\obj\Debug\netcoreapp2.1\AppInput.csproj.CoreCompileInputs.cache
+D:\HelloWorld\AppInput\obj\Debug\netcoreapp2.1\AppInput.AssemblyInfoInputs.cache
+D:\HelloWorld\AppInput\obj\Debug\netcoreapp2.1\AppInput.AssemblyInfo.cs
+D:\HelloWorld\AppInput\obj\Debug\netcoreapp2.1\AppInput.dll
+D:\HelloWorld\AppInput\obj\Debug\netcoreapp2.1\AppInput.pdb
+D:\HelloWorld\AppInput\obj\Debug\netcoreapp2.1\AppInput.csprojAssemblyReference.cache

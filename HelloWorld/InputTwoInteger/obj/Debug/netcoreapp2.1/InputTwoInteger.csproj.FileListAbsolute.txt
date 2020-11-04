@@ -1,0 +1,10 @@
+D:\HelloWorld\InputTwoInteger\bin\Debug\netcoreapp2.1\InputTwoInteger.deps.json
+D:\HelloWorld\InputTwoInteger\bin\Debug\netcoreapp2.1\InputTwoInteger.runtimeconfig.json
+D:\HelloWorld\InputTwoInteger\bin\Debug\netcoreapp2.1\InputTwoInteger.runtimeconfig.dev.json
+D:\HelloWorld\InputTwoInteger\bin\Debug\netcoreapp2.1\InputTwoInteger.dll
+D:\HelloWorld\InputTwoInteger\bin\Debug\netcoreapp2.1\InputTwoInteger.pdb
+D:\HelloWorld\InputTwoInteger\obj\Debug\netcoreapp2.1\InputTwoInteger.csproj.CoreCompileInputs.cache
+D:\HelloWorld\InputTwoInteger\obj\Debug\netcoreapp2.1\InputTwoInteger.AssemblyInfoInputs.cache
+D:\HelloWorld\InputTwoInteger\obj\Debug\netcoreapp2.1\InputTwoInteger.AssemblyInfo.cs
+D:\HelloWorld\InputTwoInteger\obj\Debug\netcoreapp2.1\InputTwoInteger.dll
+D:\HelloWorld\InputTwoInteger\obj\Debug\netcoreapp2.1\InputTwoInteger.pdb

@@ -1,0 +1,10 @@
+D:\HelloWorld\DataType_Sbyte\bin\Debug\netcoreapp2.1\DataType_Sbyte.deps.json
+D:\HelloWorld\DataType_Sbyte\bin\Debug\netcoreapp2.1\DataType_Sbyte.runtimeconfig.json
+D:\HelloWorld\DataType_Sbyte\bin\Debug\netcoreapp2.1\DataType_Sbyte.runtimeconfig.dev.json
+D:\HelloWorld\DataType_Sbyte\bin\Debug\netcoreapp2.1\DataType_Sbyte.dll
+D:\HelloWorld\DataType_Sbyte\bin\Debug\netcoreapp2.1\DataType_Sbyte.pdb
+D:\HelloWorld\DataType_Sbyte\obj\Debug\netcoreapp2.1\DataType_Sbyte.csproj.CoreCompileInputs.cache
+D:\HelloWorld\DataType_Sbyte\obj\Debug\netcoreapp2.1\DataType_Sbyte.AssemblyInfoInputs.cache
+D:\HelloWorld\DataType_Sbyte\obj\Debug\netcoreapp2.1\DataType_Sbyte.AssemblyInfo.cs
+D:\HelloWorld\DataType_Sbyte\obj\Debug\netcoreapp2.1\DataType_Sbyte.dll
+D:\HelloWorld\DataType_Sbyte\obj\Debug\netcoreapp2.1\DataType_Sbyte.pdb
