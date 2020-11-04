@@ -1,0 +1,10 @@
+D:\261T4TN\ConsoleApp\CharacterExample\bin\Debug\netcoreapp2.1\CharacterExample.deps.json
+D:\261T4TN\ConsoleApp\CharacterExample\bin\Debug\netcoreapp2.1\CharacterExample.runtimeconfig.json
+D:\261T4TN\ConsoleApp\CharacterExample\bin\Debug\netcoreapp2.1\CharacterExample.runtimeconfig.dev.json
+D:\261T4TN\ConsoleApp\CharacterExample\bin\Debug\netcoreapp2.1\CharacterExample.dll
+D:\261T4TN\ConsoleApp\CharacterExample\bin\Debug\netcoreapp2.1\CharacterExample.pdb
+D:\261T4TN\ConsoleApp\CharacterExample\obj\Debug\netcoreapp2.1\CharacterExample.csproj.CoreCompileInputs.cache
+D:\261T4TN\ConsoleApp\CharacterExample\obj\Debug\netcoreapp2.1\CharacterExample.AssemblyInfoInputs.cache
+D:\261T4TN\ConsoleApp\CharacterExample\obj\Debug\netcoreapp2.1\CharacterExample.AssemblyInfo.cs
+D:\261T4TN\ConsoleApp\CharacterExample\obj\Debug\netcoreapp2.1\CharacterExample.dll
+D:\261T4TN\ConsoleApp\CharacterExample\obj\Debug\netcoreapp2.1\CharacterExample.pdb

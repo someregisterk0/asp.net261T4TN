@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ASP.NET-261T4TN\\ConsoleApp\\Operator3\\Operator3.csproj",
+      "projectUniqueName": "D:\\261T4TN\\ConsoleApp\\Operator3\\Operator3.csproj",
       "projectName": "Operator3",
-      "projectPath": "D:\\ASP.NET-261T4TN\\ConsoleApp\\Operator3\\Operator3.csproj",
+      "projectPath": "D:\\261T4TN\\ConsoleApp\\Operator3\\Operator3.csproj",
       "packagesPath": "C:\\Users\\hv\\.nuget\\packages\\",
-      "outputPath": "D:\\ASP.NET-261T4TN\\ConsoleApp\\Operator3\\obj\\",
+      "outputPath": "D:\\261T4TN\\ConsoleApp\\Operator3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -48,21 +48,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }

@@ -1,0 +1,10 @@
+D:\261T4TN\ConsoleApp\XemDiem\bin\Debug\XemDiem.exe.config
+D:\261T4TN\ConsoleApp\XemDiem\bin\Debug\XemDiem.exe
+D:\261T4TN\ConsoleApp\XemDiem\bin\Debug\XemDiem.pdb
+D:\261T4TN\ConsoleApp\XemDiem\obj\Debug\XemDiem.csprojAssemblyReference.cache
+D:\261T4TN\ConsoleApp\XemDiem\obj\Debug\XemDiem.Form1.resources
+D:\261T4TN\ConsoleApp\XemDiem\obj\Debug\XemDiem.Properties.Resources.resources
+D:\261T4TN\ConsoleApp\XemDiem\obj\Debug\XemDiem.csproj.GenerateResource.cache
+D:\261T4TN\ConsoleApp\XemDiem\obj\Debug\XemDiem.csproj.CoreCompileInputs.cache
+D:\261T4TN\ConsoleApp\XemDiem\obj\Debug\XemDiem.exe
+D:\261T4TN\ConsoleApp\XemDiem\obj\Debug\XemDiem.pdb

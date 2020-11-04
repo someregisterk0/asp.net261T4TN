@@ -1,0 +1,11 @@
+D:\261T4TN\ConsoleApp\SoSanh2PhanSo\bin\Debug\netcoreapp2.1\SoSanh2PhanSo.deps.json
+D:\261T4TN\ConsoleApp\SoSanh2PhanSo\bin\Debug\netcoreapp2.1\SoSanh2PhanSo.runtimeconfig.json
+D:\261T4TN\ConsoleApp\SoSanh2PhanSo\bin\Debug\netcoreapp2.1\SoSanh2PhanSo.runtimeconfig.dev.json
+D:\261T4TN\ConsoleApp\SoSanh2PhanSo\bin\Debug\netcoreapp2.1\SoSanh2PhanSo.dll
+D:\261T4TN\ConsoleApp\SoSanh2PhanSo\bin\Debug\netcoreapp2.1\SoSanh2PhanSo.pdb
+D:\261T4TN\ConsoleApp\SoSanh2PhanSo\obj\Debug\netcoreapp2.1\SoSanh2PhanSo.csproj.CoreCompileInputs.cache
+D:\261T4TN\ConsoleApp\SoSanh2PhanSo\obj\Debug\netcoreapp2.1\SoSanh2PhanSo.AssemblyInfoInputs.cache
+D:\261T4TN\ConsoleApp\SoSanh2PhanSo\obj\Debug\netcoreapp2.1\SoSanh2PhanSo.AssemblyInfo.cs
+D:\261T4TN\ConsoleApp\SoSanh2PhanSo\obj\Debug\netcoreapp2.1\SoSanh2PhanSo.dll
+D:\261T4TN\ConsoleApp\SoSanh2PhanSo\obj\Debug\netcoreapp2.1\SoSanh2PhanSo.pdb
+D:\261T4TN\ConsoleApp\SoSanh2PhanSo\obj\Debug\netcoreapp2.1\SoSanh2PhanSo.csprojAssemblyReference.cache

@@ -1,0 +1,10 @@
+D:\261T4TN\ConsoleApp\XemDiemTrungBinh\bin\Debug\netcoreapp2.1\XemDiemTrungBinh.deps.json
+D:\261T4TN\ConsoleApp\XemDiemTrungBinh\bin\Debug\netcoreapp2.1\XemDiemTrungBinh.runtimeconfig.json
+D:\261T4TN\ConsoleApp\XemDiemTrungBinh\bin\Debug\netcoreapp2.1\XemDiemTrungBinh.runtimeconfig.dev.json
+D:\261T4TN\ConsoleApp\XemDiemTrungBinh\bin\Debug\netcoreapp2.1\XemDiemTrungBinh.dll
+D:\261T4TN\ConsoleApp\XemDiemTrungBinh\bin\Debug\netcoreapp2.1\XemDiemTrungBinh.pdb
+D:\261T4TN\ConsoleApp\XemDiemTrungBinh\obj\Debug\netcoreapp2.1\XemDiemTrungBinh.csproj.CoreCompileInputs.cache
+D:\261T4TN\ConsoleApp\XemDiemTrungBinh\obj\Debug\netcoreapp2.1\XemDiemTrungBinh.AssemblyInfoInputs.cache
+D:\261T4TN\ConsoleApp\XemDiemTrungBinh\obj\Debug\netcoreapp2.1\XemDiemTrungBinh.AssemblyInfo.cs
+D:\261T4TN\ConsoleApp\XemDiemTrungBinh\obj\Debug\netcoreapp2.1\XemDiemTrungBinh.dll
+D:\261T4TN\ConsoleApp\XemDiemTrungBinh\obj\Debug\netcoreapp2.1\XemDiemTrungBinh.pdb

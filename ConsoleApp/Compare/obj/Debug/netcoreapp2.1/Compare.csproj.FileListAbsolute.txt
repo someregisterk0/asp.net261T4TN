@@ -1,0 +1,11 @@
+D:\261T4TN\ConsoleApp\Compare\bin\Debug\netcoreapp2.1\Compare.deps.json
+D:\261T4TN\ConsoleApp\Compare\bin\Debug\netcoreapp2.1\Compare.runtimeconfig.json
+D:\261T4TN\ConsoleApp\Compare\bin\Debug\netcoreapp2.1\Compare.runtimeconfig.dev.json
+D:\261T4TN\ConsoleApp\Compare\bin\Debug\netcoreapp2.1\Compare.dll
+D:\261T4TN\ConsoleApp\Compare\bin\Debug\netcoreapp2.1\Compare.pdb
+D:\261T4TN\ConsoleApp\Compare\obj\Debug\netcoreapp2.1\Compare.csprojAssemblyReference.cache
+D:\261T4TN\ConsoleApp\Compare\obj\Debug\netcoreapp2.1\Compare.csproj.CoreCompileInputs.cache
+D:\261T4TN\ConsoleApp\Compare\obj\Debug\netcoreapp2.1\Compare.AssemblyInfoInputs.cache
+D:\261T4TN\ConsoleApp\Compare\obj\Debug\netcoreapp2.1\Compare.AssemblyInfo.cs
+D:\261T4TN\ConsoleApp\Compare\obj\Debug\netcoreapp2.1\Compare.dll
+D:\261T4TN\ConsoleApp\Compare\obj\Debug\netcoreapp2.1\Compare.pdb

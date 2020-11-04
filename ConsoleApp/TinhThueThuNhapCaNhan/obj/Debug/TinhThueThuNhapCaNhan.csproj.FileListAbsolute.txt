@@ -1,0 +1,10 @@
+D:\261T4TN\ConsoleApp\TinhThueThuNhapCaNhan\bin\Debug\TinhThueThuNhapCaNhan.exe.config
+D:\261T4TN\ConsoleApp\TinhThueThuNhapCaNhan\bin\Debug\TinhThueThuNhapCaNhan.exe
+D:\261T4TN\ConsoleApp\TinhThueThuNhapCaNhan\bin\Debug\TinhThueThuNhapCaNhan.pdb
+D:\261T4TN\ConsoleApp\TinhThueThuNhapCaNhan\obj\Debug\TinhThueThuNhapCaNhan.csprojAssemblyReference.cache
+D:\261T4TN\ConsoleApp\TinhThueThuNhapCaNhan\obj\Debug\TinhThueThuNhapCaNhan.Form1.resources
+D:\261T4TN\ConsoleApp\TinhThueThuNhapCaNhan\obj\Debug\TinhThueThuNhapCaNhan.Properties.Resources.resources
+D:\261T4TN\ConsoleApp\TinhThueThuNhapCaNhan\obj\Debug\TinhThueThuNhapCaNhan.csproj.GenerateResource.cache
+D:\261T4TN\ConsoleApp\TinhThueThuNhapCaNhan\obj\Debug\TinhThueThuNhapCaNhan.csproj.CoreCompileInputs.cache
+D:\261T4TN\ConsoleApp\TinhThueThuNhapCaNhan\obj\Debug\TinhThueThuNhapCaNhan.exe
+D:\261T4TN\ConsoleApp\TinhThueThuNhapCaNhan\obj\Debug\TinhThueThuNhapCaNhan.pdb

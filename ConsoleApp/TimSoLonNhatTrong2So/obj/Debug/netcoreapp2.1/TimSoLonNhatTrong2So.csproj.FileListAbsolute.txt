@@ -1,0 +1,11 @@
+D:\261T4TN\ConsoleApp\TimSoLonNhatTrong2So\bin\Debug\netcoreapp2.1\TimSoLonNhatTrong2So.deps.json
+D:\261T4TN\ConsoleApp\TimSoLonNhatTrong2So\bin\Debug\netcoreapp2.1\TimSoLonNhatTrong2So.runtimeconfig.json
+D:\261T4TN\ConsoleApp\TimSoLonNhatTrong2So\bin\Debug\netcoreapp2.1\TimSoLonNhatTrong2So.runtimeconfig.dev.json
+D:\261T4TN\ConsoleApp\TimSoLonNhatTrong2So\bin\Debug\netcoreapp2.1\TimSoLonNhatTrong2So.dll
+D:\261T4TN\ConsoleApp\TimSoLonNhatTrong2So\bin\Debug\netcoreapp2.1\TimSoLonNhatTrong2So.pdb
+D:\261T4TN\ConsoleApp\TimSoLonNhatTrong2So\obj\Debug\netcoreapp2.1\TimSoLonNhatTrong2So.csprojAssemblyReference.cache
+D:\261T4TN\ConsoleApp\TimSoLonNhatTrong2So\obj\Debug\netcoreapp2.1\TimSoLonNhatTrong2So.csproj.CoreCompileInputs.cache
+D:\261T4TN\ConsoleApp\TimSoLonNhatTrong2So\obj\Debug\netcoreapp2.1\TimSoLonNhatTrong2So.AssemblyInfoInputs.cache
+D:\261T4TN\ConsoleApp\TimSoLonNhatTrong2So\obj\Debug\netcoreapp2.1\TimSoLonNhatTrong2So.AssemblyInfo.cs
+D:\261T4TN\ConsoleApp\TimSoLonNhatTrong2So\obj\Debug\netcoreapp2.1\TimSoLonNhatTrong2So.dll
+D:\261T4TN\ConsoleApp\TimSoLonNhatTrong2So\obj\Debug\netcoreapp2.1\TimSoLonNhatTrong2So.pdb
