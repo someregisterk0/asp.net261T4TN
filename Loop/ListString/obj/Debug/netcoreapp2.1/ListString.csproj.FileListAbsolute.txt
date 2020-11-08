@@ -1,0 +1,11 @@
+D:\261T4TN\Loop\ListString\bin\Debug\netcoreapp2.1\ListString.deps.json
+D:\261T4TN\Loop\ListString\bin\Debug\netcoreapp2.1\ListString.runtimeconfig.json
+D:\261T4TN\Loop\ListString\bin\Debug\netcoreapp2.1\ListString.runtimeconfig.dev.json
+D:\261T4TN\Loop\ListString\bin\Debug\netcoreapp2.1\ListString.dll
+D:\261T4TN\Loop\ListString\bin\Debug\netcoreapp2.1\ListString.pdb
+D:\261T4TN\Loop\ListString\obj\Debug\netcoreapp2.1\ListString.csproj.CoreCompileInputs.cache
+D:\261T4TN\Loop\ListString\obj\Debug\netcoreapp2.1\ListString.AssemblyInfoInputs.cache
+D:\261T4TN\Loop\ListString\obj\Debug\netcoreapp2.1\ListString.AssemblyInfo.cs
+D:\261T4TN\Loop\ListString\obj\Debug\netcoreapp2.1\ListString.dll
+D:\261T4TN\Loop\ListString\obj\Debug\netcoreapp2.1\ListString.pdb
+D:\261T4TN\Loop\ListString\obj\Debug\netcoreapp2.1\ListString.csprojAssemblyReference.cache

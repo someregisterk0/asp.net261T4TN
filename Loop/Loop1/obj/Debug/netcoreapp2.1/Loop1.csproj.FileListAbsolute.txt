@@ -1,0 +1,10 @@
+D:\261T4TN\Loop\Loop1\bin\Debug\netcoreapp2.1\Loop1.deps.json
+D:\261T4TN\Loop\Loop1\bin\Debug\netcoreapp2.1\Loop1.runtimeconfig.json
+D:\261T4TN\Loop\Loop1\bin\Debug\netcoreapp2.1\Loop1.runtimeconfig.dev.json
+D:\261T4TN\Loop\Loop1\bin\Debug\netcoreapp2.1\Loop1.dll
+D:\261T4TN\Loop\Loop1\bin\Debug\netcoreapp2.1\Loop1.pdb
+D:\261T4TN\Loop\Loop1\obj\Debug\netcoreapp2.1\Loop1.csproj.CoreCompileInputs.cache
+D:\261T4TN\Loop\Loop1\obj\Debug\netcoreapp2.1\Loop1.AssemblyInfoInputs.cache
+D:\261T4TN\Loop\Loop1\obj\Debug\netcoreapp2.1\Loop1.AssemblyInfo.cs
+D:\261T4TN\Loop\Loop1\obj\Debug\netcoreapp2.1\Loop1.dll
+D:\261T4TN\Loop\Loop1\obj\Debug\netcoreapp2.1\Loop1.pdb

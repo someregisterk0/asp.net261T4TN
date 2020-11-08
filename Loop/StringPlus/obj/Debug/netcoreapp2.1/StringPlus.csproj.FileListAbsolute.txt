@@ -1,0 +1,10 @@
+D:\261T4TN\Loop\StringPlus\bin\Debug\netcoreapp2.1\StringPlus.deps.json
+D:\261T4TN\Loop\StringPlus\bin\Debug\netcoreapp2.1\StringPlus.runtimeconfig.json
+D:\261T4TN\Loop\StringPlus\bin\Debug\netcoreapp2.1\StringPlus.runtimeconfig.dev.json
+D:\261T4TN\Loop\StringPlus\bin\Debug\netcoreapp2.1\StringPlus.dll
+D:\261T4TN\Loop\StringPlus\bin\Debug\netcoreapp2.1\StringPlus.pdb
+D:\261T4TN\Loop\StringPlus\obj\Debug\netcoreapp2.1\StringPlus.csproj.CoreCompileInputs.cache
+D:\261T4TN\Loop\StringPlus\obj\Debug\netcoreapp2.1\StringPlus.AssemblyInfoInputs.cache
+D:\261T4TN\Loop\StringPlus\obj\Debug\netcoreapp2.1\StringPlus.AssemblyInfo.cs
+D:\261T4TN\Loop\StringPlus\obj\Debug\netcoreapp2.1\StringPlus.dll
+D:\261T4TN\Loop\StringPlus\obj\Debug\netcoreapp2.1\StringPlus.pdb

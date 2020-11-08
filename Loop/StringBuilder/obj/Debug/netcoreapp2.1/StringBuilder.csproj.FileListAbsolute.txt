@@ -1,0 +1,10 @@
+D:\261T4TN\Loop\StringBuilder\bin\Debug\netcoreapp2.1\StringBuilder.deps.json
+D:\261T4TN\Loop\StringBuilder\bin\Debug\netcoreapp2.1\StringBuilder.runtimeconfig.json
+D:\261T4TN\Loop\StringBuilder\bin\Debug\netcoreapp2.1\StringBuilder.runtimeconfig.dev.json
+D:\261T4TN\Loop\StringBuilder\bin\Debug\netcoreapp2.1\StringBuilder.dll
+D:\261T4TN\Loop\StringBuilder\bin\Debug\netcoreapp2.1\StringBuilder.pdb
+D:\261T4TN\Loop\StringBuilder\obj\Debug\netcoreapp2.1\StringBuilder.csproj.CoreCompileInputs.cache
+D:\261T4TN\Loop\StringBuilder\obj\Debug\netcoreapp2.1\StringBuilder.AssemblyInfoInputs.cache
+D:\261T4TN\Loop\StringBuilder\obj\Debug\netcoreapp2.1\StringBuilder.AssemblyInfo.cs
+D:\261T4TN\Loop\StringBuilder\obj\Debug\netcoreapp2.1\StringBuilder.dll
+D:\261T4TN\Loop\StringBuilder\obj\Debug\netcoreapp2.1\StringBuilder.pdb

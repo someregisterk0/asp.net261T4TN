@@ -1,0 +1,10 @@
+D:\261T4TN\Loop\MoneyChange\obj\Debug\MoneyChange.csprojAssemblyReference.cache
+D:\261T4TN\Loop\MoneyChange\obj\Debug\MoneyChange.Form1.resources
+D:\261T4TN\Loop\MoneyChange\obj\Debug\MoneyChange.Properties.Resources.resources
+D:\261T4TN\Loop\MoneyChange\obj\Debug\MoneyChange.csproj.GenerateResource.cache
+D:\261T4TN\Loop\MoneyChange\obj\Debug\MoneyChange.csproj.CoreCompileInputs.cache
+D:\261T4TN\Loop\MoneyChange\bin\Debug\MoneyChange.exe.config
+D:\261T4TN\Loop\MoneyChange\bin\Debug\MoneyChange.exe
+D:\261T4TN\Loop\MoneyChange\bin\Debug\MoneyChange.pdb
+D:\261T4TN\Loop\MoneyChange\obj\Debug\MoneyChange.exe
+D:\261T4TN\Loop\MoneyChange\obj\Debug\MoneyChange.pdb

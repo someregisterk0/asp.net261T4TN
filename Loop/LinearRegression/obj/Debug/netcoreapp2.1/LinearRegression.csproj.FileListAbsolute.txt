@@ -1,0 +1,10 @@
+D:\261T4TN\Loop\LinearRegression\bin\Debug\netcoreapp2.1\LinearRegression.deps.json
+D:\261T4TN\Loop\LinearRegression\bin\Debug\netcoreapp2.1\LinearRegression.runtimeconfig.json
+D:\261T4TN\Loop\LinearRegression\bin\Debug\netcoreapp2.1\LinearRegression.runtimeconfig.dev.json
+D:\261T4TN\Loop\LinearRegression\bin\Debug\netcoreapp2.1\LinearRegression.dll
+D:\261T4TN\Loop\LinearRegression\bin\Debug\netcoreapp2.1\LinearRegression.pdb
+D:\261T4TN\Loop\LinearRegression\obj\Debug\netcoreapp2.1\LinearRegression.csproj.CoreCompileInputs.cache
+D:\261T4TN\Loop\LinearRegression\obj\Debug\netcoreapp2.1\LinearRegression.AssemblyInfoInputs.cache
+D:\261T4TN\Loop\LinearRegression\obj\Debug\netcoreapp2.1\LinearRegression.AssemblyInfo.cs
+D:\261T4TN\Loop\LinearRegression\obj\Debug\netcoreapp2.1\LinearRegression.dll
+D:\261T4TN\Loop\LinearRegression\obj\Debug\netcoreapp2.1\LinearRegression.pdb
