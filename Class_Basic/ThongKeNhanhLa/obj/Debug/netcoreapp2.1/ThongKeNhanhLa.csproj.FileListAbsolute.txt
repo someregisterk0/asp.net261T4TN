@@ -1,0 +1,11 @@
+D:\261T4TN\Class_Basic\ThongKeNhanhLa\bin\Debug\netcoreapp2.1\ThongKeNhanhLa.deps.json
+D:\261T4TN\Class_Basic\ThongKeNhanhLa\bin\Debug\netcoreapp2.1\ThongKeNhanhLa.runtimeconfig.json
+D:\261T4TN\Class_Basic\ThongKeNhanhLa\bin\Debug\netcoreapp2.1\ThongKeNhanhLa.runtimeconfig.dev.json
+D:\261T4TN\Class_Basic\ThongKeNhanhLa\bin\Debug\netcoreapp2.1\ThongKeNhanhLa.dll
+D:\261T4TN\Class_Basic\ThongKeNhanhLa\bin\Debug\netcoreapp2.1\ThongKeNhanhLa.pdb
+D:\261T4TN\Class_Basic\ThongKeNhanhLa\obj\Debug\netcoreapp2.1\ThongKeNhanhLa.csproj.CoreCompileInputs.cache
+D:\261T4TN\Class_Basic\ThongKeNhanhLa\obj\Debug\netcoreapp2.1\ThongKeNhanhLa.AssemblyInfoInputs.cache
+D:\261T4TN\Class_Basic\ThongKeNhanhLa\obj\Debug\netcoreapp2.1\ThongKeNhanhLa.AssemblyInfo.cs
+D:\261T4TN\Class_Basic\ThongKeNhanhLa\obj\Debug\netcoreapp2.1\ThongKeNhanhLa.dll
+D:\261T4TN\Class_Basic\ThongKeNhanhLa\obj\Debug\netcoreapp2.1\ThongKeNhanhLa.pdb
+D:\261T4TN\Class_Basic\ThongKeNhanhLa\obj\Debug\netcoreapp2.1\ThongKeNhanhLa.csprojAssemblyReference.cache

@@ -1,0 +1,10 @@
+D:\261T4TN\Class_Basic\Class_GetSet_Properties\obj\Debug\netcoreapp2.1\Class_GetSet_Properties.csproj.CoreCompileInputs.cache
+D:\261T4TN\Class_Basic\Class_GetSet_Properties\obj\Debug\netcoreapp2.1\Class_GetSet_Properties.AssemblyInfoInputs.cache
+D:\261T4TN\Class_Basic\Class_GetSet_Properties\obj\Debug\netcoreapp2.1\Class_GetSet_Properties.AssemblyInfo.cs
+D:\261T4TN\Class_Basic\Class_GetSet_Properties\bin\Debug\netcoreapp2.1\Class_GetSet_Properties.deps.json
+D:\261T4TN\Class_Basic\Class_GetSet_Properties\bin\Debug\netcoreapp2.1\Class_GetSet_Properties.runtimeconfig.json
+D:\261T4TN\Class_Basic\Class_GetSet_Properties\bin\Debug\netcoreapp2.1\Class_GetSet_Properties.runtimeconfig.dev.json
+D:\261T4TN\Class_Basic\Class_GetSet_Properties\bin\Debug\netcoreapp2.1\Class_GetSet_Properties.dll
+D:\261T4TN\Class_Basic\Class_GetSet_Properties\bin\Debug\netcoreapp2.1\Class_GetSet_Properties.pdb
+D:\261T4TN\Class_Basic\Class_GetSet_Properties\obj\Debug\netcoreapp2.1\Class_GetSet_Properties.dll
+D:\261T4TN\Class_Basic\Class_GetSet_Properties\obj\Debug\netcoreapp2.1\Class_GetSet_Properties.pdb

@@ -1,0 +1,10 @@
+D:\261T4TN\Class_Basic\Dictonary_sample\bin\Debug\netcoreapp2.1\Dictonary_sample.deps.json
+D:\261T4TN\Class_Basic\Dictonary_sample\bin\Debug\netcoreapp2.1\Dictonary_sample.runtimeconfig.json
+D:\261T4TN\Class_Basic\Dictonary_sample\bin\Debug\netcoreapp2.1\Dictonary_sample.runtimeconfig.dev.json
+D:\261T4TN\Class_Basic\Dictonary_sample\bin\Debug\netcoreapp2.1\Dictonary_sample.dll
+D:\261T4TN\Class_Basic\Dictonary_sample\bin\Debug\netcoreapp2.1\Dictonary_sample.pdb
+D:\261T4TN\Class_Basic\Dictonary_sample\obj\Debug\netcoreapp2.1\Dictonary_sample.csproj.CoreCompileInputs.cache
+D:\261T4TN\Class_Basic\Dictonary_sample\obj\Debug\netcoreapp2.1\Dictonary_sample.AssemblyInfoInputs.cache
+D:\261T4TN\Class_Basic\Dictonary_sample\obj\Debug\netcoreapp2.1\Dictonary_sample.AssemblyInfo.cs
+D:\261T4TN\Class_Basic\Dictonary_sample\obj\Debug\netcoreapp2.1\Dictonary_sample.dll
+D:\261T4TN\Class_Basic\Dictonary_sample\obj\Debug\netcoreapp2.1\Dictonary_sample.pdb

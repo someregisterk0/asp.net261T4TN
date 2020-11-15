@@ -1,0 +1,11 @@
+D:\261T4TN\Class_Basic\NaiveBayesClassifiers\bin\Debug\netcoreapp2.1\NaiveBayesClassifiers.deps.json
+D:\261T4TN\Class_Basic\NaiveBayesClassifiers\bin\Debug\netcoreapp2.1\NaiveBayesClassifiers.runtimeconfig.json
+D:\261T4TN\Class_Basic\NaiveBayesClassifiers\bin\Debug\netcoreapp2.1\NaiveBayesClassifiers.runtimeconfig.dev.json
+D:\261T4TN\Class_Basic\NaiveBayesClassifiers\bin\Debug\netcoreapp2.1\NaiveBayesClassifiers.dll
+D:\261T4TN\Class_Basic\NaiveBayesClassifiers\bin\Debug\netcoreapp2.1\NaiveBayesClassifiers.pdb
+D:\261T4TN\Class_Basic\NaiveBayesClassifiers\obj\Debug\netcoreapp2.1\NaiveBayesClassifiers.csproj.CoreCompileInputs.cache
+D:\261T4TN\Class_Basic\NaiveBayesClassifiers\obj\Debug\netcoreapp2.1\NaiveBayesClassifiers.AssemblyInfoInputs.cache
+D:\261T4TN\Class_Basic\NaiveBayesClassifiers\obj\Debug\netcoreapp2.1\NaiveBayesClassifiers.AssemblyInfo.cs
+D:\261T4TN\Class_Basic\NaiveBayesClassifiers\obj\Debug\netcoreapp2.1\NaiveBayesClassifiers.dll
+D:\261T4TN\Class_Basic\NaiveBayesClassifiers\obj\Debug\netcoreapp2.1\NaiveBayesClassifiers.pdb
+D:\261T4TN\Class_Basic\NaiveBayesClassifiers\obj\Debug\netcoreapp2.1\NaiveBayesClassifiers.csprojAssemblyReference.cache

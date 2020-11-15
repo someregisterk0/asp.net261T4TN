@@ -1,0 +1,10 @@
+D:\261T4TN\Class_Basic\ThongKeTanSuat\bin\Debug\netcoreapp2.1\ThongKeTanSuat.deps.json
+D:\261T4TN\Class_Basic\ThongKeTanSuat\bin\Debug\netcoreapp2.1\ThongKeTanSuat.runtimeconfig.json
+D:\261T4TN\Class_Basic\ThongKeTanSuat\bin\Debug\netcoreapp2.1\ThongKeTanSuat.runtimeconfig.dev.json
+D:\261T4TN\Class_Basic\ThongKeTanSuat\bin\Debug\netcoreapp2.1\ThongKeTanSuat.dll
+D:\261T4TN\Class_Basic\ThongKeTanSuat\bin\Debug\netcoreapp2.1\ThongKeTanSuat.pdb
+D:\261T4TN\Class_Basic\ThongKeTanSuat\obj\Debug\netcoreapp2.1\ThongKeTanSuat.csproj.CoreCompileInputs.cache
+D:\261T4TN\Class_Basic\ThongKeTanSuat\obj\Debug\netcoreapp2.1\ThongKeTanSuat.AssemblyInfoInputs.cache
+D:\261T4TN\Class_Basic\ThongKeTanSuat\obj\Debug\netcoreapp2.1\ThongKeTanSuat.AssemblyInfo.cs
+D:\261T4TN\Class_Basic\ThongKeTanSuat\obj\Debug\netcoreapp2.1\ThongKeTanSuat.dll
+D:\261T4TN\Class_Basic\ThongKeTanSuat\obj\Debug\netcoreapp2.1\ThongKeTanSuat.pdb

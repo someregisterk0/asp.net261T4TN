@@ -1,0 +1,11 @@
+D:\261T4TN\Class_Basic\Class_private_public\bin\Debug\netcoreapp2.1\Class_private_public.deps.json
+D:\261T4TN\Class_Basic\Class_private_public\bin\Debug\netcoreapp2.1\Class_private_public.runtimeconfig.json
+D:\261T4TN\Class_Basic\Class_private_public\bin\Debug\netcoreapp2.1\Class_private_public.runtimeconfig.dev.json
+D:\261T4TN\Class_Basic\Class_private_public\bin\Debug\netcoreapp2.1\Class_private_public.dll
+D:\261T4TN\Class_Basic\Class_private_public\bin\Debug\netcoreapp2.1\Class_private_public.pdb
+D:\261T4TN\Class_Basic\Class_private_public\obj\Debug\netcoreapp2.1\Class_private_public.csprojAssemblyReference.cache
+D:\261T4TN\Class_Basic\Class_private_public\obj\Debug\netcoreapp2.1\Class_private_public.csproj.CoreCompileInputs.cache
+D:\261T4TN\Class_Basic\Class_private_public\obj\Debug\netcoreapp2.1\Class_private_public.AssemblyInfoInputs.cache
+D:\261T4TN\Class_Basic\Class_private_public\obj\Debug\netcoreapp2.1\Class_private_public.AssemblyInfo.cs
+D:\261T4TN\Class_Basic\Class_private_public\obj\Debug\netcoreapp2.1\Class_private_public.dll
+D:\261T4TN\Class_Basic\Class_private_public\obj\Debug\netcoreapp2.1\Class_private_public.pdb

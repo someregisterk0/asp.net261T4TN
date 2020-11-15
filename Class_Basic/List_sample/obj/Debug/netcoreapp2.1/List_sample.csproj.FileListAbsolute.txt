@@ -1,0 +1,10 @@
+D:\261T4TN\Class_Basic\List_sample\bin\Debug\netcoreapp2.1\List_sample.deps.json
+D:\261T4TN\Class_Basic\List_sample\bin\Debug\netcoreapp2.1\List_sample.runtimeconfig.json
+D:\261T4TN\Class_Basic\List_sample\bin\Debug\netcoreapp2.1\List_sample.runtimeconfig.dev.json
+D:\261T4TN\Class_Basic\List_sample\bin\Debug\netcoreapp2.1\List_sample.dll
+D:\261T4TN\Class_Basic\List_sample\bin\Debug\netcoreapp2.1\List_sample.pdb
+D:\261T4TN\Class_Basic\List_sample\obj\Debug\netcoreapp2.1\List_sample.csproj.CoreCompileInputs.cache
+D:\261T4TN\Class_Basic\List_sample\obj\Debug\netcoreapp2.1\List_sample.AssemblyInfoInputs.cache
+D:\261T4TN\Class_Basic\List_sample\obj\Debug\netcoreapp2.1\List_sample.AssemblyInfo.cs
+D:\261T4TN\Class_Basic\List_sample\obj\Debug\netcoreapp2.1\List_sample.dll
+D:\261T4TN\Class_Basic\List_sample\obj\Debug\netcoreapp2.1\List_sample.pdb
