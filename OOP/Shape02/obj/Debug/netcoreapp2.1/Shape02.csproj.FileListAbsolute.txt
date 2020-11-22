@@ -1,0 +1,10 @@
+D:\261T4TN\OOP\Shape02\bin\Debug\netcoreapp2.1\Shape02.deps.json
+D:\261T4TN\OOP\Shape02\bin\Debug\netcoreapp2.1\Shape02.runtimeconfig.json
+D:\261T4TN\OOP\Shape02\bin\Debug\netcoreapp2.1\Shape02.runtimeconfig.dev.json
+D:\261T4TN\OOP\Shape02\bin\Debug\netcoreapp2.1\Shape02.dll
+D:\261T4TN\OOP\Shape02\bin\Debug\netcoreapp2.1\Shape02.pdb
+D:\261T4TN\OOP\Shape02\obj\Debug\netcoreapp2.1\Shape02.csproj.CoreCompileInputs.cache
+D:\261T4TN\OOP\Shape02\obj\Debug\netcoreapp2.1\Shape02.AssemblyInfoInputs.cache
+D:\261T4TN\OOP\Shape02\obj\Debug\netcoreapp2.1\Shape02.AssemblyInfo.cs
+D:\261T4TN\OOP\Shape02\obj\Debug\netcoreapp2.1\Shape02.dll
+D:\261T4TN\OOP\Shape02\obj\Debug\netcoreapp2.1\Shape02.pdb

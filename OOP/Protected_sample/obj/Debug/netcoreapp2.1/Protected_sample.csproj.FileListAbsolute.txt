@@ -1,0 +1,11 @@
+D:\261T4TN\OOP\Protected_sample\obj\Debug\netcoreapp2.1\Protected_sample.csproj.CoreCompileInputs.cache
+D:\261T4TN\OOP\Protected_sample\obj\Debug\netcoreapp2.1\Protected_sample.AssemblyInfoInputs.cache
+D:\261T4TN\OOP\Protected_sample\obj\Debug\netcoreapp2.1\Protected_sample.AssemblyInfo.cs
+D:\261T4TN\OOP\Protected_sample\bin\Debug\netcoreapp2.1\Protected_sample.deps.json
+D:\261T4TN\OOP\Protected_sample\bin\Debug\netcoreapp2.1\Protected_sample.runtimeconfig.json
+D:\261T4TN\OOP\Protected_sample\bin\Debug\netcoreapp2.1\Protected_sample.runtimeconfig.dev.json
+D:\261T4TN\OOP\Protected_sample\bin\Debug\netcoreapp2.1\Protected_sample.dll
+D:\261T4TN\OOP\Protected_sample\bin\Debug\netcoreapp2.1\Protected_sample.pdb
+D:\261T4TN\OOP\Protected_sample\obj\Debug\netcoreapp2.1\Protected_sample.csprojAssemblyReference.cache
+D:\261T4TN\OOP\Protected_sample\obj\Debug\netcoreapp2.1\Protected_sample.dll
+D:\261T4TN\OOP\Protected_sample\obj\Debug\netcoreapp2.1\Protected_sample.pdb
