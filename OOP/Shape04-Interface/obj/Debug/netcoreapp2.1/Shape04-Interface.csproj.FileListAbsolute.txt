@@ -1,0 +1,10 @@
+D:\261T4TN\OOP\Shape04-Interface\bin\Debug\netcoreapp2.1\Shape04-Interface.deps.json
+D:\261T4TN\OOP\Shape04-Interface\bin\Debug\netcoreapp2.1\Shape04-Interface.runtimeconfig.json
+D:\261T4TN\OOP\Shape04-Interface\bin\Debug\netcoreapp2.1\Shape04-Interface.runtimeconfig.dev.json
+D:\261T4TN\OOP\Shape04-Interface\bin\Debug\netcoreapp2.1\Shape04-Interface.dll
+D:\261T4TN\OOP\Shape04-Interface\bin\Debug\netcoreapp2.1\Shape04-Interface.pdb
+D:\261T4TN\OOP\Shape04-Interface\obj\Debug\netcoreapp2.1\Shape04-Interface.csproj.CoreCompileInputs.cache
+D:\261T4TN\OOP\Shape04-Interface\obj\Debug\netcoreapp2.1\Shape04-Interface.AssemblyInfoInputs.cache
+D:\261T4TN\OOP\Shape04-Interface\obj\Debug\netcoreapp2.1\Shape04-Interface.AssemblyInfo.cs
+D:\261T4TN\OOP\Shape04-Interface\obj\Debug\netcoreapp2.1\Shape04-Interface.dll
+D:\261T4TN\OOP\Shape04-Interface\obj\Debug\netcoreapp2.1\Shape04-Interface.pdb

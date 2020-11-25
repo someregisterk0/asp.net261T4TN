@@ -1,0 +1,11 @@
+D:\261T4TN\OOP\Scaler02-Abstract\bin\Debug\netcoreapp2.1\Scaler02-Abstract.deps.json
+D:\261T4TN\OOP\Scaler02-Abstract\bin\Debug\netcoreapp2.1\Scaler02-Abstract.runtimeconfig.json
+D:\261T4TN\OOP\Scaler02-Abstract\bin\Debug\netcoreapp2.1\Scaler02-Abstract.runtimeconfig.dev.json
+D:\261T4TN\OOP\Scaler02-Abstract\bin\Debug\netcoreapp2.1\Scaler02-Abstract.dll
+D:\261T4TN\OOP\Scaler02-Abstract\bin\Debug\netcoreapp2.1\Scaler02-Abstract.pdb
+D:\261T4TN\OOP\Scaler02-Abstract\obj\Debug\netcoreapp2.1\Scaler02-Abstract.csproj.CoreCompileInputs.cache
+D:\261T4TN\OOP\Scaler02-Abstract\obj\Debug\netcoreapp2.1\Scaler02-Abstract.AssemblyInfoInputs.cache
+D:\261T4TN\OOP\Scaler02-Abstract\obj\Debug\netcoreapp2.1\Scaler02-Abstract.AssemblyInfo.cs
+D:\261T4TN\OOP\Scaler02-Abstract\obj\Debug\netcoreapp2.1\Scaler02-Abstract.dll
+D:\261T4TN\OOP\Scaler02-Abstract\obj\Debug\netcoreapp2.1\Scaler02-Abstract.pdb
+D:\261T4TN\OOP\Scaler02-Abstract\obj\Debug\netcoreapp2.1\Scaler02-Abstract.csprojAssemblyReference.cache

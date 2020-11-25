@@ -1,0 +1,10 @@
+D:\261T4TN\OOP\AbstractClass_sample\bin\Debug\netcoreapp2.1\AbstractClass_sample.deps.json
+D:\261T4TN\OOP\AbstractClass_sample\bin\Debug\netcoreapp2.1\AbstractClass_sample.runtimeconfig.json
+D:\261T4TN\OOP\AbstractClass_sample\bin\Debug\netcoreapp2.1\AbstractClass_sample.runtimeconfig.dev.json
+D:\261T4TN\OOP\AbstractClass_sample\bin\Debug\netcoreapp2.1\AbstractClass_sample.dll
+D:\261T4TN\OOP\AbstractClass_sample\bin\Debug\netcoreapp2.1\AbstractClass_sample.pdb
+D:\261T4TN\OOP\AbstractClass_sample\obj\Debug\netcoreapp2.1\AbstractClass_sample.csproj.CoreCompileInputs.cache
+D:\261T4TN\OOP\AbstractClass_sample\obj\Debug\netcoreapp2.1\AbstractClass_sample.AssemblyInfoInputs.cache
+D:\261T4TN\OOP\AbstractClass_sample\obj\Debug\netcoreapp2.1\AbstractClass_sample.AssemblyInfo.cs
+D:\261T4TN\OOP\AbstractClass_sample\obj\Debug\netcoreapp2.1\AbstractClass_sample.dll
+D:\261T4TN\OOP\AbstractClass_sample\obj\Debug\netcoreapp2.1\AbstractClass_sample.pdb

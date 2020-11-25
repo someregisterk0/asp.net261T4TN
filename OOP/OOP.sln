@@ -3,19 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeThua_sample", "KeThua_sample\KeThua_sample.csproj", "{343BD821-A34F-412A-9006-5FC7199FCA1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeThua_sample", "KeThua_sample\KeThua_sample.csproj", "{343BD821-A34F-412A-9006-5FC7199FCA1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Protected_sample", "Protected_sample\Protected_sample.csproj", "{D40B8F36-8033-4DD2-9B3A-8D8B71B24F54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Protected_sample", "Protected_sample\Protected_sample.csproj", "{D40B8F36-8033-4DD2-9B3A-8D8B71B24F54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConStructor_sample", "ConStructor_sample\ConStructor_sample.csproj", "{41AAEE22-B0B2-48A4-B7AD-CD0C42AD11C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConStructor_sample", "ConStructor_sample\ConStructor_sample.csproj", "{41AAEE22-B0B2-48A4-B7AD-CD0C42AD11C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualMethod_sample", "VirtualMethod_sample\VirtualMethod_sample.csproj", "{F2E0AFB7-3E75-436B-BD03-CB43F30FEC90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualMethod_sample", "VirtualMethod_sample\VirtualMethod_sample.csproj", "{F2E0AFB7-3E75-436B-BD03-CB43F30FEC90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shap01", "Sharp01\Shap01.csproj", "{5F0EC7FE-7ECC-4BC4-A480-36F7267AF845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shap01", "Sharp01\Shap01.csproj", "{5F0EC7FE-7ECC-4BC4-A480-36F7267AF845}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape02", "Shape02\Shape02.csproj", "{72F4397D-99A1-46ED-B42E-929E269CE4E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shape02", "Shape02\Shape02.csproj", "{72F4397D-99A1-46ED-B42E-929E269CE4E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaler01", "Scaler01\Scaler01.csproj", "{9805AFDC-F0C0-40B9-8AE8-847C53E801B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scaler01", "Scaler01\Scaler01.csproj", "{9805AFDC-F0C0-40B9-8AE8-847C53E801B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClass_sample", "AbstractClass_sample\AbstractClass_sample.csproj", "{4CA042BE-7208-413C-8104-057C44F0D779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_sample", "Interface_sample\Interface_sample.csproj", "{C9281C3F-C773-4D8B-B7C8-6A46C6A4B724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape03-Abstract", "Shape03-Abstract\Shape03-Abstract.csproj", "{BC9BB03E-95B3-47C3-A01E-B02235DFA53E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape04-Interface", "Shape04-Interface\Shape04-Interface.csproj", "{05ED3FD8-F576-46D1-80A7-7250C8B49552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaler02-Abstract", "Scaler02-Abstract\Scaler02-Abstract.csproj", "{554CD501-DA25-43EC-88B3-F56AD1AB7595}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaler03-Interface", "Scaler03-Interface\Scaler03-Interface.csproj", "{F31F2AEE-3F1B-4717-BB83-5D8B85445DE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticField_sample", "StaticField_sample\StaticField_sample.csproj", "{F4FDA273-B852-4887-BB01-FDAD65194D90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +65,34 @@ Global
 		{9805AFDC-F0C0-40B9-8AE8-847C53E801B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9805AFDC-F0C0-40B9-8AE8-847C53E801B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9805AFDC-F0C0-40B9-8AE8-847C53E801B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CA042BE-7208-413C-8104-057C44F0D779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA042BE-7208-413C-8104-057C44F0D779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA042BE-7208-413C-8104-057C44F0D779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA042BE-7208-413C-8104-057C44F0D779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9281C3F-C773-4D8B-B7C8-6A46C6A4B724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9281C3F-C773-4D8B-B7C8-6A46C6A4B724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9281C3F-C773-4D8B-B7C8-6A46C6A4B724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9281C3F-C773-4D8B-B7C8-6A46C6A4B724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC9BB03E-95B3-47C3-A01E-B02235DFA53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9BB03E-95B3-47C3-A01E-B02235DFA53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9BB03E-95B3-47C3-A01E-B02235DFA53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9BB03E-95B3-47C3-A01E-B02235DFA53E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05ED3FD8-F576-46D1-80A7-7250C8B49552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05ED3FD8-F576-46D1-80A7-7250C8B49552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05ED3FD8-F576-46D1-80A7-7250C8B49552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05ED3FD8-F576-46D1-80A7-7250C8B49552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{554CD501-DA25-43EC-88B3-F56AD1AB7595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{554CD501-DA25-43EC-88B3-F56AD1AB7595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{554CD501-DA25-43EC-88B3-F56AD1AB7595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{554CD501-DA25-43EC-88B3-F56AD1AB7595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F31F2AEE-3F1B-4717-BB83-5D8B85445DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31F2AEE-3F1B-4717-BB83-5D8B85445DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31F2AEE-3F1B-4717-BB83-5D8B85445DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31F2AEE-3F1B-4717-BB83-5D8B85445DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4FDA273-B852-4887-BB01-FDAD65194D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4FDA273-B852-4887-BB01-FDAD65194D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4FDA273-B852-4887-BB01-FDAD65194D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4FDA273-B852-4887-BB01-FDAD65194D90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

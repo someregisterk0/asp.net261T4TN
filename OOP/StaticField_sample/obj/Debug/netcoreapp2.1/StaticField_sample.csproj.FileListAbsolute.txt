@@ -1,0 +1,10 @@
+D:\261T4TN\OOP\StaticField_sample\bin\Debug\netcoreapp2.1\StaticField_sample.deps.json
+D:\261T4TN\OOP\StaticField_sample\bin\Debug\netcoreapp2.1\StaticField_sample.runtimeconfig.json
+D:\261T4TN\OOP\StaticField_sample\bin\Debug\netcoreapp2.1\StaticField_sample.runtimeconfig.dev.json
+D:\261T4TN\OOP\StaticField_sample\bin\Debug\netcoreapp2.1\StaticField_sample.dll
+D:\261T4TN\OOP\StaticField_sample\bin\Debug\netcoreapp2.1\StaticField_sample.pdb
+D:\261T4TN\OOP\StaticField_sample\obj\Debug\netcoreapp2.1\StaticField_sample.csproj.CoreCompileInputs.cache
+D:\261T4TN\OOP\StaticField_sample\obj\Debug\netcoreapp2.1\StaticField_sample.AssemblyInfoInputs.cache
+D:\261T4TN\OOP\StaticField_sample\obj\Debug\netcoreapp2.1\StaticField_sample.AssemblyInfo.cs
+D:\261T4TN\OOP\StaticField_sample\obj\Debug\netcoreapp2.1\StaticField_sample.dll
+D:\261T4TN\OOP\StaticField_sample\obj\Debug\netcoreapp2.1\StaticField_sample.pdb

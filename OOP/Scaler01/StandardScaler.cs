@@ -10,11 +10,19 @@ namespace Scaler01
 
         public void Fit(double[] a)
         {
-
+            for(int i = 0; i < a.Length; ++i)
+            {
+                mean += a[i];
+            }
+            mean /= a.Length;
         }
 
         public double[] Transform(double[] a)
         {
+            for(int i = 0; i < a.Length; ++i)
+            {
+                standard += Math.Pow(a[i] - mean, 2);
+            }
             return null;
         }
 

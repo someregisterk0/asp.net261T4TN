@@ -1,0 +1,10 @@
+D:\261T4TN\OOP\Scaler03-Interface\bin\Debug\netcoreapp2.1\Scaler03-Interface.deps.json
+D:\261T4TN\OOP\Scaler03-Interface\bin\Debug\netcoreapp2.1\Scaler03-Interface.runtimeconfig.json
+D:\261T4TN\OOP\Scaler03-Interface\bin\Debug\netcoreapp2.1\Scaler03-Interface.runtimeconfig.dev.json
+D:\261T4TN\OOP\Scaler03-Interface\bin\Debug\netcoreapp2.1\Scaler03-Interface.dll
+D:\261T4TN\OOP\Scaler03-Interface\bin\Debug\netcoreapp2.1\Scaler03-Interface.pdb
+D:\261T4TN\OOP\Scaler03-Interface\obj\Debug\netcoreapp2.1\Scaler03-Interface.csproj.CoreCompileInputs.cache
+D:\261T4TN\OOP\Scaler03-Interface\obj\Debug\netcoreapp2.1\Scaler03-Interface.AssemblyInfoInputs.cache
+D:\261T4TN\OOP\Scaler03-Interface\obj\Debug\netcoreapp2.1\Scaler03-Interface.AssemblyInfo.cs
+D:\261T4TN\OOP\Scaler03-Interface\obj\Debug\netcoreapp2.1\Scaler03-Interface.dll
+D:\261T4TN\OOP\Scaler03-Interface\obj\Debug\netcoreapp2.1\Scaler03-Interface.pdb
