@@ -1,0 +1,11 @@
+D:\261T4TN\OOP\LabelEncoder01\bin\Debug\netcoreapp2.1\LabelEncoder01.deps.json
+D:\261T4TN\OOP\LabelEncoder01\bin\Debug\netcoreapp2.1\LabelEncoder01.runtimeconfig.json
+D:\261T4TN\OOP\LabelEncoder01\bin\Debug\netcoreapp2.1\LabelEncoder01.runtimeconfig.dev.json
+D:\261T4TN\OOP\LabelEncoder01\bin\Debug\netcoreapp2.1\LabelEncoder01.dll
+D:\261T4TN\OOP\LabelEncoder01\bin\Debug\netcoreapp2.1\LabelEncoder01.pdb
+D:\261T4TN\OOP\LabelEncoder01\obj\Debug\netcoreapp2.1\LabelEncoder01.csprojAssemblyReference.cache
+D:\261T4TN\OOP\LabelEncoder01\obj\Debug\netcoreapp2.1\LabelEncoder01.csproj.CoreCompileInputs.cache
+D:\261T4TN\OOP\LabelEncoder01\obj\Debug\netcoreapp2.1\LabelEncoder01.AssemblyInfoInputs.cache
+D:\261T4TN\OOP\LabelEncoder01\obj\Debug\netcoreapp2.1\LabelEncoder01.AssemblyInfo.cs
+D:\261T4TN\OOP\LabelEncoder01\obj\Debug\netcoreapp2.1\LabelEncoder01.dll
+D:\261T4TN\OOP\LabelEncoder01\obj\Debug\netcoreapp2.1\LabelEncoder01.pdb

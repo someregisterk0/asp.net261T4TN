@@ -17,19 +17,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shape02", "Shape02\Shape02.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scaler01", "Scaler01\Scaler01.csproj", "{9805AFDC-F0C0-40B9-8AE8-847C53E801B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClass_sample", "AbstractClass_sample\AbstractClass_sample.csproj", "{4CA042BE-7208-413C-8104-057C44F0D779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractClass_sample", "AbstractClass_sample\AbstractClass_sample.csproj", "{4CA042BE-7208-413C-8104-057C44F0D779}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_sample", "Interface_sample\Interface_sample.csproj", "{C9281C3F-C773-4D8B-B7C8-6A46C6A4B724}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface_sample", "Interface_sample\Interface_sample.csproj", "{C9281C3F-C773-4D8B-B7C8-6A46C6A4B724}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape03-Abstract", "Shape03-Abstract\Shape03-Abstract.csproj", "{BC9BB03E-95B3-47C3-A01E-B02235DFA53E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shape03-Abstract", "Shape03-Abstract\Shape03-Abstract.csproj", "{BC9BB03E-95B3-47C3-A01E-B02235DFA53E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape04-Interface", "Shape04-Interface\Shape04-Interface.csproj", "{05ED3FD8-F576-46D1-80A7-7250C8B49552}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shape04-Interface", "Shape04-Interface\Shape04-Interface.csproj", "{05ED3FD8-F576-46D1-80A7-7250C8B49552}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaler02-Abstract", "Scaler02-Abstract\Scaler02-Abstract.csproj", "{554CD501-DA25-43EC-88B3-F56AD1AB7595}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scaler02-Abstract", "Scaler02-Abstract\Scaler02-Abstract.csproj", "{554CD501-DA25-43EC-88B3-F56AD1AB7595}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaler03-Interface", "Scaler03-Interface\Scaler03-Interface.csproj", "{F31F2AEE-3F1B-4717-BB83-5D8B85445DE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scaler03-Interface", "Scaler03-Interface\Scaler03-Interface.csproj", "{F31F2AEE-3F1B-4717-BB83-5D8B85445DE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticField_sample", "StaticField_sample\StaticField_sample.csproj", "{F4FDA273-B852-4887-BB01-FDAD65194D90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticField_sample", "StaticField_sample\StaticField_sample.csproj", "{F4FDA273-B852-4887-BB01-FDAD65194D90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticMethod_sample", "StaticMethod_sample\StaticMethod_sample.csproj", "{FB4BB866-1A5B-422F-B14F-8F27E1282E7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic01_sample", "Generic01_sample\Generic01_sample.csproj", "{242C8004-D456-4831-824B-3BC5E3D95472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabelEncoder01", "LabelEncoder01\LabelEncoder01.csproj", "{D2FAAB75-E7DF-4387-8118-8E7A4B92EC6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabelEncoder02", "LabelEncoder02\LabelEncoder02.csproj", "{F4B0D2A0-AD16-4457-A41E-6E46F1FE2D91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneHotEncoder01", "OneHotEncoder01\OneHotEncoder01.csproj", "{1B79F89F-0D89-4BFC-AAB7-4155C3B55DB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +103,26 @@ Global
 		{F4FDA273-B852-4887-BB01-FDAD65194D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4FDA273-B852-4887-BB01-FDAD65194D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4FDA273-B852-4887-BB01-FDAD65194D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB4BB866-1A5B-422F-B14F-8F27E1282E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4BB866-1A5B-422F-B14F-8F27E1282E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4BB866-1A5B-422F-B14F-8F27E1282E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4BB866-1A5B-422F-B14F-8F27E1282E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{242C8004-D456-4831-824B-3BC5E3D95472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242C8004-D456-4831-824B-3BC5E3D95472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242C8004-D456-4831-824B-3BC5E3D95472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242C8004-D456-4831-824B-3BC5E3D95472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2FAAB75-E7DF-4387-8118-8E7A4B92EC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2FAAB75-E7DF-4387-8118-8E7A4B92EC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2FAAB75-E7DF-4387-8118-8E7A4B92EC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2FAAB75-E7DF-4387-8118-8E7A4B92EC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B0D2A0-AD16-4457-A41E-6E46F1FE2D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B0D2A0-AD16-4457-A41E-6E46F1FE2D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B0D2A0-AD16-4457-A41E-6E46F1FE2D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B0D2A0-AD16-4457-A41E-6E46F1FE2D91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B79F89F-0D89-4BFC-AAB7-4155C3B55DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B79F89F-0D89-4BFC-AAB7-4155C3B55DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B79F89F-0D89-4BFC-AAB7-4155C3B55DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B79F89F-0D89-4BFC-AAB7-4155C3B55DB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

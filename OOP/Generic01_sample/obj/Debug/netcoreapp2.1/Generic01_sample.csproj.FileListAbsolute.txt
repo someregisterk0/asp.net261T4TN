@@ -1,0 +1,10 @@
+D:\261T4TN\OOP\Generic01_sample\bin\Debug\netcoreapp2.1\Generic01_sample.deps.json
+D:\261T4TN\OOP\Generic01_sample\bin\Debug\netcoreapp2.1\Generic01_sample.runtimeconfig.json
+D:\261T4TN\OOP\Generic01_sample\bin\Debug\netcoreapp2.1\Generic01_sample.runtimeconfig.dev.json
+D:\261T4TN\OOP\Generic01_sample\bin\Debug\netcoreapp2.1\Generic01_sample.dll
+D:\261T4TN\OOP\Generic01_sample\bin\Debug\netcoreapp2.1\Generic01_sample.pdb
+D:\261T4TN\OOP\Generic01_sample\obj\Debug\netcoreapp2.1\Generic01_sample.csproj.CoreCompileInputs.cache
+D:\261T4TN\OOP\Generic01_sample\obj\Debug\netcoreapp2.1\Generic01_sample.AssemblyInfoInputs.cache
+D:\261T4TN\OOP\Generic01_sample\obj\Debug\netcoreapp2.1\Generic01_sample.AssemblyInfo.cs
+D:\261T4TN\OOP\Generic01_sample\obj\Debug\netcoreapp2.1\Generic01_sample.dll
+D:\261T4TN\OOP\Generic01_sample\obj\Debug\netcoreapp2.1\Generic01_sample.pdb
