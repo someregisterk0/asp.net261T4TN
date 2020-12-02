@@ -1,0 +1,11 @@
+D:\asp.net261T4TN\WinAppExample\WinApp\bin\Debug\WinApp.exe.config
+D:\asp.net261T4TN\WinAppExample\WinApp\bin\Debug\WinApp.exe
+D:\asp.net261T4TN\WinAppExample\WinApp\bin\Debug\WinApp.pdb
+D:\asp.net261T4TN\WinAppExample\WinApp\obj\Debug\WinApp.csprojAssemblyReference.cache
+D:\asp.net261T4TN\WinAppExample\WinApp\obj\Debug\WinApp.Form1.resources
+D:\asp.net261T4TN\WinAppExample\WinApp\obj\Debug\WinApp.Properties.Resources.resources
+D:\asp.net261T4TN\WinAppExample\WinApp\obj\Debug\WinApp.csproj.GenerateResource.cache
+D:\asp.net261T4TN\WinAppExample\WinApp\obj\Debug\WinApp.csproj.CoreCompileInputs.cache
+D:\asp.net261T4TN\WinAppExample\WinApp\obj\Debug\WinApp.exe
+D:\asp.net261T4TN\WinAppExample\WinApp\obj\Debug\WinApp.pdb
+D:\asp.net261T4TN\WinAppExample\WinApp\obj\Debug\WinApp.FormCategory.resources
