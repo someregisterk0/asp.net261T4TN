@@ -51,5 +51,18 @@ namespace WinApp
                 }
             }
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            int rowIndex = gvCategory.CurrentCell.RowIndex;
+            int id = (int)gvCategory["ColId", rowIndex].Value;
+
+            CategoryRepository repository = new CategoryRepository();
+
+            Category obj = repository.GetCategoryById(id);
+
+            txtId.Text = obj.Id.ToString();
+            txtName.Text = obj.Name;
+        }
     }
 }

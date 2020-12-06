@@ -20,3 +20,12 @@ GO
 
 -- Truy vấn dữ liệu
 SELECT * FROM Category;
+
+-- Tạo Proceduce
+CREATE PROC GetCategories
+AS
+BEGIN
+	SELECT * FROM Category;
+END
+
+EXEC GetCategories;

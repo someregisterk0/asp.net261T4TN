@@ -85,5 +85,34 @@ namespace WinApp
             connection.Close();
             return ret;
         }
+
+        public Category GetCategoryById(int id)
+        {
+            IDbConnection connection = new SqlConnection(connectionString);
+
+            IDbCommand command = connection.CreateCommand();
+            command.CommandText = "SELECT * FROM Category WHERE CategoryId = @Id";
+            command.CommandType = CommandType.Text;
+
+            IDataParameter idParameter = command.CreateParameter();
+            idParameter.ParameterName = "@Id";
+            idParameter.Value = id;
+            command.Parameters.Add(idParameter);
+
+            connection.Open();
+
+            IDataReader reader = command.ExecuteReader();
+            Category obj = new Category();
+            if (reader.Read())
+            {
+                obj.Id = (int)reader["CategoryId"];
+                obj.Name = (string)reader["CategoryName"];
+            }
+
+            reader.Close();
+            connection.Close();
+
+            return obj;
+        }
     }
 }
