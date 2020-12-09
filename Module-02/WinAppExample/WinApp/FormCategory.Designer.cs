@@ -37,6 +37,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gvCategory)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,11 +119,22 @@
             this.txtId.Size = new System.Drawing.Size(164, 20);
             this.txtId.TabIndex = 6;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(623, 128);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(99, 29);
+            this.btnCancel.TabIndex = 7;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // FormCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnDelete);
@@ -150,5 +162,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
