@@ -22,6 +22,16 @@ CREATE TABLE Product(
 );
 GO
 
+DROP TABLE Account;
+GO
+CREATE TABLE Account(
+	AccountId UNIQUEIDENTIFIER DEFAULT NEWID() NOT NULL PRIMARY KEY,
+	Username VARCHAR(32) UNIQUE NOT NULL,
+	Password VARCHAR(16) NOT NULL,
+	Email VARCHAR(64)
+);
+GO
+
 -- Nhập data
 INSERT INTO Category(CategoryName) VALUES('Laptop');
 GO
@@ -33,4 +43,8 @@ INSERT INTO Product(CategoryId, ProductName, Price, Quantity, ImageUrl, Descript
 	VALUES (1, 'AMD 5900X', 1000, 87, NULL, NULL),
 			(1, 'RX 6700', 5400, 189, NULL, NULL)
 GO
+
+DROP TABLE Category
+
+SELECT * FROM Account;
 
