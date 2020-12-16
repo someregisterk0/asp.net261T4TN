@@ -90,4 +90,37 @@ GO
 
 EXEC DeleteStudent 9;
 
-SELECT * FROM Category
+CREATE PROC GetStudentById(@Id INT)
+AS
+BEGIN
+	SELECT * FROM Student WHERE StudentId = @Id;
+END
+GO
+
+EXEC GetStudentById 1;
+
+CREATE PROC EditStudent(
+	@Id INT,
+	@FullName NVARCHAR(64),
+	@Email VARCHAR(128),
+	@DateOfBirth DATE,
+	@PlaceOfBirth NVARCHAR(32),
+	@Address NVARCHAR(128),
+	@Phone VARCHAR(16),
+	@Gender BIT
+)
+AS
+BEGIN
+	UPDATE Student SET
+		FullName = @FullName,
+		Email = @Email,
+		DateOfBirth = @DateOfBirth,
+		PlaceOfBirth = @PlaceOfBirth,
+		Address = @Address,
+		Phone = @Phone,
+		Gender = @Gender
+	WHERE StudentId = @Id;
+END
+GO
+
+SELECT * FROM Student

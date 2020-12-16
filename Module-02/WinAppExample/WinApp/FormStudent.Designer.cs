@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.gvStudent = new System.Windows.Forms.DataGridView();
+            this.ColId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
@@ -45,8 +47,9 @@
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.cbxGender = new System.Windows.Forms.ComboBox();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.ColId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gvStudent)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +63,18 @@
             this.gvStudent.Name = "gvStudent";
             this.gvStudent.Size = new System.Drawing.Size(959, 363);
             this.gvStudent.TabIndex = 0;
+            // 
+            // ColId
+            // 
+            this.ColId.DataPropertyName = "Id";
+            this.ColId.HeaderText = "Id";
+            this.ColId.Name = "ColId";
+            // 
+            // ColFullName
+            // 
+            this.ColFullName.DataPropertyName = "FullName";
+            this.ColFullName.HeaderText = "Tên";
+            this.ColFullName.Name = "ColFullName";
             // 
             // label1
             // 
@@ -196,23 +211,41 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // ColId
+            // btnEdit
             // 
-            this.ColId.DataPropertyName = "Id";
-            this.ColId.HeaderText = "Id";
-            this.ColId.Name = "ColId";
+            this.btnEdit.Location = new System.Drawing.Point(415, 145);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(87, 29);
+            this.btnEdit.TabIndex = 15;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // ColFullName
+            // txtId
             // 
-            this.ColFullName.DataPropertyName = "FullName";
-            this.ColFullName.HeaderText = "Tên";
-            this.ColFullName.Name = "ColFullName";
+            this.txtId.Location = new System.Drawing.Point(545, 93);
+            this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new System.Drawing.Size(115, 20);
+            this.txtId.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(476, 96);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(16, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Id";
             // 
             // FormStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(983, 593);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.cbxGender);
             this.Controls.Add(this.dtpDateOfBirth);
@@ -260,5 +293,8 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColFullName;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountRepository.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="CategoryRepository.cs" />
     <Compile Include="Form1.cs">
@@ -54,11 +56,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccount.Designer.cs">
+      <DependentUpon>FormAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCategory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCategory.Designer.cs">
       <DependentUpon>FormCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStudent.cs">
       <SubType>Form</SubType>
@@ -67,6 +81,8 @@
       <DependentUpon>FormStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Gender.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
@@ -74,8 +90,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAccount.resx">
+      <DependentUpon>FormAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCategory.resx">
       <DependentUpon>FormCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStudent.resx">
       <DependentUpon>FormStudent.cs</DependentUpon>

@@ -21,3 +21,5 @@ D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.csproj.CoreCom
 D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.exe
 D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.pdb
 D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormStudent.resources
+D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormProduct.resources
+D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormAccount.resources

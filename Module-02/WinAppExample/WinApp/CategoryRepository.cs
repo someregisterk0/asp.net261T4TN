@@ -114,5 +114,32 @@ namespace WinApp
 
             return obj;
         }
+
+        public int Edit(Category obj)
+        {
+            IDbConnection connection = new SqlConnection(connectionString);
+
+            IDbCommand command = connection.CreateCommand();
+            command.CommandText = "UPDATE Category SET CategoryName = @Name WHERE CategoryId = @Id";
+            command.CommandType = CommandType.Text;
+
+            IDataParameter idParameter = command.CreateParameter();
+            idParameter.ParameterName = "@Id";
+            idParameter.Value = obj.Id;
+            command.Parameters.Add(idParameter);
+
+            IDataParameter nameParameter = command.CreateParameter();
+            nameParameter.ParameterName = "@Name";
+            nameParameter.Value = obj.Name;
+            command.Parameters.Add(nameParameter);
+
+            connection.Open();
+
+            int ret = command.ExecuteNonQuery();
+
+            connection.Close();
+
+            return ret;
+        }
     }
 }

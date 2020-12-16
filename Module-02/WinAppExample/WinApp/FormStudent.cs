@@ -21,6 +21,7 @@ namespace WinApp
         {
             StudentRepository repository = new StudentRepository();
             gvStudent.DataSource = repository.GetStudents();
+            gvStudent.Columns[3].DefaultCellStyle.Format = "dd/MM/yyyy";
 
             List<Gender> list = new List<Gender>()
             {
@@ -50,9 +51,22 @@ namespace WinApp
                 Gender = (bool)cbxGender.SelectedValue
             };
 
-            if(repository.AddStudent(obj) > 0)
+            int ret = 0;
+            if(string.IsNullOrEmpty(txtId.Text)) // Thêm mới
             {
-                MessageBox.Show("Add Success.");
+                ret = repository.AddStudent(obj);
+            }
+            else // Edit
+            {
+                obj.Id = int.Parse(txtId.Text);
+                ret = repository.EditStudent(obj);
+                btnEdit.Text = "Edit";
+            }
+
+            if(ret > 0)
+            {
+                Clear();
+                MessageBox.Show("Success.");
                 gvStudent.DataSource = repository.GetStudents();
             }
         }
@@ -68,6 +82,46 @@ namespace WinApp
                 MessageBox.Show("Delete Success.");
                 gvStudent.DataSource = repository.GetStudents();
             }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (btnEdit.Text.Equals("Edit"))
+            {
+                btnEdit.Text = "Cancel";
+
+                StudentRepository repository = new StudentRepository();
+
+                int rowIndex = gvStudent.CurrentCell.RowIndex;
+                int id = (int)gvStudent["ColId", rowIndex].Value;
+
+                Student obj = repository.GetStudentById(id);
+
+                txtId.Text = obj.Id.ToString();
+                txtFullName.Text = obj.FullName;
+                txtEmail.Text = obj.Email;
+                dtpDateOfBirth.Value = obj.DateOfBirth;
+                txtPlaceOfBirth.Text = obj.PlaceOfBirth;
+                cbxGender.SelectedValue = obj.Gender;
+                txtPhone.Text = obj.Phone;
+                txtAddress.Text = obj.Address;
+            }
+            else
+            {
+                btnEdit.Text = "Edit";
+                Clear();
+            }
+        }
+
+        public void Clear()
+        {
+            txtId.Clear();
+            txtFullName.Clear();
+            txtEmail.Clear();
+            dtpDateOfBirth.Value = DateTime.Now;
+            txtPlaceOfBirth.Clear();
+            txtPhone.Clear();
+            txtAddress.Clear();
         }
     }
 }
