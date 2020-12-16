@@ -34,8 +34,8 @@ namespace WinApp
             IDbConnection connection = new SqlConnection(connectionString);
 
             IDbCommand command = connection.CreateCommand();
-            command.CommandText = "INSERT INTO Product (CategoryId, ProductName, Price, Quantity, ImageUrl, Description) " +
-                "VALUES (@CategoryId, @Name, @Price, @Quantity, @ImageUrl, @Description)";
+            command.CommandText = "INSERT INTO Product (CategoryId, ProductName, Price, Quantity, ImageUrl, Description, ImageFile) " +
+                "VALUES (@CategoryId, @Name, @Price, @Quantity, @ImageUrl, @Description, @ImageFile)";
 
             IDataParameter categoryParameter = command.CreateParameter();
             categoryParameter.ParameterName = "@CategoryId";
@@ -66,6 +66,11 @@ namespace WinApp
             descriptionParameter.ParameterName = "@Description";
             descriptionParameter.Value = obj.Description;
             command.Parameters.Add(descriptionParameter);
+
+            IDataParameter imageFileParameter = command.CreateParameter();
+            imageFileParameter.ParameterName = "@ImageFile";
+            imageFileParameter.Value = obj.ImageFile;
+            command.Parameters.Add(imageFileParameter);
 
             connection.Open();
 

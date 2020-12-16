@@ -158,10 +158,16 @@ CREATE TABLE Product(
 );
 GO
 
+-- Xóa một cột trong bảng
+--ALTER TABLE Product DROP COLUMN ImageFile;
+
+-- Cập nhật cột ImageFile
+ALTER TABLE Product ADD ImageFile VARBINARY(MAX);
+
 -- Nhập dữ liệu
 INSERT INTO Product(CategoryId, ProductName, Price, Quantity, ImageUrl, Description)
 	VALUES (1, 'AMD 5900X', 1000, 87, NULL, NULL),
-			(1, 'RX 6700', 5400, 189, NULL, NULL)
+			(2, 'RX 6700', 5400, 189, NULL, NULL)
 GO
 
 --### END -- Product
@@ -183,4 +189,11 @@ CREATE TABLE Account(
 );
 GO
 
+-- Nhập dữ liệu
+INSERT INTO Account(Username, Password, Email) VALUES
+	('danhnh', '123', 'danhnh@email.com'),
+	('danh', '123', 'abc@email.com');
+
 --### END -- Account
+
+SELECT * FROM Account WHERE Username = 'danhnh' AND Password = '123';

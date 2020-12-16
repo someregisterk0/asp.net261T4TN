@@ -33,5 +33,41 @@ namespace WinApp
 
             return ExcuteSQL(sql);
         }
+
+        public Account Login(string usr, string pwd)
+        {
+            usr = usr.Replace("'", "");
+            usr = usr.Replace("--", "");
+            string sql = $"SELECT * FROM Account WHERE Username = '{usr}' AND Password = '{pwd}'";
+
+            IDbConnection connect = new SqlConnection(connectionString);
+
+            IDbCommand command = connect.CreateCommand();
+            command.CommandText = sql;
+
+            connect.Open();
+            IDataReader reader = command.ExecuteReader();
+            Account obj = null;
+            if(reader.Read())
+            {
+                obj = new Account()
+                {
+                    Id = (Guid)reader["AccountId"],
+                    Username = (string)reader["Username"],
+                    Email = (string)reader["Email"]
+                };
+            }
+            reader.Close();
+
+            connect.Close();
+
+            return obj;
+        }
+
+        public int ChangePassword(string usr, string oldPwd, string newPwd)
+        {
+            string sql = $"UPDATE Account SET Password = '{newPwd}' WHERE Username = '{usr}' AND Password = '{oldPwd}'";
+            return ExcuteSQL(sql);
+        }
     }
 }

@@ -45,16 +45,19 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.ptbImageFile = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gvProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImageUrl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImageFile)).BeginInit();
             this.SuspendLayout();
             // 
             // gvProduct
             // 
             this.gvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvProduct.Location = new System.Drawing.Point(12, 390);
+            this.gvProduct.Location = new System.Drawing.Point(12, 396);
             this.gvProduct.Name = "gvProduct";
-            this.gvProduct.Size = new System.Drawing.Size(776, 320);
+            this.gvProduct.Size = new System.Drawing.Size(776, 314);
             this.gvProduct.TabIndex = 0;
             // 
             // label1
@@ -143,17 +146,17 @@
             // txtDescription
             // 
             this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescription.Location = new System.Drawing.Point(465, 204);
+            this.txtDescription.Location = new System.Drawing.Point(108, 204);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(313, 82);
+            this.txtDescription.Size = new System.Drawing.Size(176, 82);
             this.txtDescription.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(353, 207);
+            this.label6.Location = new System.Drawing.Point(14, 220);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 18);
             this.label6.TabIndex = 11;
@@ -162,7 +165,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(60, 289);
+            this.btnAdd.Location = new System.Drawing.Point(52, 317);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(114, 34);
             this.btnAdd.TabIndex = 13;
@@ -184,7 +187,7 @@
             // btnEdit
             // 
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(180, 289);
+            this.btnEdit.Location = new System.Drawing.Point(181, 317);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(114, 34);
             this.btnEdit.TabIndex = 15;
@@ -211,11 +214,33 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Id";
             // 
+            // ptbImageFile
+            // 
+            this.ptbImageFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ptbImageFile.Location = new System.Drawing.Point(465, 204);
+            this.ptbImageFile.Name = "ptbImageFile";
+            this.ptbImageFile.Size = new System.Drawing.Size(313, 186);
+            this.ptbImageFile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbImageFile.TabIndex = 19;
+            this.ptbImageFile.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(361, 256);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(75, 18);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Image File";
+            // 
             // FormProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 722);
+            this.Controls.Add(this.ptbImageFile);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnEdit);
@@ -238,6 +263,7 @@
             this.Load += new System.EventHandler(this.FormProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImageUrl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImageFile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,5 +288,7 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox ptbImageFile;
+        private System.Windows.Forms.Label label8;
     }
 }

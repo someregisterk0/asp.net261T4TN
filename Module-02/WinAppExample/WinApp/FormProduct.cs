@@ -51,6 +51,7 @@ namespace WinApp
                 ptbImageUrl.Image.Save($"./images/{imageUrl}");
             }
 
+            ImageConverter imgConverter = new ImageConverter();
             Product obj = new Product()
             {
                 CategoryId = (int)cbxCategory.SelectedValue,
@@ -58,7 +59,9 @@ namespace WinApp
                 Price = int.Parse(txtPrice.Text),
                 Quantity = short.Parse(txtQuantity.Text),
                 ImageUrl = imageUrl,
-                Description = txtDescription.Text
+                Description = txtDescription.Text,
+
+                ImageFile = (byte[])imgConverter.ConvertTo(ptbImageUrl.Image, typeof(byte[]))
             };
 
             ProductRepository repository = new ProductRepository();
@@ -85,6 +88,10 @@ namespace WinApp
             txtQuantity.Text = row["Quantity"].ToString();
             txtDescription.Text = row["Description"].ToString();
             imageUrl = row["ImageUrl"].ToString();
+
+            // Load image file từ database
+            ImageConverter imgConverter = new ImageConverter();
+            ptbImageFile.Image = (Image)imgConverter.ConvertFrom(row["ImageFile"]);
 
             if (!String.IsNullOrEmpty(row["ImageUrl"].ToString()))
             {
