@@ -4,6 +4,11 @@ GO
 USE Stores;
 GO
 
+
+--### ---------- - ---------- ###
+--### -- TABLE -- Category
+--### ---------- - ---------- ###
+
 -- Tạo Bảng
 CREATE TABLE Category(
 	CategoryId INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
@@ -18,6 +23,24 @@ INSERT INTO Category(CategoryName) VALUES
 	('HDD'), ('RAM'), ('Keyboard');
 GO
 
+-- Tạo Proceduce
+CREATE PROC GetCategories
+AS
+BEGIN
+	SELECT * FROM Category;
+END
+
+EXEC GetCategories;
+
+--### END -- Category
+
+
+
+--### ---------- - ---------- ###
+--### -- TABLE -- Student
+--### ---------- - ---------- ###
+
+-- Tạo Bảng
 CREATE TABLE Student(
 	StudentId INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
 	FullName NVARCHAR(64) NOT NULL,
@@ -30,6 +53,7 @@ CREATE TABLE Student(
 );
 GO
 
+-- Nhập dữ liệu
 INSERT INTO Student VALUES
 	(N'Nguyễn Vân Trúc', 'Truc@gmail.com', '1996-03-02', N'Hồ Chí Minh', 
 		N'21 Võ Văn Tần, Phường 6, Quận 3, Thành phố Hồ Chí Minh', '02839303031', 1),
@@ -43,18 +67,7 @@ INSERT INTO Student VALUES
 		N'1 Phạm Thái Bường, Phường 3, Trà Vinh', '02253795688', 1);
 GO
 
--- Truy vấn dữ liệu
-SELECT * FROM Category;
-
--- Tạo Proceduce
-CREATE PROC GetCategories
-AS
-BEGIN
-	SELECT * FROM Category;
-END
-
-EXEC GetCategories;
-
+-- Tạo Store Procedure
 CREATE PROC GetStudents 
 AS
 BEGIN
@@ -124,3 +137,50 @@ END
 GO
 
 SELECT * FROM Student
+
+--### END -- Student
+
+
+
+--### ---------- - ---------- ###
+--### -- TABLE -- Product
+--### ---------- - ---------- ###
+
+-- Tạo bảng
+CREATE TABLE Product(
+	ProductId INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
+	CategoryId INT NOT NULL REFERENCES Category(CategoryId),
+	ProductName NVARCHAR(64) NOT NULL,
+	Price INT NOT NULL,
+	Quantity SMALLINT NOT NULL,
+	ImageUrl VARCHAR(64),
+	Description NVARCHAR(MAX)
+);
+GO
+
+-- Nhập dữ liệu
+INSERT INTO Product(CategoryId, ProductName, Price, Quantity, ImageUrl, Description)
+	VALUES (1, 'AMD 5900X', 1000, 87, NULL, NULL),
+			(1, 'RX 6700', 5400, 189, NULL, NULL)
+GO
+
+--### END -- Product
+
+
+
+--### ---------- - ---------- ###
+--### -- TABLE -- Account
+--### ---------- - ---------- ###
+
+--DROP TABLE Account;
+GO
+-- Tạo bảng
+CREATE TABLE Account(
+	AccountId UNIQUEIDENTIFIER DEFAULT NEWID() NOT NULL PRIMARY KEY,
+	Username VARCHAR(32) UNIQUE NOT NULL,
+	Password VARCHAR(16) NOT NULL,
+	Email VARCHAR(64)
+);
+GO
+
+--### END -- Account
