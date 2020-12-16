@@ -1,6 +1,21 @@
-﻿CREATE DATABASE Student;
+﻿-- Tạo cơ sở dữ liệu
+CREATE DATABASE Stores;
 GO
-USE Student;
+USE Stores;
+GO
+
+-- Tạo Bảng
+CREATE TABLE Category(
+	CategoryId INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
+	CategoryName NVARCHAR(64) NOT NULL
+);
+GO
+
+-- Nhập dữ liệu
+INSERT INTO Category(CategoryName) VALUES('Laptop');
+GO
+INSERT INTO Category(CategoryName) VALUES
+	('HDD'), ('RAM'), ('Keyboard');
 GO
 
 CREATE TABLE Student(
@@ -28,9 +43,18 @@ INSERT INTO Student VALUES
 		N'1 Phạm Thái Bường, Phường 3, Trà Vinh', '02253795688', 1);
 GO
 
-SELECT * FROM Student;
+-- Truy vấn dữ liệu
+SELECT * FROM Category;
 
--- Tạo Procduce
+-- Tạo Proceduce
+CREATE PROC GetCategories
+AS
+BEGIN
+	SELECT * FROM Category;
+END
+
+EXEC GetCategories;
+
 CREATE PROC GetStudents 
 AS
 BEGIN
@@ -38,3 +62,32 @@ BEGIN
 END
 
 EXEC GetStudents;
+
+CREATE PROC AddStudent(
+	@FullName NVARCHAR(64),
+	@Email VARCHAR(128),
+	@DateOfBirth DATE,
+	@PlaceOfBirth NVARCHAR(32),
+	@Address NVARCHAR(128),
+	@Phone VARCHAR(16),
+	@Gender BIT
+)
+AS
+BEGIN
+	INSERT INTO Student (FullName, Email, DateOfBirth, PlaceOfBirth, Address, Phone, Gender)
+		VALUES (@FullName, @Email, @DateOfBirth, @PlaceOfBirth, @Address, @Phone, @Gender);
+END
+GO
+
+EXEC AddStudent N'Nguyễn Thành Đăng', 'dang@gmail.com', '2001/1/12', N'Hồ Chí Minh', N'12 Trần Tạp, P7, Q.12, Hồ Chí Minh', '1231232', 1;
+
+CREATE PROC DeleteStudent (@Id INT)
+AS
+BEGIN
+	DELETE FROM Student WHERE StudentId = @Id;
+END
+GO
+
+EXEC DeleteStudent 9;
+
+SELECT * FROM Category

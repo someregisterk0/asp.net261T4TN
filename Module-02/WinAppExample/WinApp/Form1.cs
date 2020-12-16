@@ -26,7 +26,7 @@ namespace WinApp
             list.Add(new Category { Id = 9, Name = "Keyboard" });
             list.Add(new Category { Id = 11, Name = "Ram" });
 
-            gvCategory.DataSource = list;
+            gvCategory.DataSource = list; 
         }
 
         private void btnSave_Click(object sender, EventArgs e)
