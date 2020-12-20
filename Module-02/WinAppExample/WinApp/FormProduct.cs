@@ -25,7 +25,7 @@ namespace WinApp
             gvProduct.DataSource = repository.GetProduct();
 
             CategoryRepository categoryRepository = new CategoryRepository();
-            cbxCategory.DataSource = categoryRepository.GetCategories();
+            cbxCategory.DataSource = categoryRepository.GetCategories2();
             cbxCategory.DisplayMember = "Name";
             cbxCategory.ValueMember = "Id";
         }

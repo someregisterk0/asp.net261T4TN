@@ -1,0 +1,13 @@
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\bin\Debug\netcoreapp3.1\TryCatch_example.exe
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\bin\Debug\netcoreapp3.1\TryCatch_example.deps.json
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\bin\Debug\netcoreapp3.1\TryCatch_example.runtimeconfig.json
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\bin\Debug\netcoreapp3.1\TryCatch_example.runtimeconfig.dev.json
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\bin\Debug\netcoreapp3.1\TryCatch_example.dll
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\bin\Debug\netcoreapp3.1\TryCatch_example.pdb
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\obj\Debug\netcoreapp3.1\TryCatch_example.csprojAssemblyReference.cache
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\obj\Debug\netcoreapp3.1\TryCatch_example.AssemblyInfoInputs.cache
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\obj\Debug\netcoreapp3.1\TryCatch_example.AssemblyInfo.cs
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\obj\Debug\netcoreapp3.1\TryCatch_example.csproj.CoreCompileInputs.cache
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\obj\Debug\netcoreapp3.1\TryCatch_example.dll
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\obj\Debug\netcoreapp3.1\TryCatch_example.pdb
+D:\asp.net261T4TN\Module-02\WinAppExample\TryCatch_example\obj\Debug\netcoreapp3.1\TryCatch_example.genruntimeconfig.cache

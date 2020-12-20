@@ -22,6 +22,6 @@ namespace prjNorthWind
         public string Extension { get; set; }
         public byte[] Photo { get; set; }
         public string Notes { get; set; }
-        public int ReportsTo { get; set; }
+        public int? ReportsTo { get; set; } // int? -> int có thể null
     }
 }

@@ -4,7 +4,6 @@ GO
 USE Stores;
 GO
 
-
 --### ---------- - ---------- ###
 --### -- TABLE -- Category
 --### ---------- - ---------- ###
@@ -74,7 +73,7 @@ BEGIN
 	SELECT * FROM Student;
 END
 
-EXEC GetStudents;
+--EXEC GetStudents;
 
 CREATE PROC AddStudent(
 	@FullName NVARCHAR(64),
@@ -92,7 +91,7 @@ BEGIN
 END
 GO
 
-EXEC AddStudent N'Nguyễn Thành Đăng', 'dang@gmail.com', '2001/1/12', N'Hồ Chí Minh', N'12 Trần Tạp, P7, Q.12, Hồ Chí Minh', '1231232', 1;
+--EXEC AddStudent N'Nguyễn Thành Đăng', 'dang@gmail.com', '2001/1/12', N'Hồ Chí Minh', N'12 Trần Tạp, P7, Q.12, Hồ Chí Minh', '1231232', 1;
 
 CREATE PROC DeleteStudent (@Id INT)
 AS
@@ -101,7 +100,7 @@ BEGIN
 END
 GO
 
-EXEC DeleteStudent 9;
+--EXEC DeleteStudent 9;
 
 CREATE PROC GetStudentById(@Id INT)
 AS
@@ -110,7 +109,7 @@ BEGIN
 END
 GO
 
-EXEC GetStudentById 1;
+--EXEC GetStudentById 1;
 
 CREATE PROC EditStudent(
 	@Id INT,
@@ -136,8 +135,6 @@ BEGIN
 END
 GO
 
-SELECT * FROM Student
-
 --### END -- Student
 
 
@@ -162,7 +159,7 @@ GO
 --ALTER TABLE Product DROP COLUMN ImageFile;
 
 -- Cập nhật cột ImageFile
-ALTER TABLE Product ADD ImageFile VARBINARY(MAX);
+--ALTER TABLE Product ADD ImageFile VARBINARY(MAX);
 
 -- Nhập dữ liệu
 INSERT INTO Product(CategoryId, ProductName, Price, Quantity, ImageUrl, Description)
@@ -184,7 +181,7 @@ GO
 CREATE TABLE Account(
 	AccountId UNIQUEIDENTIFIER DEFAULT NEWID() NOT NULL PRIMARY KEY,
 	Username VARCHAR(32) UNIQUE NOT NULL,
-	Password VARCHAR(16) NOT NULL,
+	Password VARCHAR(64) NOT NULL,
 	Email VARCHAR(64)
 );
 GO
@@ -193,7 +190,57 @@ GO
 INSERT INTO Account(Username, Password, Email) VALUES
 	('danhnh', '123', 'danhnh@email.com'),
 	('danh', '123', 'abc@email.com');
+GO
 
 --### END -- Account
 
-SELECT * FROM Account WHERE Username = 'danhnh' AND Password = '123';
+
+
+--### ---------- - ---------- ###
+--### -- TABLE -- Member
+--### ---------- - ---------- ###
+
+-- Tạo bảng
+CREATE TABLE Member(
+	AccountId UNIQUEIDENTIFIER DEFAULT NEWID() NOT NULL PRIMARY KEY,
+	Username VARCHAR(32) UNIQUE NOT NULL,
+	Password VARBINARY(64) NOT NULL,
+	Email VARCHAR(128)
+);
+GO
+
+--RETURN
+CREATE PROC AddMember(
+	@Username VARCHAR(32),
+	@Password VARCHAR(16),
+	@Email VARCHAR(128)
+)
+AS
+BEGIN
+	IF NOT EXISTS(SELECT * FROM Member WHERE Username = @Username)
+	BEGIN
+		INSERT INTO Member (Username, Password, Email) VALUES (@Username, HASHBYTES('SHA2_512', @Password), @Email)
+		RETURN 1
+	END
+	RETURN 0
+END
+GO
+
+CREATE PROC SignIn(
+	@Username VARCHAR(32),
+	@Password VARCHAR(16)
+)
+AS
+BEGIN
+	IF EXISTS(SELECT * FROM Member WHERE Username = @Username)
+	BEGIN
+		SELECT * FROM Member WHERE Username = @Username AND Password = HASHBYTES('SHA2_512', @Password)
+		RETURN 1;
+	END
+	RETURN 0;
+END
+GO
+
+--### END -- Member
+
+select * from Member

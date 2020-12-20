@@ -43,6 +43,30 @@ namespace WinApp
             return list;
         }
 
+        public List<Category> GetCategories2()
+        {
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                using (IDbCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "SELECT * FROM Category";
+                    connection.Open();
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        List<Category> list = new List<Category>();
+                        while (reader.Read())
+                        {
+                            list.Add(new Category {
+                                Id = (int)reader["CategoryId"],
+                                Name = (string)reader["CategoryName"]
+                            });
+                        }
+                        return list;
+                    }
+                }
+            }
+        }
+
         public int Add(Category obj)
         {
             //string connectionString = @"Data Source=PM505-03\MSSQLSERVER2014;Initial Catalog=Stores;Integrated Security=True";

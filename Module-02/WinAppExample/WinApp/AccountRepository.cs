@@ -26,12 +26,39 @@ namespace WinApp
             return ret;
         }
 
+        public int ExcuteSQL2(string sql)
+        {
+            IDbConnection connect = null;
+            try
+            {
+                connect = new SqlConnection(connectionString);
+                IDbCommand command = connect.CreateCommand();
+                command.CommandText = sql;
+                connect.Open();
+                return command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+                return 0;
+            }
+            finally
+            {
+                if (connect != null)
+                {
+                    connect.Close();
+                    Console.WriteLine("Da dong ket noi.");
+                }
+            }
+        }
+
         public int Add(Account obj)
         {
            string sql = $"INSERT INTO Account(Username, Password, Email) VALUES" +
                 $"('{obj.Username}', '{obj.Password}', '{obj.Email}')";
 
-            return ExcuteSQL(sql);
+            //return ExcuteSQL(sql);
+            return ExcuteSQL2(sql);
         }
 
         public Account Login(string usr, string pwd)

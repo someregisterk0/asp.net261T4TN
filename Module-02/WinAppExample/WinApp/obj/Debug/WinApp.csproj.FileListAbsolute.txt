@@ -26,3 +26,4 @@ D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormAccount.re
 D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormLogin.resources
 D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormMain.resources
 D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormChangePassword.resources
+D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormSignup.resources

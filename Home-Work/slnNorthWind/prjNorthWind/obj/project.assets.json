@@ -478,19 +478,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Totoro\\.nuget\\packages\\": {}
+    "C:\\Users\\hv\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Totoro\\source\\repos\\slnNorthWind\\prjNorthWind\\prjNorthWind.csproj",
+      "projectUniqueName": "D:\\asp.net261T4TN\\Home-Work\\slnNorthWind\\prjNorthWind\\prjNorthWind.csproj",
       "projectName": "prjNorthWind",
-      "projectPath": "C:\\Users\\Totoro\\source\\repos\\slnNorthWind\\prjNorthWind\\prjNorthWind.csproj",
-      "packagesPath": "C:\\Users\\Totoro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Totoro\\source\\repos\\slnNorthWind\\prjNorthWind\\obj\\",
+      "projectPath": "D:\\asp.net261T4TN\\Home-Work\\slnNorthWind\\prjNorthWind\\prjNorthWind.csproj",
+      "packagesPath": "C:\\Users\\hv\\.nuget\\packages\\",
+      "outputPath": "D:\\asp.net261T4TN\\Home-Work\\slnNorthWind\\prjNorthWind\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Totoro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -502,7 +506,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -514,7 +517,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "SqlConnection": {
             "target": "Package",
@@ -543,7 +545,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   },
