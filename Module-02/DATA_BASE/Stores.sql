@@ -28,8 +28,9 @@ AS
 BEGIN
 	SELECT * FROM Category;
 END
+GO
 
-EXEC GetCategories;
+--EXEC GetCategories;
 
 --### END -- Category
 
@@ -72,6 +73,7 @@ AS
 BEGIN
 	SELECT * FROM Student;
 END
+GO
 
 --EXEC GetStudents;
 
@@ -164,7 +166,7 @@ GO
 -- Nhập dữ liệu
 INSERT INTO Product(CategoryId, ProductName, Price, Quantity, ImageUrl, Description)
 	VALUES (1, 'AMD 5900X', 1000, 87, NULL, NULL),
-			(2, 'RX 6700', 5400, 189, NULL, NULL)
+			(2, 'RX 6700', 5400, 189, NULL, NULL);
 GO
 
 --### END -- Product
@@ -234,8 +236,9 @@ AS
 BEGIN
 	IF EXISTS(SELECT * FROM Member WHERE Username = @Username)
 	BEGIN
-		SELECT * FROM Member WHERE Username = @Username AND Password = HASHBYTES('SHA2_512', @Password)
-		RETURN 1;
+		IF EXISTS (SELECT * FROM Member WHERE Username = @Username AND Password = HASHBYTES('SHA2_512', @Password))
+			RETURN 1;
+		RETURN 0;
 	END
 	RETURN 0;
 END

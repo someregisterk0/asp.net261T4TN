@@ -9,6 +9,6 @@ namespace WinApp
 {
     abstract class BaseRepository
     {
-        protected static readonly string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
+        protected static readonly string connectionString = ConfigurationManager.ConnectionStrings["HomeDb"].ConnectionString;
     }
 }

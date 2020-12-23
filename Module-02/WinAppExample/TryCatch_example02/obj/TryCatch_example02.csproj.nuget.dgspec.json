@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj": {}
+    "E:\\Codes\\KHTN\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj": {}
   },
   "projects": {
-    "D:\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj": {
+    "E:\\Codes\\KHTN\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj",
+        "projectUniqueName": "E:\\Codes\\KHTN\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj",
         "projectName": "TryCatch_example02",
-        "projectPath": "D:\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj",
-        "packagesPath": "C:\\Users\\hv\\.nuget\\packages\\",
-        "outputPath": "D:\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\obj\\",
+        "projectPath": "E:\\Codes\\KHTN\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj",
+        "packagesPath": "C:\\Users\\Totoro\\.nuget\\packages\\",
+        "outputPath": "E:\\Codes\\KHTN\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Totoro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -55,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
