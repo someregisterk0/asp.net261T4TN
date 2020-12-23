@@ -35,12 +35,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSignUp2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSignup
             // 
             this.btnSignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignup.Location = new System.Drawing.Point(183, 214);
+            this.btnSignup.Location = new System.Drawing.Point(117, 222);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(149, 38);
             this.btnSignup.TabIndex = 13;
@@ -103,11 +104,23 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "User Name";
             // 
-            // FormMember
+            // btnSignUp2
+            // 
+            this.btnSignUp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp2.Location = new System.Drawing.Point(295, 222);
+            this.btnSignUp2.Name = "btnSignUp2";
+            this.btnSignUp2.Size = new System.Drawing.Size(149, 38);
+            this.btnSignUp2.TabIndex = 14;
+            this.btnSignUp2.Text = "Signup2";
+            this.btnSignUp2.UseVisualStyleBackColor = true;
+            this.btnSignUp2.Click += new System.EventHandler(this.btnSignUp2_Click);
+            // 
+            // FormSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(609, 325);
+            this.Controls.Add(this.btnSignUp2);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label3);
@@ -115,7 +128,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
-            this.Name = "FormMember";
+            this.Name = "FormSignup";
             this.Text = "FormMember";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -131,5 +144,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSignUp2;
     }
 }

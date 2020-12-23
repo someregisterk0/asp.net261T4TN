@@ -46,3 +46,5 @@ E:\Codes\KHTN\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.csp
 E:\Codes\KHTN\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.exe
 E:\Codes\KHTN\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.pdb
 E:\Codes\KHTN\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormSignIn.resources
+D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormSignIn.resources
+D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormCustomer.resources

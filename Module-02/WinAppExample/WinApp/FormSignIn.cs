@@ -19,19 +19,42 @@ namespace WinApp
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            Member obj = new Member
-            {
-                Username = txtUserName.Text,
-                Password = txtPassWord.Text
-            };
-
             MemberRepository repository = new MemberRepository();
-
+            string usr = txtUserName.Text;
+            string pwd = txtPassWord.Text;
             int ret;
-            repository.SignIn(obj.Username, obj.Password, out ret);
 
-            string[] msg = { "Sign in fail.", "Success" };
-            MessageBox.Show(msg[ret]);
+            Member obj = repository.SignIn(usr, pwd, out ret);
+
+            if (obj != null)
+            {
+                MessageBox.Show("Sign in Success");
+            }
+            else
+            {
+                string[] msg = { "Username not exists.", "Input passwrod fail." };
+                MessageBox.Show(msg[ret]);
+            }
+        }
+
+        private void btnSignIn2_Click(object sender, EventArgs e)
+        {
+            MemberRepository repository = new MemberRepository();
+            string usr = txtUserName.Text;
+            string pwd = txtPassWord.Text;
+            int ret;
+
+            Member obj = repository.SignIn2(usr, pwd, out ret);
+
+            if (obj != null)
+            {
+                MessageBox.Show("Sign in Success");
+            }
+            else
+            {
+                string[] msg = { "Username not exists.", "Input passwrod fail." };
+                MessageBox.Show(msg[ret]);
+            }
         }
     }
 }

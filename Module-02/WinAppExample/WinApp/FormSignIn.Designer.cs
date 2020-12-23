@@ -34,12 +34,13 @@ namespace WinApp
             this.label2 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSignIn2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSignIn
             // 
             this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignIn.Location = new System.Drawing.Point(183, 166);
+            this.btnSignIn.Location = new System.Drawing.Point(102, 159);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(149, 38);
             this.btnSignIn.TabIndex = 20;
@@ -84,11 +85,23 @@ namespace WinApp
             this.label1.TabIndex = 14;
             this.label1.Text = "User Name";
             // 
+            // btnSignIn2
+            // 
+            this.btnSignIn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn2.Location = new System.Drawing.Point(293, 159);
+            this.btnSignIn2.Name = "btnSignIn2";
+            this.btnSignIn2.Size = new System.Drawing.Size(149, 38);
+            this.btnSignIn2.TabIndex = 21;
+            this.btnSignIn2.Text = "Sign In 2";
+            this.btnSignIn2.UseVisualStyleBackColor = true;
+            this.btnSignIn2.Click += new System.EventHandler(this.btnSignIn2_Click);
+            // 
             // FormSignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(621, 275);
+            this.Controls.Add(this.btnSignIn2);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.txtPassWord);
             this.Controls.Add(this.label2);
@@ -108,5 +121,6 @@ namespace WinApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSignIn2;
     }
 }

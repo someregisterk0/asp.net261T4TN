@@ -33,5 +33,22 @@ namespace WinApp
 
             MessageBox.Show(msg[ret]);
         }
+
+        private void btnSignUp2_Click(object sender, EventArgs e)
+        {
+            Member obj = new Member
+            {
+                Username = txtUserName.Text,
+                Password = txtPassWord.Text,
+                Email = txtEmail.Text
+            };
+
+            MemberRepository repository = new MemberRepository();
+            string[] msg = { "Username exists", "Success" };
+
+            int ret = repository.Add2(obj);
+
+            MessageBox.Show(msg[ret]);
+        }
     }
 }

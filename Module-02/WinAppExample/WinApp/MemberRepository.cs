@@ -94,5 +94,92 @@ namespace WinApp
                 }
             }
         }
+
+        // Add và SignIn với Hash password
+
+        public int Add2(Member obj)
+        {
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                using (IDbCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "AddMember2";
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    IDataParameter usernameParameter = command.CreateParameter();
+                    usernameParameter.ParameterName = "@Username";
+                    usernameParameter.Value = obj.Username;
+                    command.Parameters.Add(usernameParameter);
+
+                    IDataParameter passwordParameter = command.CreateParameter();
+                    passwordParameter.ParameterName = "@Password";
+                    passwordParameter.Value = Hash.Sha(obj.Username + "!@#$%^&*" + obj.Password);
+                    command.Parameters.Add(passwordParameter);
+
+                    IDataParameter emailParameter = command.CreateParameter();
+                    emailParameter.ParameterName = "@Email";
+                    emailParameter.Value = obj.Email;
+                    command.Parameters.Add(emailParameter);
+
+                    IDataParameter retParameter = command.CreateParameter();
+                    retParameter.Direction = ParameterDirection.ReturnValue;
+                    retParameter.ParameterName = "@Ret";
+                    command.Parameters.Add(retParameter);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+
+                    IDataParameter ret = (IDataParameter)command.Parameters["@Ret"];
+                    return (int)ret.Value;
+                }
+            }
+        }
+
+        public Member SignIn2(string usr, string pwd, out int ret)
+        {
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                using (IDbCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "SignIn2";
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    IDataParameter usernameParameter = command.CreateParameter();
+                    usernameParameter.ParameterName = "@Username";
+                    usernameParameter.Value = usr;
+                    command.Parameters.Add(usernameParameter);
+
+                    IDataParameter passwordParameter = command.CreateParameter();
+                    passwordParameter.ParameterName = "@Password";
+                    passwordParameter.Value = Hash.Sha(usr + "!@#$%^&*" + pwd);
+                    command.Parameters.Add(passwordParameter);
+
+                    IDataParameter retParameter = command.CreateParameter();
+                    retParameter.Direction = ParameterDirection.ReturnValue;
+                    retParameter.ParameterName = "@Ret";
+                    command.Parameters.Add(retParameter);
+
+                    connection.Open();
+                    Member obj = null;
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            obj = new Member
+                            {
+                                Id = (Guid)reader["MemberId"],
+                                Username = (string)reader["Username"],
+                                Email = (string)reader["Email"]
+                            };
+                        }
+                    }
+
+                    IDataParameter retp = (IDataParameter)command.Parameters["@Ret"];
+                    ret = (int)retp.Value;
+                    return obj;
+                }
+            }
+        }
+
     }
 }

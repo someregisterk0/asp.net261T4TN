@@ -204,7 +204,7 @@ GO
 
 -- Tạo bảng
 CREATE TABLE Member(
-	AccountId UNIQUEIDENTIFIER DEFAULT NEWID() NOT NULL PRIMARY KEY,
+	MemberId UNIQUEIDENTIFIER DEFAULT NEWID() NOT NULL PRIMARY KEY,
 	Username VARCHAR(32) UNIQUE NOT NULL,
 	Password VARBINARY(64) NOT NULL,
 	Email VARCHAR(128)
@@ -221,7 +221,7 @@ AS
 BEGIN
 	IF NOT EXISTS(SELECT * FROM Member WHERE Username = @Username)
 	BEGIN
-		INSERT INTO Member (Username, Password, Email) VALUES (@Username, HASHBYTES('SHA2_512', @Password), @Email)
+		INSERT INTO Member (Username, Password, Email) VALUES (@Username, HASHBYTES('SHA2_512', @Username + '!@#$%^&*' + @Password), @Email)
 		RETURN 1
 	END
 	RETURN 0
@@ -236,9 +236,41 @@ AS
 BEGIN
 	IF EXISTS(SELECT * FROM Member WHERE Username = @Username)
 	BEGIN
-		IF EXISTS (SELECT * FROM Member WHERE Username = @Username AND Password = HASHBYTES('SHA2_512', @Password))
-			RETURN 1;
-		RETURN 0;
+		SELECT * FROM Member WHERE Username = @Username AND Password = HASHBYTES('SHA2_512', @Username + '!@#$%^&*' + @Password);
+		RETURN 1;
+	END
+	RETURN 0;
+END
+GO
+
+------------------------------------------------------------------------
+
+CREATE PROC AddMember2(
+	@Username VARCHAR(32),
+	@Password VARBINARY(64),
+	@Email VARCHAR(128)
+)
+AS
+BEGIN
+	IF NOT EXISTS(SELECT * FROM Member WHERE Username = @Username)
+	BEGIN
+		INSERT INTO Member (Username, Password, Email) VALUES (@Username, @Password, @Email)
+		RETURN 1
+	END
+	RETURN 0
+END
+GO
+
+CREATE PROC SignIn2(
+	@Username VARCHAR(32),
+	@Password VARBINARY(64)
+)
+AS
+BEGIN
+	IF EXISTS(SELECT * FROM Member WHERE Username = @Username)
+	BEGIN
+		SELECT * FROM Member WHERE Username = @Username AND Password = @Password;
+		RETURN 1;
 	END
 	RETURN 0;
 END
