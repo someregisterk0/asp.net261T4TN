@@ -41,6 +41,10 @@ AS
 GO
 --EXEC GetProducts;
 
+
+
+
+
 CREATE TABLE sales.Customer (
 	CustomerId INT IDENTITY (1, 1) PRIMARY KEY,
 	FirstName VARCHAR (64) NOT NULL,
@@ -85,6 +89,69 @@ EXEC GetCustomers @PageIndex = 2, @PageSize = 20;
 GO
 EXEC GetCustomers @PageIndex = 3, @PageSize = 20;
 GO
+
+CREATE PROC SearchCustomer(
+	@Q NVARCHAR(32)
+)
+AS
+BEGIN
+	SELECT * FROM sales.Customer WHERE FirstName LIKE @Q
+		OR LastName LIKE @Q OR Street LIKE @Q OR Email LIKE @Q OR Phone LIKE @Q;
+END
+GO
+
+CREATE PROC SearchCustomer2(
+	@Q NVARCHAR(32),
+	@City VARCHAR(64)
+)
+AS
+BEGIN
+	SELECT * FROM sales.Customer 
+	WHERE 
+	(FirstName LIKE @Q OR LastName LIKE @Q OR Street LIKE @Q OR Email LIKE @Q OR Phone LIKE @Q)
+	AND City = @City;
+END
+GO
+
+--EXEC SearchCustomer 'bra%';
+GO
+
+-- Tất cả các khách hàng bắt đầu bằng chữ d
+SELECT * FROM sales.Customer WHERE FirstName LIKE 'd%';
+-- Tất cả các khách hàng kết thúc bằng chữ ra
+SELECT * FROM sales.Customer WHERE FirstName LIKE '%ra';
+SELECT * FROM sales.Customer WHERE FirstName LIKE '%bra%';
+
+CREATE PROC SearchAndPaginationCustomer(
+	@Q VARCHAR(32),
+	@PageIndex INT,
+	@PageSize INT,
+	@Total INT OUTPUT
+)
+AS
+BEGIN
+	SELECT * FROM sales.Customer WHERE FirstName LIKE @Q ORDER BY CustomerId
+		OFFSET (@PageIndex - 1) * @PageSize ROWS FETCH NEXT @PageSize ROWS ONLY;
+	SELECT @Total = COUNT(*) FROM sales.Customer WHERE FirstName LIKE @Q;
+END
+GO
+
+
+CREATE PROC GetCities(
+	@State VARCHAR(32) = NULL
+)
+AS
+BEGIN
+	SELECT DISTINCT City FROM sales.Customer
+		WHERE @State IS NULL OR State = @State;
+END
+GO
+
+SELECT DISTINCT City FROM sales.Customer WHERE State = 'NY'
+SELECT DISTINCT City FROM sales.Customer WHERE State = 'CA'
+SELECT DISTINCT City FROM sales.Customer WHERE State = 'TX'
+
+
 
 --DROP TABLE sales.Store;
 CREATE TABLE sales.Store (

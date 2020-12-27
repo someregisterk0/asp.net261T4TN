@@ -96,6 +96,24 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSearchAndPaginationCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchAndPaginationCustomer.Designer.cs">
+      <DependentUpon>FormSearchAndPaginationCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchAutoComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchAutoComplete.Designer.cs">
+      <DependentUpon>FormSearchAutoComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchCustomer.Designer.cs">
+      <DependentUpon>FormSearchCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +169,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchAndPaginationCustomer.resx">
+      <DependentUpon>FormSearchAndPaginationCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchAutoComplete.resx">
+      <DependentUpon>FormSearchAutoComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchCustomer.resx">
+      <DependentUpon>FormSearchCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSignIn.resx">
       <DependentUpon>FormSignIn.cs</DependentUpon>
