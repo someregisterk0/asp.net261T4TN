@@ -27,7 +27,7 @@ namespace WinApp
             {
                 int total = 0;
                 gvCustomer.DataSource = repository.SearchCustomer(txtQ.Text, page, size, out total);
-                totalPage = (total - 1) / size + 1;
+                totalPage = ((total - 1) / size) + 1;
             }
         }
 

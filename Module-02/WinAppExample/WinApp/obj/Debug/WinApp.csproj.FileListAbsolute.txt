@@ -51,3 +51,5 @@ D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormCustomer.r
 D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormSearchCustomer.resources
 D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormSearchAutoComplete.resources
 D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormSearchAndPaginationCustomer.resources
+D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormImport.resources
+D:\asp.net261T4TN\Module-02\WinAppExample\WinApp\obj\Debug\WinApp.FormMenuItem.resources

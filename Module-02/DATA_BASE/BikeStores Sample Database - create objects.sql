@@ -121,6 +121,7 @@ SELECT * FROM sales.Customer WHERE FirstName LIKE 'd%';
 -- Tất cả các khách hàng kết thúc bằng chữ ra
 SELECT * FROM sales.Customer WHERE FirstName LIKE '%ra';
 SELECT * FROM sales.Customer WHERE FirstName LIKE '%bra%';
+GO
 
 CREATE PROC SearchAndPaginationCustomer(
 	@Q VARCHAR(32),
@@ -215,3 +216,58 @@ CREATE TABLE production.Stock (
 	FOREIGN KEY (ProductId) REFERENCES production.Product (ProductId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 GO
+
+
+----------------------------------------------------------------------------------------
+-- Movie Rating
+
+CREATE TABLE Rating(
+	UserId INT NOT NULL,
+	MovieId INT NOT NULL,
+	Rating TINYINT NOT NULL,
+	Timestamp INT NOT NULL
+);
+GO
+
+CREATE PROC AddRating
+(
+	@UserId INT,
+	@MovieId INT,
+	@Rating TINYINT,
+	@Timestamp INT
+)
+AS
+BEGIN
+	INSERT INTO Rating (UserId, MovieId, Rating, Timestamp) 
+		VALUES (@UserId, @MovieId, @Rating, @Timestamp);
+END
+GO
+--TRUNCATE TABLE Rating;
+
+
+CREATE TABLE Movie(
+	MovieId INT NOT NULL,
+	Title VARCHAR(256) NOT NULL,
+	Genres VARCHAR(256) NOT NULL
+);
+GO
+--TRUNCATE TABLE Movie;
+
+--------------------------------------------------------------------
+-- TABLE Menu
+CREATE TABLE MenuItem(
+	MenuItemId VARCHAR(32) NOT NULL PRIMARY KEY,
+	MenuItemName NVARCHAR(64) NOT NULL,
+	FormName VARCHAR(32),
+	ParentId VARCHAR(32) REFERENCES MenuItem(MenuItemId)
+);
+GO
+
+INSERT INTO MenuItem (MenuItemId, MenuItemName, FormName, ParentId) VALUES 
+	('Manage', 'Manage', NULL, NULL),
+	('Category', 'Category', 'FormCategory', 'Manage'),
+	('Product', 'Product', 'FormProduct', 'Manage');
+GO
+
+SELECT * FROM MenuItem
+
