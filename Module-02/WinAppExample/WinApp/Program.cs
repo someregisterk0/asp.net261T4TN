@@ -16,7 +16,7 @@ namespace WinApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMenuItem());
+            Application.Run(new FormCategory2());
         }
     }
 }

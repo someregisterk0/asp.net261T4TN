@@ -72,6 +72,12 @@
     <Compile Include="FormCategory.Designer.cs">
       <DependentUpon>FormCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCategory2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategory2.Designer.cs">
+      <DependentUpon>FormCategory2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,12 @@
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageMenuItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageMenuItem.Designer.cs">
+      <DependentUpon>FormManageMenuItem.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMenuItem.cs">
       <SubType>Form</SubType>
@@ -158,6 +170,7 @@
     <Compile Include="MenuItem.cs" />
     <Compile Include="MenuItemRepository.cs" />
     <Compile Include="MovieRepository.cs" />
+    <Compile Include="Parameter.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductRepository.cs" />
     <Compile Include="Program.cs" />
@@ -175,6 +188,9 @@
     <EmbeddedResource Include="FormCategory.resx">
       <DependentUpon>FormCategory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCategory2.resx">
+      <DependentUpon>FormCategory2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormChangePassword.resx">
       <DependentUpon>FormChangePassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageMenuItem.resx">
+      <DependentUpon>FormManageMenuItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuItem.resx">
       <DependentUpon>FormMenuItem.cs</DependentUpon>

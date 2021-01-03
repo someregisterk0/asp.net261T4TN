@@ -264,10 +264,23 @@ CREATE TABLE MenuItem(
 GO
 
 INSERT INTO MenuItem (MenuItemId, MenuItemName, FormName, ParentId) VALUES 
+	('System', 'System', NULL, NULL),
 	('Manage', 'Manage', NULL, NULL),
 	('Category', 'Category', 'FormCategory', 'Manage'),
 	('Product', 'Product', 'FormProduct', 'Manage');
 GO
+
+CREATE PROC AddMenuItem(
+	@Id VARCHAR(32) ,
+	@Name NVARCHAR(64),
+	@FormName VARCHAR(32) = NULL,
+	@ParentId VARCHAR(32) = NULL
+)
+AS
+BEGIN
+	INSERT INTO MenuItem (MenuItemId, MenuItemName, FormName, ParentId) VALUES
+		(@Id, @Name, @FormName, @ParentId)
+END
 
 SELECT * FROM MenuItem
 

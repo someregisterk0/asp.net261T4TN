@@ -58,5 +58,100 @@ namespace WinApp
                 }
             }
         }
+
+        public List<MenuItem> GetParents()
+        {
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                using (IDbCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "SELECT * FROM MenuItem WHERE ParentId IS NULL";
+                    connection.Open();
+
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        List<MenuItem> list = new List<MenuItem>();
+                        while (reader.Read())
+                        {
+                            MenuItem obj = new MenuItem
+                            {
+                                Id = (string)reader["MenuItemId"],
+                                Name = (string)reader["MenuItemName"],
+                                FormName = reader["FormName"] != DBNull.Value ? (string)reader["FormName"] : null
+                            };
+                            list.Add(obj);
+                        }
+                        return list;
+                    }
+                }
+            }
+        }
+
+        public List<MenuItem> GetAllMenuItem()
+        {
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                using (IDbCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "SELECT * FROM MenuItem";
+                    connection.Open();
+
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        List<MenuItem> list = new List<MenuItem>();
+                        while (reader.Read())
+                        {
+                            MenuItem obj = new MenuItem
+                            {
+                                Id = (string)reader["MenuItemId"],
+                                Name = (string)reader["MenuItemName"],
+                                FormName = reader["FormName"] != DBNull.Value ? (string)reader["FormName"] : null,
+                                ParentId = reader["ParentId"] != DBNull.Value ? (string)reader["ParentId"] : null
+                            };
+                            list.Add(obj);
+                        }
+                        return list;
+                    }
+                }
+            }
+        }
+
+
+
+        public int AddMenuItem(MenuItem obj)
+        {
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                using (IDbCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "AddMenuItem";
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    IDataParameter idParameter = command.CreateParameter();
+                    idParameter.ParameterName = "@Id";
+                    idParameter.Value = obj.Id;
+                    command.Parameters.Add(idParameter);
+
+                    IDataParameter nameParameter = command.CreateParameter();
+                    nameParameter.ParameterName = "@Name";
+                    nameParameter.Value = obj.Name;
+                    command.Parameters.Add(nameParameter);
+
+                    IDataParameter formNameParameter = command.CreateParameter();
+                    formNameParameter.ParameterName = "@FormName";
+                    formNameParameter.Value = obj.FormName;
+                    command.Parameters.Add(formNameParameter);
+
+                    IDataParameter parentIdParameter = command.CreateParameter();
+                    parentIdParameter.ParameterName = "@ParentId";
+                    parentIdParameter.Value = obj.ParentId;
+                    command.Parameters.Add(parentIdParameter);
+
+                    connection.Open();
+
+                    return command.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }
