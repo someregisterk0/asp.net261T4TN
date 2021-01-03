@@ -8,23 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\hv\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Totoro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj",
+      "projectUniqueName": "E:\\Codes\\KHTN\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj",
       "projectName": "TryCatch_example02",
-      "projectPath": "D:\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj",
-      "packagesPath": "C:\\Users\\hv\\.nuget\\packages\\",
-      "outputPath": "D:\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\obj\\",
+      "projectPath": "E:\\Codes\\KHTN\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\TryCatch_example02.csproj",
+      "packagesPath": "C:\\Users\\Totoro\\.nuget\\packages\\",
+      "outputPath": "E:\\Codes\\KHTN\\asp.net261T4TN\\Module-02\\WinAppExample\\TryCatch_example02\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\hv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Totoro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
