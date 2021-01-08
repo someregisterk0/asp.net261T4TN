@@ -46,6 +46,7 @@ namespace WinApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "FormMenuItem";
             this.Text = "FormMenuItem";

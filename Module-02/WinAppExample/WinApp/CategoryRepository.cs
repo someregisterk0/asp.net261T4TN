@@ -9,8 +9,37 @@ using System.Data.SqlClient;
 
 namespace WinApp
 {
-    class CategoryRepository
+    class CategoryRepository : BaseRepository
     {
+        public int Delete2(int id)
+        {
+            Parameter parameter = new Parameter { Name = "@Id", Value = id };
+
+            // Gọi Procedure
+            // return Save("DeleteCategory", parameter); 
+
+            // Gọi bằng command Text
+            string sql = "DELETE FROM Category WHERE CategoryId = @Id";
+            return Save(sql, parameter, CommandType.Text);
+        }
+
+        public int Add2(Category obj)
+        {
+            string sql = "INSERT INTO Category VALUES (@name)";
+            return Save(sql, new Parameter { Name = "@name", Value = obj.Name }, CommandType.Text);
+        }
+
+        public int Edit2(Category obj)
+        {
+            string sql = "UPDATE Category SET CategoryName = @Name WHERE CategoryId = @Id";
+            Parameter[] parameters =
+            {
+                new Parameter{Name = "@Name", Value = obj.Name},
+                new Parameter{Name = "@Id", Value = obj.Id}
+            };
+            return Save(sql, parameters, CommandType.Text);
+        }
+
         // fields
         // const string connectionString = @"Data Source=PM505-03\MSSQLSERVER2014;Initial Catalog=Stores;Integrated Security=True";
         readonly static string connectionString = @"Data Source=PM505-03\MSSQLSERVER2014;Initial Catalog=Stores;Integrated Security=True";
@@ -56,7 +85,8 @@ namespace WinApp
                         List<Category> list = new List<Category>();
                         while (reader.Read())
                         {
-                            list.Add(new Category {
+                            list.Add(new Category
+                            {
                                 Id = (int)reader["CategoryId"],
                                 Name = (string)reader["CategoryName"]
                             });
