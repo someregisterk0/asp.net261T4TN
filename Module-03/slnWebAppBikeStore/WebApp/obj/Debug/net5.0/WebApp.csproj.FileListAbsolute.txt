@@ -54,3 +54,7 @@ D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\bin\Debug\net5.0\runtimes\
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Category\Error.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Category\Edit.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs

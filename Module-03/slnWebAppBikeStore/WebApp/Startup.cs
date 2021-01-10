@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,6 +28,8 @@ namespace WebApp
             }
 
             app.UseRouting();
+
+            app.UseStaticFiles();  // để dùng thêm js, jquery
 
             app.UseEndpoints(endpoints =>
             {
