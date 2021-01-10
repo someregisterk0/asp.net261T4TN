@@ -1,0 +1,20 @@
+﻿@model List<WebApp.Models.Brand>
+
+<a href="/category/create">Create</a>
+<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (WebApp.Models.Brand item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>
