@@ -38,13 +38,14 @@ namespace WebApp.Models
             }
         }
 
-        public int Save(string sql, Parameter parameter)
+        public int Save(string sql, Parameter parameter, CommandType commandType = CommandType.Text)
         {
             using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))
             {
                 using (IDbCommand command = connection.CreateCommand())
                 {
                     command.CommandText = sql;
+                    command.CommandType = commandType;
 
                     Add(command, parameter);
                     connection.Open();
@@ -53,13 +54,14 @@ namespace WebApp.Models
             }
         }
 
-        public int Save(string sql, Parameter[] parameters)
+        public int Save(string sql, Parameter[] parameters, CommandType commandType = CommandType.Text)
         {
             using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))
             {
                 using (IDbCommand command = connection.CreateCommand())
                 {
                     command.CommandText = sql;
+                    command.CommandType = commandType;
 
                     Add(command, parameters);
                     connection.Open();

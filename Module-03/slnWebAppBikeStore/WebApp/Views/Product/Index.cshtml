@@ -1,0 +1,28 @@
+﻿@model List<WebApp.Models.Product>
+
+    <a href="/product/create">Create</a>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Category</th>
+            <th>Model Year</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (WebApp.Models.Product item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.BrandId</td>
+                <td>@item.CategoryId</td>
+                <td>@item.ModelYear</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
