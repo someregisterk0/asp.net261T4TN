@@ -1,7 +1,7 @@
 ﻿<form method="post">
     <div class="form-group">
         <label>Name</label>
-        <input class="form-control" type="text" name="name" />
+        <input class="form-control" type="text" required name="name" />
     </div>
     <div class="form-group">
         <label>Category</label>
@@ -23,11 +23,11 @@
     </div>
     <div class="form-group">
         <label>Price</label>
-        <input class="form-control" type="text" name="name" />
+        <input class="form-control" type="number" required step="0.01" name="Price" />
     </div>
     <div class="form-group">
         <label>Model Year</label>
-        <input class="form-control" type="text" name="name" />
+        <input class="form-control" type="number" required min="1900" max="2050" name="ModelYear" />
     </div>
 
     <div>

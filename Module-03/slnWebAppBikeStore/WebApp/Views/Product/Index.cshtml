@@ -1,8 +1,41 @@
 ﻿@model List<WebApp.Models.Product>
 
-    <a href="/product/create">Create</a>
-<table>
-    <thead>
+<a class="btn-primary" href="/product/create">Create</a>
+
+@{ int p = ViewContext.RouteData.Values["id"] is null ? 1 : Convert.ToInt32(ViewContext.RouteData.Values["id"]); }
+
+<ul class="pagination">
+    @if (p > 1)
+    {
+        <li class="page-item">
+            <a class="page-link" href="/product/index/@(p - 1)">Previous</a>
+        </li>
+    }
+    @for (int i = 1; i <= ViewBag.pages; i++)
+    {
+        if (i == ViewBag.p) // i == p
+        {
+            <li class="page-item active">
+                <a class="page-link" href="/product/index/@i">@i</a>
+            </li>
+        }
+        else
+        {
+            <li class="page-item">
+                <a class="page-link" href="/product/index/@i">@i</a>
+            </li>
+        }
+    }
+    @if (p < ViewBag.pages)
+    {
+        <li class="page-item">
+            <a class="page-link" href="/product/index/@(p + 1)">Next</a>
+        </li>
+    }
+</ul>
+
+<table class="table table-bordered">
+    <thead class="table-primary">
         <tr>
             <th>Id</th>
             <th>Name</th>
@@ -10,6 +43,7 @@
             <th>Category</th>
             <th>Model Year</th>
             <th>Price</th>
+            <th>Edit</th>
         </tr>
     </thead>
     <tbody>
@@ -18,11 +52,41 @@
             <tr>
                 <td>@item.Id</td>
                 <td>@item.Name</td>
-                <td>@item.BrandId</td>
-                <td>@item.CategoryId</td>
+                <td>@item.CategoryName</td>
+                <td>@item.BrandName</td>
                 <td>@item.ModelYear</td>
                 <td>@item.Price</td>
+                <td>
+                    <a href="/product/edit/@item.Id"><i class="far fa-edit"></i></a>
+                </td>
             </tr>
         }
     </tbody>
 </table>
+
+
+
+<ul id="pagination" class="pagination">
+    @if (p > 1)
+    {
+        <li class="page-item">
+            <a class="page-link" href="/product/index/@(p - 1)">Previous</a>
+        </li>
+    }
+    @for (int i = 1; i <= ViewBag.pages; i++)
+    {
+        <li class="p page-item">
+            <a class="page-link" href="/product/index/@i">@i</a>
+        </li>
+    }
+    @if (p < ViewBag.pages)
+    {
+        <li class="page-item">
+            <a class="page-link" href="/product/index/@(p + 1)">Next</a>
+        </li>
+    }
+</ul>
+
+<script>
+    $($('li.p')[@p-1]).addClass('active');
+</script>
