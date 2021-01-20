@@ -26,6 +26,7 @@ namespace WebApp.Models
             // thieu
             dataParameter.DbType = parameter.DbType;
             dataParameter.Direction = parameter.Direction;
+            parameter.DataParameter = dataParameter;
 
             command.Parameters.Add(dataParameter);
         }

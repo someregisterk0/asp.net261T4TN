@@ -1,0 +1,52 @@
+﻿@model List<WebApp.Models.Product>;
+
+<table class="table table-bordered">
+    <thead class="table-primary">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Brand</th>
+            <th>Model Year</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody id="sheet">
+        @foreach (WebApp.Models.Product item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.CategoryName</td>
+                <td>@item.BrandName</td>
+                <td>@item.ModelYear</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    var p = 1;
+    $(window).scroll(function () {
+        console.log('Top', $(this).scrollTop());
+        console.log('Height', $(this).height());
+        console.log('Document', $(document).height());
+
+        var top = $(this).scrollTop();
+        var height = $(this).height();
+        var doc = $(document).height();
+
+        if (top + height == doc) {
+            p++;
+            if (p <= @ViewBag.n) {
+                $.post('/product/loadmore/' + p, function (a) {
+                    for (var i in a) {
+                        var o = a[i];
+                        $(sheet).append(`<tr><td>${o['id']}</td><td>${o['name']}</td><td>${o['categoryName']}</td><td>${o['brandName']}</td><td>${o['modelYear']}</td><td>${o['price']}</td></tr>`);
+                    }
+                });
+            }
+        }
+    });
+</script>

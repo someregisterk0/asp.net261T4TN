@@ -31,6 +31,41 @@ END
 GO
 
 
+CREATE PROC GetProductsNotTotal(
+	@Index INT,
+	@Size INT
+)
+AS
+BEGIN
+	SELECT P.*, B.BrandName, C.CategoryName FROM production.Product AS P 
+		JOIN production.Brand AS B ON P.BrandId = B.BrandId
+		JOIN production.Category AS C ON P.CategoryId = C.CategoryId
+		ORDER BY P.ProductId
+		OFFSET @Index ROWS FETCH NEXT @Size ROWS ONLY;
+END
+GO
+
+-- q = query
+CREATE PROC SearchProducts(
+	@Q VARCHAR(32),
+	@Index INT,
+	@Size INT,
+	@Total INT OUT
+)
+AS
+BEGIN
+	SELECT P.*, B.BrandName, C.CategoryName FROM production.Product AS P 
+		JOIN production.Brand AS B ON P.BrandId = B.BrandId
+		JOIN production.Category AS C ON P.CategoryId = C.CategoryId
+		WHERE ProductName LIKE @Q
+		ORDER BY P.ProductId
+		OFFSET @Index ROWS FETCH NEXT @Size ROWS ONLY;
+
+		SELECT @Total = COUNT(*) FROM production.Product WHERE ProductName LIKE @Q;
+END
+GO
+
+
 CREATE PROC AddProduct(
 	@Name VARCHAR (256),
 	@BrandId SMALLINT,
@@ -44,6 +79,7 @@ BEGIN
 		VALUES(@Name, @BrandId, @CategoryId, @ModelYear, @Price)
 END
 GO
+
 
 CREATE PROC EditProduct(
 	@Id INT,

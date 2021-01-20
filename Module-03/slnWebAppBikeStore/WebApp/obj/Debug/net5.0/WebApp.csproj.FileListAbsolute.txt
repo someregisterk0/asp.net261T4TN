@@ -62,3 +62,6 @@ D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Vie
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Product\Create.cshtml.g.cs
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Product\LoadMore.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Product\Lazy.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Product\Search.cshtml.g.cs

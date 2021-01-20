@@ -13,5 +13,6 @@ namespace WebApp.Models
         public object Value { get; set; }
         public DbType DbType { get; set; }
         public ParameterDirection Direction { get; set; }
+        public IDataParameter DataParameter { get; set; }
     }
 }

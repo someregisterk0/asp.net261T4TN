@@ -78,6 +78,71 @@ namespace WebApp.Models
             }
         }
 
+        public List<Product> GetProducts(int index, int size)
+        {
+            using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))
+            {
+                using (IDbCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "GetProductsNotTotal";
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    Parameter[] parameters =
+                    {
+                        new Parameter{ Name = "@Index", Value = index, DbType = DbType.Int32 },
+                        new Parameter{ Name = "@Size", Value = size, DbType = DbType.Int32 }
+                    };
+                    Add(command, parameters);
+
+                    connection.Open();
+
+                    List<Product> list = new List<Product>();
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            list.Add(Fetch2(reader));
+                        }
+                    }
+                    return list;
+                }
+            }
+        }
+
+        public List<Product> SearchProducts(string q, int index, int size, out int total)
+        {
+            using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))
+            {
+                using (IDbCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "SearchProducts";
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    Parameter[] parameters =
+                    {
+                        new Parameter{ Name = "@Q", Value = $"%{q}%" },
+                        new Parameter{ Name = "@Index", Value = index, DbType = DbType.Int32 },
+                        new Parameter{ Name = "@Size", Value = size, DbType = DbType.Int32 },
+                        new Parameter{ Name = "@Total", DbType = DbType.Int32, Direction = ParameterDirection.Output }
+                    };
+                    Add(command, parameters);
+
+                    connection.Open();
+
+                    List<Product> list = new List<Product>();
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            list.Add(Fetch2(reader));
+                        }
+                    }
+                    total = (int)(parameters[3].DataParameter.Value);
+                    return list;
+                }
+            }
+        }
+
         public int Add(Product obj)
         {
             Parameter[] parameters = { 

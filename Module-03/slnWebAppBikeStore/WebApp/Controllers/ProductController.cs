@@ -75,5 +75,34 @@ namespace WebApp.Controllers
                 return Redirect("/production/error");
             }
         }
+
+        public IActionResult LoadMore()
+        {
+            int total;
+            List<Product> list = repository.GetProducts(0, size, out total);
+            ViewBag.n = ((total - 1) / size) + 1;
+            return View(list);
+        }
+        [HttpPost]
+        public IActionResult LoadMore(int id)
+        {
+            return Json(repository.GetProducts((id - 1) * size, size));
+        }
+
+        public IActionResult Lazy()
+        {
+            int total;
+            List<Product> list = repository.GetProducts(0, size, out total);
+            ViewBag.n = ((total - 1) / size) + 1;
+            return View(list);
+        }
+
+        public IActionResult Search(string q, int id = 1)
+        {
+            int total;
+            List<Product> list = repository.SearchProducts(q, (id - 1) * size, size, out total);
+            ViewBag.n = (total - 1) / size + 1;
+            return View(list);
+        }
     }
 }

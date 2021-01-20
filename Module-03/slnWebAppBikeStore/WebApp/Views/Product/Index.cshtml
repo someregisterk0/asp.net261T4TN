@@ -1,6 +1,15 @@
 ﻿@model List<WebApp.Models.Product>
 
-<a class="btn-primary" href="/product/create">Create</a>
+    <ul>
+        <li><a class="btn-primary" href="/product/loadmore">Load More</a></li>
+        <li><a class="btn-primary" href="/product/lazy">Lazy</a></li>
+        <li><a class="btn-primary" href="/product/create">Create</a></li>
+    </ul>
+
+<form action="/product/search" method="get">
+    <input type="text" name="q" />
+    <button>Search</button>
+</form>
 
 @{ int p = ViewContext.RouteData.Values["id"] is null ? 1 : Convert.ToInt32(ViewContext.RouteData.Values["id"]); }
 
