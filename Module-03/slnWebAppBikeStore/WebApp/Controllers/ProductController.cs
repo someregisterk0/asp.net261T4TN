@@ -104,5 +104,20 @@ namespace WebApp.Controllers
             ViewBag.n = (total - 1) / size + 1;
             return View(list);
         }
+
+        public IActionResult SearchLoadMore(string q)
+        {
+            int total;
+            List<Product> list = repository.SearchProducts(q, 0, size, out total);
+            ViewBag.n = (total - 1) / size + 1;
+            return View(list);
+        }
+        [HttpPost]
+        public IActionResult SearchLoadMore(int p, string q)
+        {
+            int total;
+            List<Product> list = repository.SearchProducts(q, (p - 1) * size, size, out total);
+            return Json(list);
+        }
     }
 }

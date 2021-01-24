@@ -1,0 +1,15 @@
+﻿<ul>
+    <li><a href="upload/multiple">Upload Multiple</a></li>
+    <li><a href="upload/online">Online</a></li>
+</ul>
+
+<form enctype="multipart/form-data"  method="post">
+    <input type="file" name="f" />
+    <button>Upload</button>
+</form>
+         
+@if (!string.IsNullOrEmpty(Model))
+{
+    <img src="/upload/@Model" width="200" />
+}
+

@@ -1,4 +1,5 @@
-﻿@model List<WebApp.Models.Product>
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers 
+@model List<WebApp.Models.Product>
 
 <form action="/product/search" method="get">
     <input type="text" name="q" value="@Context.Request.Query["q"]"/>
@@ -14,7 +15,9 @@
     }
 </ul>
 
-<table class="table table-bordered">
+<partial name="Product" model="@Model" />
+
+@*<table class="table table-bordered">
     <thead class="table-primary">
         <tr>
             <th>Id</th>
@@ -42,5 +45,5 @@
             </tr>
         }
     </tbody>
-</table>
+</table>*@
 

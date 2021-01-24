@@ -1,0 +1,13 @@
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\bin\Debug\netcoreapp3.1\RandomFileName.exe
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\bin\Debug\netcoreapp3.1\RandomFileName.deps.json
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\bin\Debug\netcoreapp3.1\RandomFileName.runtimeconfig.json
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\bin\Debug\netcoreapp3.1\RandomFileName.runtimeconfig.dev.json
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\bin\Debug\netcoreapp3.1\RandomFileName.dll
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\bin\Debug\netcoreapp3.1\RandomFileName.pdb
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\obj\Debug\netcoreapp3.1\RandomFileName.csprojAssemblyReference.cache
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\obj\Debug\netcoreapp3.1\RandomFileName.AssemblyInfoInputs.cache
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\obj\Debug\netcoreapp3.1\RandomFileName.AssemblyInfo.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\obj\Debug\netcoreapp3.1\RandomFileName.csproj.CoreCompileInputs.cache
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\obj\Debug\netcoreapp3.1\RandomFileName.dll
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\obj\Debug\netcoreapp3.1\RandomFileName.pdb
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\RandomString\obj\Debug\netcoreapp3.1\RandomFileName.genruntimeconfig.cache

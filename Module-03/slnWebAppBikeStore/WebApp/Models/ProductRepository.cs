@@ -16,7 +16,7 @@ namespace WebApp.Models
 
         }
 
-        Product Fetch(IDataReader reader)
+        static Product Fetch(IDataReader reader)
         {
             return new Product
             {
@@ -29,8 +29,9 @@ namespace WebApp.Models
             };
         }
 
-        Product Fetch2(IDataReader reader)
+        static Product Fetch2(IDataReader reader)
         {
+            /*
             return new Product
             {
                 Id = (int)reader["ProductId"],
@@ -42,6 +43,11 @@ namespace WebApp.Models
                 ModelYear = (short)reader["ModelYear"],
                 Price = (decimal)reader["Price"]
             };
+            */
+            Product obj = Fetch(reader);
+            obj.BrandName = (string)reader["BrandName"];
+            obj.CategoryName = (string)reader["CategoryName"];
+            return obj;
         }
 
         public List<Product> GetProducts(int index, int size, out int total)
@@ -63,6 +69,7 @@ namespace WebApp.Models
 
                     connection.Open();
 
+                    /*
                     List<Product> list = new List<Product>();
                     using (IDataReader reader = command.ExecuteReader())
                     {
@@ -71,6 +78,8 @@ namespace WebApp.Models
                             list.Add(Fetch2(reader));
                         }
                     }
+                    */
+                    List<Product> list = FetchAll(command);
                     IDataParameter parameter = ((IDataParameter)command.Parameters["@Total"]);
                     total = (int)parameter.Value;
                     return list;
@@ -95,7 +104,8 @@ namespace WebApp.Models
                     Add(command, parameters);
 
                     connection.Open();
-
+                    return FetchAll(command);
+                    /*
                     List<Product> list = new List<Product>();
                     using (IDataReader reader = command.ExecuteReader())
                     {
@@ -105,6 +115,7 @@ namespace WebApp.Models
                         }
                     }
                     return list;
+                    */
                 }
             }
         }
@@ -129,6 +140,7 @@ namespace WebApp.Models
 
                     connection.Open();
 
+                    /*
                     List<Product> list = new List<Product>();
                     using (IDataReader reader = command.ExecuteReader())
                     {
@@ -137,6 +149,8 @@ namespace WebApp.Models
                             list.Add(Fetch2(reader));
                         }
                     }
+                    */
+                    List<Product> list = FetchAll(command);
                     total = (int)(parameters[3].DataParameter.Value);
                     return list;
                 }
@@ -193,6 +207,19 @@ namespace WebApp.Models
             };
             string sql = "EditProduct";
             return Save(sql, parameters, CommandType.StoredProcedure);
+        }
+
+        static List<Product> FetchAll(IDbCommand command)
+        {
+            List<Product> list = new List<Product>();
+            using (IDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    list.Add(Fetch2(reader));
+                }
+            }
+            return list;
         }
     }
 }
