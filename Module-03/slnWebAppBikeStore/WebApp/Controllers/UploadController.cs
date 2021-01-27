@@ -92,5 +92,45 @@ namespace WebApp.Controllers
             }
             return View("Online", fileName);
         }
+
+        public IActionResult Ajax()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Ajax(IFormFile f)
+        {
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "upload", f.FileName);
+            using (Stream stream = System.IO.File.Create(path))
+            {
+                f.CopyTo(stream);
+            }
+            return Json(new { name = f.FileName });
+        }
+
+        public IActionResult Icon()
+        {
+            return View();
+        }
+
+        public IActionResult IconMultiple()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AjaxMultiple(IFormFile[] af)
+        {
+            List<string> list = new List<string>();
+            string root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "upload");
+            foreach (IFormFile f in af)
+            {
+                using (Stream stream = System.IO.File.Create(Path.Combine(root, f.FileName)))
+                {
+                    f.CopyTo(stream);
+                }
+                list.Add(f.FileName);
+            }
+            return Json(list);
+        }
     }
 }

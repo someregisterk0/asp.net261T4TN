@@ -70,3 +70,8 @@ D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Vie
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Upload\Index.cshtml.g.cs
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Upload\Multiple.cshtml.g.cs
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Upload\Online.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Upload\Ajax.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Ajax\Index.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAjax.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Upload\Icon.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Upload\IconMultiple.cshtml.g.cs
