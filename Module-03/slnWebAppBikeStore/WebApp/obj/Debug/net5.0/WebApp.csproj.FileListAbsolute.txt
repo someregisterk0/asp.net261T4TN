@@ -75,3 +75,9 @@ D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Vie
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAjax.cshtml.g.cs
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Upload\Icon.cshtml.g.cs
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Upload\IconMultiple.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Upload\Folder.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Auth\SignIn.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Auth\SignUp.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Role\Index.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Member\Index.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Member\Roles.cshtml.g.cs

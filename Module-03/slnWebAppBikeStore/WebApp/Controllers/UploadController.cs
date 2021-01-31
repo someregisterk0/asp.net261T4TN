@@ -132,5 +132,34 @@ namespace WebApp.Controllers
             }
             return Json(list);
         }
+
+        public IActionResult Folder()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Folder(IFormFile[] af)
+        {
+            string root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "upload");
+            List<string> list = new List<string>();
+            foreach (IFormFile f in af)
+            {
+                Console.WriteLine(f.FileName);
+                // kiem tra neu khong ton tai thu muc, tao moi
+                int index = f.FileName.LastIndexOf('/');
+                string folder = Path.Combine(root, f.FileName.Substring(0, index));
+                if(!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+                Console.WriteLine(folder);
+                using (Stream stream = System.IO.File.Create(Path.Combine(root, f.FileName)))
+                {
+                    f.CopyTo(stream);
+                }
+                list.Add(f.FileName);
+            }
+            return View(list);
+        }
     }
 }
