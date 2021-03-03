@@ -44,6 +44,47 @@ namespace WebApp.Models
             }
         }
 
+        public List<Role> GetRolesByMember(Guid id)
+        {
+            using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))
+            {
+                using (IDbCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "GetRolesByMember";
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    Parameter parameter = new Parameter
+                    {
+                        Name = "@MemberId",
+                        Value = id,
+                        DbType = DbType.Guid
+                    };
+                    Add(command, parameter);
+
+                    connection.Open();
+
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        List<Role> list = new List<Role>();
+                        while (reader.Read())
+                        {
+                            list.Add(FetchWithChecked(reader));
+                        }
+                        return list;
+                    }
+                }
+            }
+        }
+
+        static Role FetchWithChecked(IDataReader reader)
+        {
+            return new Role
+            {
+                Id = (Guid)reader["RoleId"],
+                Name = (string)reader["RoleName"],
+                Checked = (bool)reader["Checked"]
+            };
+        }
         static Role Fetch(IDataReader reader)
         {
             return new Role

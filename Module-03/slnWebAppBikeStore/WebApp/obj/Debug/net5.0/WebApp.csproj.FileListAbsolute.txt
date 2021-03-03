@@ -81,3 +81,4 @@ D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Vie
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Role\Index.cshtml.g.cs
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Member\Index.cshtml.g.cs
 D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Member\Roles.cshtml.g.cs
+D:\asp.net261T4TN\Module-03\slnWebAppBikeStore\WebApp\obj\Debug\net5.0\Razor\Views\Auth\Index.cshtml.g.cs

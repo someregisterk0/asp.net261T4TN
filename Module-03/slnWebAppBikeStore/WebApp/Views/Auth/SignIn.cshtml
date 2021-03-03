@@ -1,1 +1,24 @@
-﻿<h1>Sign In</h1>
+﻿<!--Tag Helper-->
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model WebApp.Models.SignInModel
+
+<div asp-validation-summary="All"></div>
+<form method="post">
+    <div>
+        <label asp-for="Usr">Username</label>
+        <input type="text" asp-for="Usr" />
+        <span asp-validation-for="Usr"></span>
+    </div>
+    <div>
+        <label asp-for="Pwd">Password</label>
+        <input type="password" asp-for="Pwd" />
+        <span asp-validation-for="Pwd"></span>
+    </div>
+    <div>
+        <label asp-for="Rem">Remember me?</label>
+        <input type="checkbox" asp-for="Rem" />
+    </div>
+    <div>
+        <button>Sign</button>
+    </div>
+</form>

@@ -4,8 +4,8 @@
 <p>Email: <b>@Model.Email</b></p>
 <p>Gender: <b>@Model.Gender</b></p>
 
-<table>
-    <thead>
+<table class="table table-bordered">
+    <thead class="table-primary">
         <tr>
             <th>Role Name</th>
             <th>Checked</th>
@@ -17,7 +17,14 @@
             <tr>
                 <td>@item.Name</td>
                 <td>
-                    <input type="checkbox" class="a" value="@item.Id" />
+                    @if (item.Checked)
+                    {
+                        <input type="checkbox" class="a" checked value="@item.Id" />
+                    }
+                    else
+                    {
+                        <input type="checkbox" class="a" value="@item.Id" />
+                    }
                 </td>
             </tr>
         }

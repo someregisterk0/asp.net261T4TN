@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 namespace WebApp
 {
     public class Startup
@@ -17,6 +19,13 @@ namespace WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+
+            services.AddAuthentication("Cookies").AddCookie(opt =>
+            {
+                opt.LoginPath = "/auth/signin";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -30,6 +39,10 @@ namespace WebApp
             app.UseRouting();
 
             app.UseStaticFiles();  // để dùng thêm js, jquery
+
+            // để thêm phần xác thực
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

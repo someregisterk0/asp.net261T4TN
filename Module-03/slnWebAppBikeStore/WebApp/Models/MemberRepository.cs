@@ -19,7 +19,7 @@ namespace WebApp.Models
         {
             Parameter[] parameters = { 
                 new Parameter{ Name = "@Username", Value = obj.Username },
-                new Parameter{ Name = "@Password", Value = Helper.Hash(obj.Username), DbType = DbType.Binary },
+                new Parameter{ Name = "@Password", Value = Helper.Hash(obj.Password), DbType = DbType.Binary },
                 new Parameter{ Name = "@Email", Value = obj.Email },
                 new Parameter{ Name = "@Gender", Value = obj.Gender },
                 new Parameter{ Name = "@Ret", Direction = ParameterDirection.ReturnValue }
@@ -48,6 +48,31 @@ namespace WebApp.Models
                             list.Add(Fetch(reader));
                         }
                         return list;
+                    }
+                }
+            }
+        }
+
+        public Member SignIn(SignInModel obj)
+        {
+            using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))
+            {
+                using (IDbCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "SignIn";
+                    command.CommandType = CommandType.StoredProcedure;
+                    Add(command, new Parameter { Name = "@Usr", Value = obj.Usr });
+                    Add(command, new Parameter { Name = "@Pwd", Value = Helper.Hash(obj.Pwd), DbType = DbType.Binary });
+
+                    connection.Open();
+
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return Fetch(reader);
+                        }
+                        return null;
                     }
                 }
             }

@@ -33,7 +33,8 @@ namespace WebApp.Controllers
         {
             Member obj = repository.GetMemberById(id);
             // chua dung
-            obj.Roles = roleRepository.GetRoles();
+            //obj.Roles = roleRepository.GetRoles();
+            obj.Roles = roleRepository.GetRolesByMember(id);
 
             return View(obj);
         }

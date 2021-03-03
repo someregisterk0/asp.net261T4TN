@@ -102,10 +102,14 @@ END
 GO
 
 --- ### New Talbe ### ---
+
+drop table Member;
+drop table memberinrole;
+
 CREATE TABLE Member (
 	MemberId UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
 	Username VARCHAR(32) NOT NULL UNIQUE,
-	Password VARBINARY NOT NULL,
+	Password VARBINARY(64) NOT NULL,
 	Email VARCHAR(64) NOT NULL,
 	Gender TINYINT NOT NULL
 );
@@ -120,7 +124,7 @@ GO
 CREATE TABLE MemberInRole (
 	MemberId UNIQUEIDENTIFIER NOT NULL REFERENCES Member(MemberId),
 	RoleId UNIQUEIDENTIFIER NOT NULL REFERENCES Role(RoleId),
-	IdDeleted BIT NOT NULL DEFAULT 0,
+	IsDeleted BIT NOT NULL DEFAULT 0,
 	PRIMARY KEY(MemberId, RoleId)
 );
 GO
@@ -128,7 +132,7 @@ GO
 --- ### Store Procedure ### ---
 CREATE PROC AddMember(
 	@Username VARCHAR(32),
-	@Password VARBINARY,
+	@Password VARBINARY(64),
 	@Email VARCHAR(64),
 	@Gender TINYINT
 )
@@ -179,8 +183,39 @@ CREATE PROC AddMemberInRole(
 )
 AS
 BEGIN
-	INSERT INTO MemberInRole(MemberId, RoleId)
-		VALUES(@MemberId, @RoleId);
+	IF EXISTS(SELECT * FROM MemberInRole WHERE MemberId = @MemberId AND RoleId = @RoleId)
+		UPDATE MemberInRole SET IsDeleted = ~IsDeleted WHERE MemberId = @MemberId AND RoleId = @RoleId
+	ELSE
+		INSERT INTO MemberInRole(MemberId, RoleId)
+			VALUES(@MemberId, @RoleId);
 END
+GO
 
-select *from MemberInRole
+
+DECLARE @MemberId UNIQUEIDENTIFIER = 'CE527DE3-36BE-49C2-A1F5-1DF9644F0F7E';
+SELECT Role.*, CAST(IIF(MemberId IS NULL, 0, 1) AS BIT) AS Checked
+	FROM MemberInRole RIGHT JOIN Role ON MemberInRole.RoleId = Role.RoleId AND MemberId = @MemberId;
+GO
+
+CREATE PROC GetRolesByMember(@MemberId UNIQUEIDENTIFIER)
+AS
+BEGIN
+	SELECT Role.*, CAST(IIF(MemberId IS NULL, 0, 1) AS BIT) AS Checked
+	FROM MemberInRole RIGHT JOIN Role ON MemberInRole.RoleId = Role.RoleId AND MemberId = @MemberId
+	AND IsDeleted = 0
+END
+GO
+
+EXEC GetRolesByMember @MemberId = '313A9172-43E2-4B76-B813-7864245137CE';
+GO
+
+
+CREATE PROC SignIn(
+	@Usr VARCHAR(32),
+	@Pwd VARBINARY(64)
+)
+AS
+BEGIN
+	SELECT * FROM Member WHERE Username = @Usr AND Password = @Pwd;
+END
+GO
