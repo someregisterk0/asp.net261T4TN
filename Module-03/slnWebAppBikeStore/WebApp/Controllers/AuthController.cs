@@ -16,10 +16,12 @@ namespace WebApp.Controllers
     public class AuthController : Controller
     {
         MemberRepository repository;
+        RoleRepository roleRepository;
 
         public AuthController(IConfiguration configuration)
         {
             repository = new MemberRepository(configuration);
+            roleRepository = new RoleRepository(configuration);
         }
 
         [Authorize]
@@ -59,6 +61,13 @@ namespace WebApp.Controllers
                         new Claim(ClaimTypes.Email, member.Email)
                     };
 
+                    //Roles
+                    List<Role> roles = roleRepository.GetRoles(member.Id);
+                    foreach (Role role in roles)
+                    {
+                        claims.Add(new Claim(ClaimTypes.Role, role.Name));
+                    }
+
                     // Xử lý Login
                     ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);  // CookieAuthenticationDefaults.AuthenticationScheme == chuỗi "Cookies"
                     ClaimsPrincipal principal = new ClaimsPrincipal(claimsIdentity);
@@ -66,9 +75,8 @@ namespace WebApp.Controllers
                     // Remember me?
                     AuthenticationProperties properties = new AuthenticationProperties
                     {
-
+                        IsPersistent = obj.Rem 
                     };
-
                     HttpContext.SignInAsync(principal, properties);
                     return Redirect("/auth");
                 }
@@ -78,6 +86,18 @@ namespace WebApp.Controllers
                 }
             }
             return View(obj);
+        }
+
+        [Authorize]
+        public IActionResult LogOut() //Tên hàm SignOut bị trùng trong BaseController
+        {
+            HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return Redirect("/auth/signin");
+        }
+
+        public IActionResult Denied()
+        {
+            return View();
         }
     }
 }

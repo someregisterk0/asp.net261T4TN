@@ -8,29 +8,29 @@ using WebApp.Models;
 
 namespace WebApp.Controllers
 {
-    public class BrandController : Controller
+    public class BrandController : BaseController
     {
-        BrandRepository repository;
+        //BrandRepository repository;
 
-        public BrandController(IConfiguration configuration)
+        public BrandController(IConfiguration configuration):base(configuration)
         {
-            repository = new BrandRepository(configuration);
+            //repository = new BrandRepository(configuration);
         }
 
         public IActionResult Index()
         {
-            return View(repository.GetBrands());
+            return View(provider.Brand.GetBrands());
         }
         [HttpPost]
         public IActionResult Create(Brand obj)
         {
-            repository.Add(obj);
+            provider.Brand.Add(obj);
             return Redirect("/brand");
         }
 
         public IActionResult Detail(int id)
         {
-            return Json(repository.GetBrandById(id));
+            return Json(provider.Brand.GetBrandById(id));
         }
     }
 }

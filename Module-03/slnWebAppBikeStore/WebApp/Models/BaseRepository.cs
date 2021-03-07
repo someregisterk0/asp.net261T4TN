@@ -18,6 +18,12 @@ namespace WebApp.Models
             this.configuration = configuration;
         }
 
+        public IDbConnection connection;
+        public BaseRepository(IDbConnection connection)
+        {
+            this.connection = connection;
+        }
+
         public void Add(IDbCommand command, Parameter parameter)
         {
             IDataParameter dataParameter = command.CreateParameter();

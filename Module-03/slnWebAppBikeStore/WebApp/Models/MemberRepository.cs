@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using System.Data;
 using Microsoft.Data.SqlClient;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApp.Models
 {

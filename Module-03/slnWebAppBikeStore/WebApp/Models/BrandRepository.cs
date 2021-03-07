@@ -16,16 +16,21 @@ namespace WebApp.Models
 
         }
 
+        public BrandRepository(IDbConnection connection) : base(connection)
+        {
+
+        }
+
         public List<Brand> GetBrands()
         {
-            using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))
-            {
+            //using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))
+            //{
                 using (IDbCommand command = connection.CreateCommand())
                 {
                     command.CommandText = "SELECT * FROM production.Brand";
                     command.CommandType = CommandType.Text;
 
-                    connection.Open();
+                    //connection.Open();
 
                     using (IDataReader reader = command.ExecuteReader())
                     {
@@ -37,7 +42,7 @@ namespace WebApp.Models
                         return list;
                     }
                 }
-            }
+            //}
         }
 
         public int Add(Brand obj)
@@ -61,8 +66,8 @@ namespace WebApp.Models
 
         public Brand GetBrandById(int id)
         {
-            using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))
-            {
+            //using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))
+            //{
                 using (IDbCommand command = connection.CreateCommand())
                 {
                     command.CommandText = "SELECT * FROM production.Brand WHERE BrandId = @Id";
@@ -74,7 +79,7 @@ namespace WebApp.Models
                     //command.Parameters.Add(idParameter);
                     Add(command, new Parameter { Name = "@Id", Value = id });
 
-                    connection.Open();
+                    //connection.Open();
 
                     using (IDataReader reader = command.ExecuteReader())
                     {
@@ -85,7 +90,7 @@ namespace WebApp.Models
                         return null;
                     }
                 }
-            }
+           // }
         }
 
         Brand Fetch(IDataReader reader)

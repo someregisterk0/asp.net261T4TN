@@ -25,6 +25,8 @@ namespace WebApp
             services.AddAuthentication("Cookies").AddCookie(opt =>
             {
                 opt.LoginPath = "/auth/signin";
+                opt.ExpireTimeSpan = TimeSpan.FromDays(30);
+                opt.AccessDeniedPath = "/auth/denied";
             });
         }
 
@@ -48,7 +50,8 @@ namespace WebApp
             {
                 //endpoints.MapGet("/", async context =>
                 //{
-                    endpoints.MapDefaultControllerRoute();
+                endpoints.MapDefaultControllerRoute();
+                endpoints.MapControllerRoute(name: "dashboard", pattern:"{area:exists}/{controller=home}/{action=index}/{id?}");
                 //});
             });
         }

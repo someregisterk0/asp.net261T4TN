@@ -44,6 +44,38 @@ namespace WebApp.Models
             }
         }
 
+        public List<Role> GetRoles(Guid id)
+        {
+            using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))
+            {
+                using (IDbCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "SELECT * FROM MemberInRole JOIN Role ON MemberInRole.RoleId = Role.RoleId AND MemberId = @Id AND IsDeleted = 0";
+                    command.CommandType = CommandType.Text;
+
+                    Parameter parameter = new Parameter
+                    {
+                        Name = "@Id",
+                        Value = id,
+                        DbType = DbType.Guid
+                    };
+                    Add(command, parameter);
+
+                    connection.Open();
+
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        List<Role> list = new List<Role>();
+                        while (reader.Read())
+                        {
+                            list.Add(Fetch(reader));
+                        }
+                        return list;
+                    }
+                }
+            }
+        }
+
         public List<Role> GetRolesByMember(Guid id)
         {
             using (IDbConnection connection = new SqlConnection(configuration.GetConnectionString("BikeStore")))

@@ -103,8 +103,8 @@ GO
 
 --- ### New Talbe ### ---
 
-drop table Member;
-drop table memberinrole;
+--drop table Member;
+--drop table memberinrole;
 
 CREATE TABLE Member (
 	MemberId UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
