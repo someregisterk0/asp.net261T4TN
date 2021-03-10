@@ -1,0 +1,33 @@
+﻿@model List<Store>
+
+<a href="/dashboard/store/create" class="btn btn-primary">Create</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Street</th>
+            <th>City</th>
+            <th>State</th>
+            <th>ZipCode</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (Store item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Phone</td>
+                <td>@item.Email</td>
+                <td>@item.Street</td>
+                <td>@item.City</td>
+                <td>@item.State</td>
+                <td>@item.ZipCode</td>
+            </tr>
+         }   
+    </tbody>
+</table>

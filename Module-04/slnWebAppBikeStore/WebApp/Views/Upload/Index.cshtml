@@ -1,0 +1,19 @@
+﻿<ul>
+    <li><a href="upload/folder">Upload Folder</a></li>
+    <li><a href="upload/multiple">Upload Multiple</a></li>
+    <li><a href="upload/online">Online</a></li>
+    <li><a href="upload/ajax">Ajax</a></li>
+    <li><a href="upload/icon">Ajax Icon</a></li>
+    <li><a href="upload/iconmultiple">Ajax Icon Multiple</a></li>
+</ul>
+
+<form enctype="multipart/form-data"  method="post">
+    <input type="file" name="f" />
+    <button>Upload</button>
+</form>
+         
+@if (!string.IsNullOrEmpty(Model))
+{
+    <img src="/upload/@Model" width="200" />
+}
+

@@ -1,0 +1,34 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers;
+@model Store;
+
+    <form method="post">
+        <div>
+            <label asp-for="Name">Name</label>
+            <input type="text" asp-for="Name" />
+        </div>
+        <div>
+            <label asp-for="Email">Email</label>
+            <input type="text" asp-for="Email" />
+        </div>
+        <div>
+            <label asp-for="Phone">Phone</label>
+            <input type="text" asp-for="Phone" />
+        </div>
+        <div>
+            <label asp-for="Street">Street</label>
+            <input type="text" asp-for="Street" />
+        </div>
+        <div>
+            <label asp-for="City">City</label>
+            <input type="text" asp-for="City" />
+        </div>
+        <div>
+            <label asp-for="State">State</label>
+            <input type="text" asp-for="State" />
+        </div>
+        <div>
+            <label asp-for="ZipCode">ZipCode</label>
+            <input type="text" asp-for="ZipCode" />
+        </div>
+        <button class="btn btn-primary">Save Change</button>
+    </form>
