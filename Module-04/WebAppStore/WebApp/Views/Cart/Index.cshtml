@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Cart> 
+
+<table class="table table-bordered">
+    <tr>
+        <th>Product</th>
+        <th>Image</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (Cart item in Model)
+    {
+<tr>
+    <td>@item.ProductName</td>
+    <td>@item.ImageUrl</td>
+    <td>@item.UnitOfPrice</td>
+    <td>
+        <input min="1" max="100" type="number" v="@item.ProductId" name="qty" value="@item.Quantity" />
+    </td>
+    <td>
+        <a href="/cart/edit/@item.ProductId"><i class="fas fa-edit"></i></a>
+    </td>
+    <td>
+        <a href="/cart/delete/@item.ProductId"><i class="fas fa-trash-alt"></i></a>
+    </td>
+</tr>
+    }
+</table>
+
+<script>
+    $('input[name="qty"]').click(function() {
+        console.log($(this).attr('v'));
+        var obj = { productId: $(this).attr('v'), quantity: $(this).val() };
+        $.post('/cart/edit', obj, function (ret) {
+            console.log(ret);
+        });
+    });
+</script>

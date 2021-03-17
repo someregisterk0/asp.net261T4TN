@@ -43,3 +43,4 @@ D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\Shar
 D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\Home\Detail.cshtml.g.cs
+D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\Cart\Index.cshtml.g.cs

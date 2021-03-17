@@ -16,11 +16,25 @@
             <img class="img-fluid" src="/photos/@img" alt="@Model.ProductName" />
         }
         <p>Price: <b>@Model.UnitOfPrice.ToString("#,###")</b></p>
-        <p>@Html.Raw(Model.Description)</p>
-        <p><b>Thông số kỹ thuật</b></p>
-        <p>@Html.Raw(Model.Specification.Replace("\n", "<br>"))</p>
 
-        <div>Product Ralation</div>
+        @* Button Add To Cart *@
+        <form action="/cart/add" method="post">
+            <input type="hidden" name="productId" value="@Model.ProductId" />
+            <input type="number" name="quantity" value="1" min="1" max="100" />
+            <button class="btn btn-primary">Add To Cart</button>
+        </form>
+
+        @if (Model.Description != null)
+        {
+            <p>@Html.Raw(Model.Description)</p>
+        }
+        @if (Model.Specification != null)
+        {
+            <p><b>Thông số kỹ thuật</b></p>
+            <p>@Html.Raw(Model.Specification.Replace("\n", "<br>"))</p>
+        }
+
+        <div>Product Relation</div>
         <div class="row">
             @foreach (Product item in ViewBag.relations)
             {
