@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -77,6 +78,26 @@ namespace WebApp.Controllers
                 return Json(provider.Cart.Update(obj));
             }
             return Json(-1);
+        }
+
+        [Authorize]
+        public IActionResult CheckOut()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CheckOut(Invoice obj)
+        {
+            if (Request.Cookies["cartId"] != null)
+            {
+                obj.InvoiceId = obj.CartId = Guid.Parse(Request.Cookies["cartId"]);
+                provider.Invoice.Add(obj);
+                // Xóa Cookie cũ
+                Response.Cookies.Delete("cartId", new CookieOptions { Path = "/" });
+                return Redirect($"/invoice/detail/{obj.CartId}");
+            }
+            return Redirect("/");
         }
     }
 }

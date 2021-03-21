@@ -15,6 +15,9 @@ namespace WebApp.Models
         CategoryRepository category;
         ProductRepository product;
         CartRepository cart;
+        InvoiceRepository invoice;
+        InvoiceDetailRepository invoiceDetail;
+        AccountRepository account;
 
         public CategoryRepository Category
         {
@@ -49,6 +52,42 @@ namespace WebApp.Models
                     cart = new CartRepository(Connection);
                 }
                 return cart;
+            }
+        }
+
+        public InvoiceRepository Invoice
+        {
+            get
+            {
+                if (invoice is null)
+                {
+                    invoice = new InvoiceRepository(Connection);
+                }
+                return invoice;
+            }
+        }
+
+        public InvoiceDetailRepository InvoiceDetail
+        {
+            get
+            {
+                if (invoiceDetail is null)
+                {
+                    invoiceDetail = new InvoiceDetailRepository(Connection);
+                }
+                return invoiceDetail;
+            }
+        }
+
+        public AccountRepository Account
+        {
+            get
+            {
+                if (account is null)
+                {
+                    account = new AccountRepository(Connection);
+                }
+                return account;
             }
         }
     }

@@ -1,0 +1,24 @@
+﻿@model Invoice
+
+    <p>Your Invoice</p>
+    <h2>@Model.Fullname</h2>
+    <p>@Model.Address</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Product</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        @foreach (InvoiceDetail item in Model.InvoiceDetails)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td><img src="/photos/@item.ImageUrl.Split(',')[0]" alt="@item.ProductName" width="70" /></td>
+                <td>@item.UnitOfPrice</td>
+                <td>@item.Quantity</td>
+            </tr>
+        }
+    </table>
+

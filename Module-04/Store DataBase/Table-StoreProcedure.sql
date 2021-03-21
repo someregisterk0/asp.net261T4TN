@@ -1,4 +1,4 @@
-USE Store
+﻿USE Store
 GO
 
 CREATE TABLE Cart (
@@ -32,6 +32,28 @@ BEGIN
 END
 GO
 
-select * from Cart
-delete from Cart
-SELECT Cart.*, ProductName, UnitOfPrice, ImageUrl FROM Cart JOIN Product ON Cart.ProductId = Product.ProductId WHERE CardId = @Id
+--Thêm cột AccountId vào bảng Invoice
+ALTER TABLE Invoice ADD AccountId UNIQUEIDENTIFIER REFERENCES Account(AccountId);
+GO
+
+CREATE PROC AddInvoice(
+	@CartId UNIQUEIDENTIFIER,
+	@AccountId UNIQUEIDENTIFIER = NULL,
+	@Fullname NVARCHAR(64),
+	@Email VARCHAR(64),
+	@Phone VARCHAR(16),
+	@Address NVARCHAR(128)
+)
+AS
+BEGIN
+	--InvoiceId lấy từ (chính là) CartId
+	--DECLARE @InvoiceId UNIQUEIDENTIFIER = NEWID();
+	INSERT Invoice(InvoiceId, AccountId, Fullname, Email, Phone, Address) VALUES
+		(@CartId, @AccountId, @Fullname, @Email, @Phone, @Address);
+	INSERT InvoiceDetail(InvoiceId, ProductId, UnitOfPrice, Quantity)
+		SELECT @CartId, Cart.ProductId, UnitOfPrice, Quantity
+		FROM Cart JOIN Product ON Cart.ProductId = Product.ProductId
+		WHERE CartId = @CartId;
+	DELETE FROM Cart WHERE CartId = @CartId;
+END
+GO

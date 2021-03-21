@@ -11,24 +11,35 @@
     </tr>
     @foreach (Cart item in Model)
     {
-<tr>
-    <td>@item.ProductName</td>
-    <td>@item.ImageUrl</td>
-    <td>@item.UnitOfPrice</td>
-    <td>
-        <input min="1" max="100" type="number" v="@item.ProductId" name="qty" value="@item.Quantity" />
-    </td>
-    <td>
-        <a href="/cart/edit/@item.ProductId"><i class="fas fa-edit"></i></a>
-    </td>
-    <td>
-        <a href="/cart/delete/@item.ProductId"><i class="fas fa-trash-alt"></i></a>
-    </td>
-</tr>
+        <tr>
+            <td>
+                <a href="/home/detail/@item.ProductId">@item.ProductName</a>
+            </td>
+            <td>
+                <a href="/home/detail/@item.ProductId">
+                    <img src="/photos/@item.ImageUrl.Split(",")[0]" alt="@item.ProductName" width="70" />
+                </a>
+            </td>
+            <td>@item.UnitOfPrice.ToString("#,###")</td>
+            <td>@item.ProductName</td>
+            <td>@item.ImageUrl</td>
+            <td>@item.UnitOfPrice</td>
+            <td>
+                <input min="1" max="100" type="number" v="@item.ProductId" name="qty" value="@item.Quantity" />
+            </td>
+            <td>
+                <a class="d" href="/cart/delete/@item.ProductId"><i class="fas fa-trash-alt"></i></a>
+            </td>
+        </tr>
     }
 </table>
+<center><a class="btn btn-primary" href="/cart/checkout">Check out</a></center>
 
 <script>
+    $('.d').click(function () {
+        return confirm('Are you sure delete?');
+    });
+
     $('input[name="qty"]').click(function() {
         console.log($(this).attr('v'));
         var obj = { productId: $(this).attr('v'), quantity: $(this).val() };

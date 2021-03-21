@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
@@ -24,6 +25,15 @@ namespace WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            // authorize
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(opt =>
+                {
+                    opt.LoginPath = "/auth/signin";
+                    opt.AccessDeniedPath = "/auth/denied";
+                    opt.ExpireTimeSpan = TimeSpan.FromDays(30);
+                    opt.Cookie.Name = "cse.net.vn";
+                });
             services.AddScoped<SiteProvider>(p => new SiteProvider(configuration));
         }
 
@@ -39,6 +49,10 @@ namespace WebApp
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            // để tạo chức năng đăng nhập
+            app.UseAuthentication(); // trước
+            app.UseAuthorization(); // sau
 
             app.UseEndpoints(endpoints =>
             {
