@@ -36,20 +36,21 @@ GO
 ALTER TABLE Invoice ADD AccountId UNIQUEIDENTIFIER REFERENCES Account(AccountId);
 GO
 
-CREATE PROC AddInvoice(
+ALTER PROC AddInvoice(
 	@CartId UNIQUEIDENTIFIER,
 	@AccountId UNIQUEIDENTIFIER = NULL,
 	@Fullname NVARCHAR(64),
 	@Email VARCHAR(64),
 	@Phone VARCHAR(16),
+	@WardId CHAR(5),
 	@Address NVARCHAR(128)
 )
 AS
 BEGIN
 	--InvoiceId lấy từ (chính là) CartId
 	--DECLARE @InvoiceId UNIQUEIDENTIFIER = NEWID();
-	INSERT Invoice(InvoiceId, AccountId, Fullname, Email, Phone, Address) VALUES
-		(@CartId, @AccountId, @Fullname, @Email, @Phone, @Address);
+	INSERT Invoice(InvoiceId, AccountId, Fullname, Email, Phone, WardId, Address) VALUES
+		(@CartId, @AccountId, @Fullname, @Email, @Phone, @WardId, @Address);
 	INSERT InvoiceDetail(InvoiceId, ProductId, UnitOfPrice, Quantity)
 		SELECT @CartId, Cart.ProductId, UnitOfPrice, Quantity
 		FROM Cart JOIN Product ON Cart.ProductId = Product.ProductId
@@ -57,3 +58,8 @@ BEGIN
 	DELETE FROM Cart WHERE CartId = @CartId;
 END
 GO
+
+ALTER TABLE Invoice Add WardId CHAR(5) REFERENCES Ward(WardId);
+GO
+
+select * from Invoice

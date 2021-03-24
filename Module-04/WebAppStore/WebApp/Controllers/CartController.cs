@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using WebApp.Models;
 
@@ -83,7 +85,18 @@ namespace WebApp.Controllers
         [Authorize]
         public IActionResult CheckOut()
         {
+            ViewBag.provinces = new SelectList(provider.Province.GetProvinces(), "ProvinceId", "ProvinceName");
             return View();
+        }
+
+        public IActionResult District(string id)
+        {
+            return Json(provider.District.GetDistricts(id));
+        }
+
+        public IActionResult Ward(string id)
+        {
+            return Json(provider.Ward.GetWards(id));
         }
 
         [HttpPost]
@@ -92,6 +105,7 @@ namespace WebApp.Controllers
             if (Request.Cookies["cartId"] != null)
             {
                 obj.InvoiceId = obj.CartId = Guid.Parse(Request.Cookies["cartId"]);
+                obj.AccountId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
                 provider.Invoice.Add(obj);
                 // Xóa Cookie cũ
                 Response.Cookies.Delete("cartId", new CookieOptions { Path = "/" });

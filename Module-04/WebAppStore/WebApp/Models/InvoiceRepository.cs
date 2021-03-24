@@ -15,7 +15,7 @@ namespace WebApp.Models
 
         public int Add(Invoice obj)
         {
-            return connection.Execute("AddInvoice", new { CartId = obj.CartId, Fullname = obj.Fullname, Email = obj.Email, Phone = obj.Phone, Address = obj.Address }, commandType: CommandType.StoredProcedure);
+            return connection.Execute("AddInvoice", new { CartId = obj.CartId, AccountId = obj.AccountId, Fullname = obj.Fullname, Email = obj.Email, Phone = obj.Phone, WardId = obj.WardId, Address = obj.Address }, commandType: CommandType.StoredProcedure);
         }
 
         public Invoice GetInvoiceById(Guid id)
