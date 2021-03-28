@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Product>
+@addTagHelper *,WebApp
+@*@Html.Raw(ViewBag.welcome)*@
+
+
+@*Pagination dùng TagHelper*@
+<div>
+    <pagination size="10" url="/home/category/@ViewContext.RouteData.Values["id"]/{0}" total="@ViewBag.total"></pagination>
+</div>
+
+
+@{
+    int p = Convert.ToInt32(@ViewContext.RouteData.Values["p"]) - 1;
+    if (p == -1)
+    {
+        p = 0;
+    }
+}
+
+@*Xem giá trị chọn trên rout (đang chọn page thứ bao nhiêu)*@
+@ViewContext.RouteData.Values["id"];
+@ViewContext.RouteData.Values["p"];
+
+<script>
+    $($('.pagination li.page-item')[@p]).addClass('active');
+</script>
+
+<div class="row">
+    <div class="col-3">
+        <ul>
+            @foreach (Category item in ViewBag.categories)
+            {
+                <li><a href="/home/category/@item.CategoryId">@item.CategoryName</a></li>
+            }
+        </ul>
+    </div>
+    <div class="col-9">
+        <div class="row">
+            @foreach (Product item in Model)
+            {
+                <div class="col-6">
+                    <a href="/home/detail/@item.ProductId"><h3>@item.ProductName</h3></a>
+                    <a href="/home/detail/@item.ProductId">
+                        <img class="img-fluid" src="/photos/@item.ImageUrl.Split(',')[0]" alt="@item.ProductName" />
+                    </a>
+                    <p>Price: <b>@item.UnitOfPrice.ToString("#,###")</b></p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+

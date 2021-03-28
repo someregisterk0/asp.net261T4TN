@@ -18,6 +18,38 @@ END
 GO
 
 
+CREATE PROC GetProductsPagination(
+	@Index INT,
+	@Size INT,
+	@Total INT OUT
+)
+AS
+BEGIN
+	SELECT * FROM Product ORDER BY ProductId OFFSET @Index ROWS FETCH NEXT @Size ROW ONLY;
+	SELECT @Total = COUNT(*) FROM Product;
+END
+GO
+
+DECLARE @t INT;
+EXEC GetProductsPagination @Index = 0 , @Size = 10, @Total = @t OUT;
+PRINT @t;
+GO
+
+--GetProductsByCategory theo phân trang
+CREATE PROC GetProductsByCategory(
+	@Id SMALLINT,
+	@Index INT,
+	@Size INT,
+	@Total INT OUT
+)
+AS
+BEGIN
+	SELECT * FROM Product WHERE CategoryId = @Id 
+		ORDER BY ProductId OFFSET @Index ROWS FETCH NEXT @Size ROW ONLY;
+	SELECT @Total = COUNT(*) FROM Product WHERE CategoryId = @Id;
+END
+GO
+
 CREATE PROC AddCart (
 	@CartId UNIQUEIDENTIFIER, 
 	@ProductId INT, 
@@ -32,11 +64,14 @@ BEGIN
 END
 GO
 
+-- Chạy insert tỉnh thành vào trước rồi mới thêm cột WardId
 --Thêm cột AccountId vào bảng Invoice
 ALTER TABLE Invoice ADD AccountId UNIQUEIDENTIFIER REFERENCES Account(AccountId);
 GO
+ALTER TABLE Invoice Add WardId CHAR(5) REFERENCES Ward(WardId);
+GO
 
-ALTER PROC AddInvoice(
+CREATE PROC AddInvoice(
 	@CartId UNIQUEIDENTIFIER,
 	@AccountId UNIQUEIDENTIFIER = NULL,
 	@Fullname NVARCHAR(64),
@@ -59,7 +94,8 @@ BEGIN
 END
 GO
 
-ALTER TABLE Invoice Add WardId CHAR(5) REFERENCES Ward(WardId);
-GO
+
+
+
 
 select * from Invoice

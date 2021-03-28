@@ -47,3 +47,5 @@ D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\Cart
 D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\Cart\CheckOut.cshtml.g.cs
 D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\Invoice\Detail.cshtml.g.cs
 D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\Auth\SignIn.cshtml.g.cs
+D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\Home\List.cshtml.g.cs
+D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\Home\Category.cshtml.g.cs

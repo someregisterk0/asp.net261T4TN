@@ -1,6 +1,49 @@
 ﻿@model IEnumerable<Product>
+@addTagHelper *,WebApp
+@*@Html.Raw(ViewBag.welcome)*@
 
-@Html.Raw(ViewBag.welcome)
+
+@*Pagination dùng TagHelper*@
+<div>
+    <pagination size="10" url="/home/index/{0}" total="@ViewBag.total"></pagination>
+</div>
+
+
+@{ 
+    int p = Convert.ToInt32(@ViewContext.RouteData.Values["id"]) - 1;
+    if (p == -1)
+    {
+        p = 0;
+    }
+}
+
+@*Xem giá trị chọn trên rout (đang chọn page thứ bao nhiêu)*@
+@ViewContext.RouteData.Values["id"];
+@*Pagination*@
+<ul class="pagination" id="pa">
+    @for (int i = 1; i <= ViewBag.n; i++)
+    {
+        <li class="page-item">
+            <a class="page-link" href="/home/index/@i">@i</a>
+        </li>
+        <!--if (i == p)
+        {
+            <li class="page-item active">--> @*class active để in đậm page đang chọn*@
+            <!--<a class="page-link" href="/home/index/@i">@i</a>
+                </li>
+            }
+            else
+            {
+                <li class="page-item">
+                    <a class="page-link" href="/home/index/@i">@i</a>
+                </li>
+            }-->
+        }
+</ul>
+<script>
+    $($('.pagination li.page-item')[@p]).addClass('active');
+    $($('#pa li.page-item')[@p]).addClass('active');
+</script>
 
 <div class="row">
     <div class="col-3">
