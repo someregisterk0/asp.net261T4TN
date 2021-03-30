@@ -61,11 +61,11 @@ namespace WebApp.Models
             return connection.QuerySingle<Product>(sql, new { Id = id });
         }
 
-        public Dictionary<short,List<Product>> KeyValuePairs()
+        public Dictionary<short, List<Product>> KeyValuePairs()
         {
             IEnumerable<Product> products = GetProducts();
             Dictionary<short, List<Product>> dict = new Dictionary<short, List<Product>>();
-            foreach (Product item  in products)
+            foreach (Product item in products)
             {
                 short key = item.CategoryId;
                 if (!dict.ContainsKey(key))
@@ -75,6 +75,12 @@ namespace WebApp.Models
                 dict[key].Add(item);
             }
             return dict;
+        }
+
+        public IEnumerable<Product> SearchProducts(string q)
+        {
+            string sql = "SearchProducts";
+            return connection.Query<Product>(sql, new { Q = "%" + q  + "%" }, commandType: CommandType.StoredProcedure);
         }
     }
 }

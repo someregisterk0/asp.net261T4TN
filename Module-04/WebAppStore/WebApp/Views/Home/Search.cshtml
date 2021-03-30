@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Product>
+@addTagHelper *,WebApp
+
+
+<a href="/home/list">List</a>
+
+<div class="row">
+    <div class="col-3">
+        <ul>
+            @foreach (Category item in ViewBag.categories)
+            {
+                <li><a href="/home/category/@item.CategoryId">@item.CategoryName</a></li>
+            }
+        </ul>
+    </div>
+    <div class="col-9">
+        <div class="row">
+            @foreach (Product item in Model)
+            {
+                <div class="col-6">
+                    <a href="/home/detail/@item.ProductId"><h3>@item.ProductName</h3></a>
+                    <a href="/home/detail/@item.ProductId">
+                        <img class="img-fluid" src="/photos/@item.ImageUrl.Split(',')[0]" alt="@item.ProductName" />
+                    </a>
+                    <p>Price: <b>@item.UnitOfPrice.ToString("#,###")</b></p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -95,6 +95,16 @@ END
 GO
 
 
+CREATE PROC SearchProducts (
+	@Q VARCHAR(32)
+)
+AS
+BEGIN
+	SELECT * FROM Product WHERE ProductName LIKE @Q;
+END
+GO
+
+
 
 
 

@@ -7,3 +7,9 @@ D:\asp.net261T4TN\Module-04\WebAppStore\Core\obj\Debug\netcoreapp3.1\Core.Assemb
 D:\asp.net261T4TN\Module-04\WebAppStore\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
 D:\asp.net261T4TN\Module-04\WebAppStore\Core\obj\Debug\netcoreapp3.1\Core.dll
 D:\asp.net261T4TN\Module-04\WebAppStore\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Totoro\source\repos\asp.net261T4TN\Module-04\WebAppStore\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\Totoro\source\repos\asp.net261T4TN\Module-04\WebAppStore\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\Totoro\source\repos\asp.net261T4TN\Module-04\WebAppStore\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\Totoro\source\repos\asp.net261T4TN\Module-04\WebAppStore\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\Totoro\source\repos\asp.net261T4TN\Module-04\WebAppStore\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\Totoro\source\repos\asp.net261T4TN\Module-04\WebAppStore\Core\obj\Debug\netcoreapp3.1\Core.pdb

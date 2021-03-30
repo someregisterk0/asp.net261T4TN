@@ -59,5 +59,11 @@ namespace WebApp.Controllers
             }
             return View(list);
         }
+
+        public IActionResult Search(string q)
+        {
+            ViewBag.categories = provider.Category.GetCategories();
+            return View(provider.Product.SearchProducts(q));
+        }
     }
 }
