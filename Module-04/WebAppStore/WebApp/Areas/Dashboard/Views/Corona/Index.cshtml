@@ -1,0 +1,24 @@
+﻿<table>
+    <thead>
+        <tr>
+            <th>Updated</th>
+            <th>Country</th>
+            <th>Cases</th>
+            <th>Deaths</th>
+        </tr>
+    </thead>
+    <tbody id="sheet">
+       
+    </tbody>
+</table>
+
+<script>
+    $.get("/dashboard/corona/getcoronas", function (d) {
+        var a = JSON.parse(d);
+        for (var i in a) {
+            var o = a[i];
+            var html = `<tr><td>${o['updated']}</td><td>${o['country']}</td><td>${o['cases']}</td><td>${o['deaths']}</td></tr>`;
+            $(sheet).append(html);
+        }
+    });
+</script>

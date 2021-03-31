@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Totoro\\source\\repos\\asp.net261T4TN\\Module-04\\WebAppStore\\Core\\Core.csproj": {}
+    "D:\\asp.net261T4TN\\Module-04\\WebAppStore\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Totoro\\source\\repos\\asp.net261T4TN\\Module-04\\WebAppStore\\Core\\Core.csproj": {
+    "D:\\asp.net261T4TN\\Module-04\\WebAppStore\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Totoro\\source\\repos\\asp.net261T4TN\\Module-04\\WebAppStore\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\asp.net261T4TN\\Module-04\\WebAppStore\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Totoro\\source\\repos\\asp.net261T4TN\\Module-04\\WebAppStore\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Totoro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Totoro\\source\\repos\\asp.net261T4TN\\Module-04\\WebAppStore\\Core\\obj\\",
+        "projectPath": "D:\\asp.net261T4TN\\Module-04\\WebAppStore\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\hv\\.nuget\\packages\\",
+        "outputPath": "D:\\asp.net261T4TN\\Module-04\\WebAppStore\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Totoro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Totoro\\source\\repos\\asp.net261T4TN\\Module-04\\WebAppStore\\WebApp\\WebApp.csproj": {}
+    "D:\\asp.net261T4TN\\Module-04\\WebAppStore\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Totoro\\source\\repos\\asp.net261T4TN\\Module-04\\WebAppStore\\WebApp\\WebApp.csproj": {
+    "D:\\asp.net261T4TN\\Module-04\\WebAppStore\\WebApp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Totoro\\source\\repos\\asp.net261T4TN\\Module-04\\WebAppStore\\WebApp\\WebApp.csproj",
+        "projectUniqueName": "D:\\asp.net261T4TN\\Module-04\\WebAppStore\\WebApp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Users\\Totoro\\source\\repos\\asp.net261T4TN\\Module-04\\WebAppStore\\WebApp\\WebApp.csproj",
-        "packagesPath": "C:\\Users\\Totoro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Totoro\\source\\repos\\asp.net261T4TN\\Module-04\\WebAppStore\\WebApp\\obj\\",
+        "projectPath": "D:\\asp.net261T4TN\\Module-04\\WebAppStore\\WebApp\\WebApp.csproj",
+        "packagesPath": "C:\\Users\\hv\\.nuget\\packages\\",
+        "outputPath": "D:\\asp.net261T4TN\\Module-04\\WebAppStore\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Totoro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +49,10 @@
               "target": "Package",
               "version": "[2.0.78, )"
             },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"
@@ -67,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

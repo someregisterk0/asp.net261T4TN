@@ -21,6 +21,19 @@ namespace WebApp.Models
         ProvinceRepository province;
         DistrictRepository district;
         WardRepository ward;
+        CoronaRepository corona;
+
+        public CoronaRepository Corona
+        {
+            get
+            {
+                if (corona is null)
+                {
+                    corona = new CoronaRepository();
+                }
+                return corona;
+            }
+        }
 
         public WardRepository Ward
         {

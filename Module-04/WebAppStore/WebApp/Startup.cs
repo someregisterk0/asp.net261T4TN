@@ -56,6 +56,7 @@ namespace WebApp
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(name: "dashboard", pattern: "{area:exists}/{controller=home}/{action=index}/{id?}");
                 endpoints.MapDefaultControllerRoute();
             });
         }

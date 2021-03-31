@@ -105,6 +105,16 @@ END
 GO
 
 
+CREATE PROC StatisticCategories
+AS
+BEGIN
+	SELECT CategoryName AS Name, COUNT(*) AS Total FROM Category JOIN Product 
+		ON Category.CategoryId = Product.CategoryId
+		GROUP BY CategoryName;
+END
+
+
+
 
 
 

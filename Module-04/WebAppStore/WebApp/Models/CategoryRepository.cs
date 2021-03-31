@@ -15,5 +15,10 @@ namespace WebApp.Models
             string sql = "SELECT * FROM Category";
             return connection.Query<Category>(sql);
         }
+
+        public IEnumerable<Statistic> GetStatistics()
+        {
+            return connection.Query<Statistic>("StatisticCategories", commandType: CommandType.StoredProcedure);
+        }
     }
 }

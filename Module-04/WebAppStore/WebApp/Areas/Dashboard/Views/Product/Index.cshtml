@@ -1,0 +1,42 @@
+﻿@model IEnumerable<WebApp.Models.Product>;
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">Product manage</div>
+    </div>
+    <div class="card-body">
+        <table id="tbl">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Product Code</td>
+                    <td>Name</td>
+                    <td>Unit</td>
+                    <td>Unit Of Price</td>
+                    <td>Image</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ProductId</td>
+                        <td>@item.ProductCode</td>
+                        <td>@item.ProductName</td>
+                        <td>@item.Unit</td>
+                        <td>@item.UnitOfPrice</td>
+                        <td><img src="/photos/@item.ImageUrl.Split(',')[0]" alt="@item.ProductName" width="70" /></td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+<script>
+    $(tbl).DataTable();
+</script>
