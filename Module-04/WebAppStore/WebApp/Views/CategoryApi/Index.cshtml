@@ -1,0 +1,23 @@
+﻿@model List<Category>
+
+<a class="btn btn-primary" href="/categoryapi/create">Create</a>
+
+<table class="table table-bordered">
+    <tr class="table-dark">
+        <td>Id</td>
+        <td>Code</td>
+        <td>Name</td>
+        <td>Edit</td>
+        <td>Delete</td>
+    </tr>
+    @foreach (Category item in Model)
+    {
+<tr>
+    <td>@item.CategoryId</td>
+    <td>@item.CategoryCode</td>
+    <td>@item.CategoryName</td>
+    <td><a href="/categoryapi/Edit/@item.CategoryId">Edit</a></td>
+    <td><a href="/categoryapi/delete/@item.CategoryId">Delete</a></td>
+</tr>
+    }
+</table>

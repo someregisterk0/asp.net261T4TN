@@ -111,3 +111,6 @@ D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\bin\Debug\net5.0\System.Net.Http.
 D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Corona\Index.cshtml.g.cs
+D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\CategoryApi\Index.cshtml.g.cs
+D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\CategoryApi\Create.cshtml.g.cs
+D:\asp.net261T4TN\Module-04\WebAppStore\WebApp\obj\Debug\net5.0\Razor\Views\CategoryApi\Edit.cshtml.g.cs

@@ -1,37 +1,53 @@
 ﻿@model IEnumerable<Cart> 
 
 <table class="table table-bordered">
-    <tr>
-        <th>Product</th>
-        <th>Image</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Edit</th>
-        <th>Delete</th>
-    </tr>
-    @foreach (Cart item in Model)
-    {
+    <thead>
         <tr>
-            <td>
-                <a href="/home/detail/@item.ProductId">@item.ProductName</a>
-            </td>
-            <td>
-                <a href="/home/detail/@item.ProductId">
-                    <img src="/photos/@item.ImageUrl.Split(",")[0]" alt="@item.ProductName" width="70" />
-                </a>
-            </td>
-            <td>@item.UnitOfPrice.ToString("#,###")</td>
-            <td>@item.ProductName</td>
-            <td>@item.ImageUrl</td>
-            <td>@item.UnitOfPrice</td>
-            <td>
-                <input min="1" max="100" type="number" v="@item.ProductId" name="qty" value="@item.Quantity" />
-            </td>
-            <td>
-                <a class="d" href="/cart/delete/@item.ProductId"><i class="fas fa-trash-alt"></i></a>
-            </td>
+            <th>Product</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Amount</th>
+            <th>Quantity</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
-    }
+    </thead>
+    <tbody>
+        @{ int total = 0; }
+        @foreach (Cart item in Model)
+        {
+            total += item.UnitOfPrice * item.Quantity;
+            <tr>
+                <td>
+                    <a href="/home/detail/@item.ProductId">@item.ProductName</a>
+                </td>
+                <td>
+                    <a href="/home/detail/@item.ProductId">
+                        <img src="/photos/@item.ImageUrl.Split(",")[0]" alt="@item.ProductName" width="70" />
+                    </a>
+                </td>
+                <td>@item.UnitOfPrice.ToString("#,###")</td>
+                <td>@item.ProductName</td>
+                <td>@item.ImageUrl</td>
+                <td>@item.UnitOfPrice</td>
+                <td>
+                    <input min="1" max="100" type="number" v="@item.ProductId" name="qty" value="@item.Quantity" />
+                </td>
+                <td>
+                    @((item.UnitOfPrice * item.Quantity).ToString("#,###"))
+                </td>
+                <td>
+                    <a class="d" href="/cart/delete/@item.ProductId"><i class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th class="text-center" colspan="4">Total</th>
+            <td>@total.ToString("#,###")</td>
+        </tr>
+    </tfoot>
 </table>
 <center><a class="btn btn-primary" href="/cart/checkout">Check out</a></center>
 
